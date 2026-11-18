@@ -1,0 +1,1256 @@
+{
+  "detalle1": {
+    "id": "detalle1",
+    "category": "azoteas",
+    "category_label": "Azoteas Planas",
+    "code": "DET-01 · IVE TIPOLOGÍA 1",
+    "slide": "Diapositiva 1 · Pág. 20 (Análisis Cartillas IVE)",
+    "title": "Azotea Transitable · No Ventilada · Convencional · Pavimento Fijo",
+    "subtitle": "Encuentro con peto de fábrica y secuencia escalonada de capas (P, CS, I, AT, BV, FP, SR)",
+    "scale_2d": "1:5",
+    "normativa": "Cartillas IVE · CTE DB-HS1 / DB-HE1",
+    "bounds_mm": {
+      "x_min": 0.0,
+      "x_max": 1175.0,
+      "y_min": 0.0,
+      "y_max": 960.0,
+      "z_min": -260.0,
+      "z_max": 820.0
+    },
+    "params": {
+      "deck_end_x": 985.0,
+      "junta_eps_w": 15.0,
+      "enfoscado_int_w": 15.0,
+      "peto_brick_w": 140.0,
+      "enfoscado_ext_w": 20.0,
+      "peto_top_z": 820.0,
+      "forjado_h": 260.0,
+      "compresion_h": 50.0,
+      "vigueta_spacing": 600.0,
+      "slope": 0.025,
+      "fp_min_h": 55.0,
+      "fp_reg_h": 15.0,
+      "bv_h": 3.0,
+      "at_h": 50.0,
+      "i_h": 4.0,
+      "i_turnup_h": 200.0,
+      "cs_h": 2.0,
+      "mortero_agarre_h": 20.0,
+      "tile_h": 20.0,
+      "tile_l": 280.0,
+      "tile_w": 140.0,
+      "tile_joint": 6.0,
+      "rodapie_h": 200.0,
+      "rodapie_t": 15.0,
+      "junta_perimetral": 10.0,
+      "steps_x": {
+        "SR": 0.0,
+        "FP": 85.0,
+        "BV": 175.0,
+        "AT": 265.0,
+        "I": 355.0,
+        "CS": 445.0,
+        "P_MORTERO": 525.0,
+        "P": 575.0
+      }
+    },
+    "layers": [
+      {
+        "code": "P",
+        "name": "Pavimento Fijo (Baldosa / Rasilla + Rodapié)",
+        "thickness_mm": "20 mm + 20 mm agarre",
+        "spec": "Baldosa cerámica extrusionada 280×140×20 mm colocada a matajunta con junta abierta de 6 mm sobre capa de mortero de agarre 1:6 de 20 mm. Rodapié cerámico vertical de 200×15 mm con junta perimetral elástica de 10 mm.",
+        "color": "#C45B42",
+        "mesh_keys": [
+          "P_Tiles",
+          "P_Mortar",
+          "P_Rodapie",
+          "P_Joint"
+        ],
+        "explode_z": 240.0
+      },
+      {
+        "code": "CS",
+        "name": "Capa Separadora Geotextil",
+        "thickness_mm": "2 mm",
+        "spec": "Lámina separadora de fieltro geotextil no tejido de polipropileno (150 g/m²) que independiza el pavimento y su mortero de agarre respecto a la impermeabilización.",
+        "color": "#D7EBF5",
+        "mesh_keys": [
+          "CS_Geotextile"
+        ],
+        "explode_z": 195.0
+      },
+      {
+        "code": "I",
+        "name": "Membrana Impermeabilizante",
+        "thickness_mm": "4 mm",
+        "spec": "Lámina bituminosa modificada con elastómeros SBS (LBM-40-FP) totalmente adherida, con entrega vertical de 200 mm sobre el enfoscado del peto rematada bajo el rodapié.",
+        "color": "#383B40",
+        "mesh_keys": [
+          "I_Membrane"
+        ],
+        "explode_z": 150.0
+      },
+      {
+        "code": "AT",
+        "name": "Aislamiento Térmico (XPS)",
+        "thickness_mm": "50 mm",
+        "spec": "Plancha rígida de poliestireno extruido (XPS) de alta resistencia a compresión (300 kPa), junta a media madera y conductividad λ = 0,034 W/m·K.",
+        "color": "#F3E48C",
+        "mesh_keys": [
+          "AT_XPS"
+        ],
+        "explode_z": 105.0
+      },
+      {
+        "code": "BV",
+        "name": "Barrera de Vapor",
+        "thickness_mm": "3 mm",
+        "spec": "Lámina bituminosa oxiasfáltica o film barrera de vapor dispuesto sobre la formación de pendiente y bajo el aislamiento térmico para evitar condensaciones intersticiales.",
+        "color": "#2E3034",
+        "mesh_keys": [
+          "BV_VaporBarrier"
+        ],
+        "explode_z": 65.0
+      },
+      {
+        "code": "FP",
+        "name": "Formación de Pendiente (2,5%)",
+        "thickness_mm": "55–80 mm + 15 mm reg.",
+        "spec": "Hormigón aligerado con arcilla expandida (arlita) vertido in situ con pendiente del 2,5%, coronado por capa de regularización de mortero de cemento 1:6 de 15 mm.",
+        "color": "#9E7E63",
+        "mesh_keys": [
+          "FP_Concrete",
+          "FP_Regularization"
+        ],
+        "explode_z": 30.0
+      },
+      {
+        "code": "SR",
+        "name": "Soporte Resistente (Forjado Unidireccional)",
+        "thickness_mm": "260 mm (21+5)",
+        "spec": "Forjado unidireccional de viguetas pretensadas cada 600 mm, bovedillas cerámicas aligerantes y capa de compresión de hormigón armado HA-25 de 50 mm con mallazo.",
+        "color": "#CFD3D6",
+        "mesh_keys": [
+          "SR_Slab",
+          "SR_Viguetas",
+          "SR_Bovedillas"
+        ],
+        "explode_z": 0.0
+      },
+      {
+        "code": "PETO",
+        "name": "Peto de Fábrica + Junta Perimetral EPS",
+        "thickness_mm": "175 mm + 15 mm EPS",
+        "spec": "Fábrica de ladrillo hueco doble (140 mm) enfoscada interior (15 mm) y exteriormente (20 mm), con banda desolidarizadora de EPS de 15 mm entre las capas de cubierta y el peto.",
+        "color": "#DFC5A4",
+        "mesh_keys": [
+          "Peto_Bricks",
+          "Peto_Render",
+          "Peto_JuntaEPS"
+        ],
+        "explode_z": 0.0
+      }
+    ]
+  },
+  "detalle2_qat16": {
+    "id": "detalle2_qat16",
+    "category": "azoteas",
+    "category_label": "Azoteas Planas",
+    "code": "DET-02A · NTE QAT-16",
+    "slide": "Diapositiva 2 · Pág. 19 (Análisis NTE · QAT-16)",
+    "title": "QAT-16 · Encuentro con Cazoleta",
+    "subtitle": "Caja de ladrillo hueco sencillo (PTL-7), membrana penetrando a bajante y solape de 10 cm (QAT-10)",
+    "scale_2d": "1:5",
+    "normativa": "NTE-QAT (QAT-16 · QAT-10 · PTL-7)",
+    "bounds_mm": {
+      "x_min": -320.0,
+      "x_max": 860.0,
+      "y_min": -360.0,
+      "y_max": 360.0,
+      "z_min": -250.0,
+      "z_max": 260.0
+    },
+    "params": {
+      "forjado_h": 250.0,
+      "pit_inner_half": 110.0,
+      "ptl7_wall_t": 50.0,
+      "ptl7_h": 120.0,
+      "slope": 0.05,
+      "faldon_min_h": 120.0,
+      "reg_mortar_h": 15.0,
+      "mem_inf_h": 4.0,
+      "mem_sup_h": 4.0,
+      "solape_mm": 100.0,
+      "agarre_h": 15.0,
+      "rasilla_h": 20.0,
+      "rasilla_l": 280.0,
+      "rasilla_joint": 6.0,
+      "bajante_od": 110.0,
+      "bajante_wall": 3.2,
+      "cazoleta_outer_half": 102.0,
+      "cazoleta_flange_w": 36.0,
+      "cazoleta_depth": 105.0,
+      "grate_h": 10.0
+    },
+    "layers": [
+      {
+        "code": "PAV",
+        "name": "Pavimento de Rasilla Cerámica + Mortero",
+        "thickness_mm": "20 mm + 15 mm agarre",
+        "spec": "Rasilla cerámica extrusionada sobre mortero de agarre de cemento y arena de río, rematada con vuelo goterón de 15 mm junto al perímetro de la rejilla.",
+        "color": "#C25940",
+        "mesh_keys": [
+          "Q16_Rasilla",
+          "Q16_Agarre"
+        ],
+        "explode_z": 180.0
+      },
+      {
+        "code": "QAT-10",
+        "name": "Membrana Impermeabilizante + Solape 10 cm",
+        "thickness_mm": "4 mm + solape 100 mm",
+        "spec": "QAT-10: La parte inferior de la membrana llegará hasta la bajante penetrando en ella. Una vez recibida la cazoleta se ejecutará el resto de la membrana con un solape de 10 cm sobre ella.",
+        "color": "#26282B",
+        "mesh_keys": [
+          "Q16_MembraneSup",
+          "Q16_MembraneInf"
+        ],
+        "explode_z": 135.0
+      },
+      {
+        "code": "CAZ",
+        "name": "Cazoleta Metálica con Rejilla y Vierteaguas",
+        "thickness_mm": "204×204 mm / ala 36 mm",
+        "spec": "Cazoleta prefabricada metálica/cinc con ala perimetral recibida entre ambas hojas de membrana, rejilla superior ranurada de desagüe y babero vierteaguas lateral.",
+        "color": "#8E969E",
+        "mesh_keys": [
+          "Q16_Cazoleta",
+          "Q16_Rejilla",
+          "Q16_Flashing"
+        ],
+        "explode_z": 95.0
+      },
+      {
+        "code": "REG",
+        "name": "Mortero de Regularización (1:6)",
+        "thickness_mm": "15 mm",
+        "spec": "Capa de mortero de cemento y arena 1:6 sobre faldón aligerado para asiento uniforme de la impermeabilización.",
+        "color": "#B3AAA0",
+        "mesh_keys": [
+          "Q16_RegMortar"
+        ],
+        "explode_z": 60.0
+      },
+      {
+        "code": "PTL-7",
+        "name": "Caja PTL-7 de Ladrillo Hueco Sencillo",
+        "thickness_mm": "50 mm (LHS 40 mm + 1:6)",
+        "spec": "PTL-7: Caja para recibir la cazoleta formada por tabique de ladrillo hueco sencillo recibido con mortero de cemento y arena de río, de dosificación 1:6.",
+        "color": "#CC6D4A",
+        "mesh_keys": [
+          "Q16_PTL7_Bricks",
+          "Q16_PTL7_Mortar"
+        ],
+        "explode_z": 30.0
+      },
+      {
+        "code": "FAL",
+        "name": "Faldón de Hormigón Aligerado (5%)",
+        "thickness_mm": "120–155 mm",
+        "spec": "Formación de pendiente con hormigón aligerado al 5% apoyada directamente sobre el forjado estructural.",
+        "color": "#A7A299",
+        "mesh_keys": [
+          "Q16_HormigonAlig"
+        ],
+        "explode_z": 25.0
+      },
+      {
+        "code": "FORJ",
+        "name": "Forjado + Bajante PVC Ø110",
+        "thickness_mm": "250 mm / Ø110 mm",
+        "spec": "Forjado estructural horizontal perforado para paso de la bajante de PVC Ø110 mm con copa superior para acople estanco de la cazoleta.",
+        "color": "#CACFD2",
+        "mesh_keys": [
+          "Q16_Forjado",
+          "Q16_Bajante"
+        ],
+        "explode_z": 0.0
+      }
+    ]
+  },
+  "detalle2_qat17": {
+    "id": "detalle2_qat17",
+    "category": "azoteas",
+    "category_label": "Azoteas Planas",
+    "code": "DET-02B · NTE QAT-17",
+    "slide": "Diapositiva 2 · Pág. 19 (Análisis NTE · QAT-17)",
+    "title": "QAT-17 · Canalón en Faldón de Hormigón Aligerado-S",
+    "subtitle": "Roza PTL-2 (5×5 cm), canalón de cinc QAT-2 (35 cm), maestra PTL-7 y mortero RPE-3",
+    "scale_2d": "1:5",
+    "normativa": "NTE-QAT (QAT-17 · QAT-2 · PTL-2 · PTL-7 · RPE-3)",
+    "bounds_mm": {
+      "x_min": -240.0,
+      "x_max": 950.0,
+      "y_min": -380.0,
+      "y_max": 380.0,
+      "z_min": -250.0,
+      "z_max": 640.0
+    },
+    "params": {
+      "wall_t": 240.0,
+      "wall_top_z": 640.0,
+      "forjado_h": 250.0,
+      "roza_size": 50.0,
+      "roza_bot_z": 485.0,
+      "gutter_drop_h": 350.0,
+      "rpe3_h": 20.0,
+      "gutter_w": 200.0,
+      "gutter_chamfer": 25.0,
+      "zinc_t": 1.8,
+      "zinc_flange_w": 120.0,
+      "ptl7_x0": 200.0,
+      "ptl7_t": 50.0,
+      "ptl7_h": 135.0,
+      "slope": 0.05,
+      "faldon_min_h": 135.0,
+      "reg_mortar_h": 15.0,
+      "mem_h": 4.0,
+      "solape_mm": 100.0,
+      "agarre_h": 15.0,
+      "rasilla_h": 20.0,
+      "rasilla_l": 280.0,
+      "rasilla_joint": 6.0,
+      "rasilla_overhang": 20.0
+    },
+    "layers": [
+      {
+        "code": "PAV",
+        "name": "Rasilla Cerámica + Mortero de Agarre",
+        "thickness_mm": "20 mm + 15 mm agarre",
+        "spec": "Pavimento de rasilla con vuelo goterón de 20 mm sobre la vertical interior del canalón.",
+        "color": "#C25940",
+        "mesh_keys": [
+          "Q17_Rasilla",
+          "Q17_Agarre"
+        ],
+        "explode_z": 180.0
+      },
+      {
+        "code": "MEM",
+        "name": "Membrana Impermeabilizante (Solape ≥10 cm)",
+        "thickness_mm": "4 mm / solape 100 mm",
+        "spec": "Membrana impermeabilizante bituminosa extendida sobre mortero de regularización con solape mínimo reglamentario de 10 cm (100 mm) sobre el ala del canalón de cinc.",
+        "color": "#26282B",
+        "mesh_keys": [
+          "Q17_Membrane"
+        ],
+        "explode_z": 130.0
+      },
+      {
+        "code": "QAT-2",
+        "name": "Canalón de Cinc Plegado (Cota 35 cm)",
+        "thickness_mm": "1,8 mm / H = 350 mm",
+        "spec": "QAT-2: Canalón de cinc con fondo achaflanado de 200 mm, pared vertical rematada a 35 cm en roza PTL-2 de 5×5 cm y ala horizontal de 120 mm sobre maestra PTL-7.",
+        "color": "#8D9BA3",
+        "mesh_keys": [
+          "Q17_ZincGutter"
+        ],
+        "explode_z": 90.0
+      },
+      {
+        "code": "RPE-3",
+        "name": "Mortero de Asiento RPE-3 (1:8)",
+        "thickness_mm": "20 mm",
+        "spec": "RPE-3: Mortero de cemento y arena de río, de dosificación 1:8, sirviendo de lecho continuo bajo la solera del canalón de cinc.",
+        "color": "#9B9489",
+        "mesh_keys": [
+          "Q17_RPE3"
+        ],
+        "explode_z": 40.0
+      },
+      {
+        "code": "PTL-7",
+        "name": "Maestra PTL-7 de Ladrillo Hueco Sencillo",
+        "thickness_mm": "50 mm (LHS 40 mm + 1:6)",
+        "spec": "PTL-7: Maestra formada por tabique de ladrillo hueco sencillo recibido con mortero de cemento y arena de río, de dosificación 1:6.",
+        "color": "#CC6D4A",
+        "mesh_keys": [
+          "Q17_PTL7_Bricks",
+          "Q17_RegMortar"
+        ],
+        "explode_z": 30.0
+      },
+      {
+        "code": "FAL",
+        "name": "Faldón de Hormigón Aligerado (5%)",
+        "thickness_mm": "135–170 mm",
+        "spec": "Formación de pendiente de hormigón aligerado con caída del 5% hacia la maestra del canalón.",
+        "color": "#A7A299",
+        "mesh_keys": [
+          "Q17_HormigonAlig"
+        ],
+        "explode_z": 20.0
+      },
+      {
+        "code": "MURO",
+        "name": "Muro con Roza PTL-2 (5×5 cm) + Forjado",
+        "thickness_mm": "Muro 240 mm / Forj. 250 mm",
+        "spec": "Fábrica de ladrillo de 1 pie (240 mm) con roza PTL-2 de 5×5 cm para recibido del canalón, sobre forjado de hormigón de 250 mm.",
+        "color": "#B8664B",
+        "mesh_keys": [
+          "Q17_WallBricks",
+          "Q17_Forjado"
+        ],
+        "explode_z": 0.0
+      }
+    ]
+  },
+  "detalle3": {
+    "id": "detalle3",
+    "category": "azoteas",
+    "category_label": "Azoteas Planas",
+    "code": "DET-03 · CAZOLETA SIFÓNICA",
+    "slide": "Diapositiva 3 · Pág. 21 (Análisis Detalle)",
+    "title": "Azotea Transitable con Hormigón Celular · Cazoleta Sifónica",
+    "subtitle": "Despiece completo de cazoleta sifónica con sello hidráulico, cámara de bajante aislada y rasilla de Aspe",
+    "scale_2d": "1:5",
+    "normativa": "CTE DB-HS1 / DB-HS5 / DB-HR · NTE-QAT",
+    "bounds_mm": {
+      "x_min": -750.0,
+      "x_max": 750.0,
+      "y_min": -420.0,
+      "y_max": 420.0,
+      "z_min": -600.0,
+      "z_max": 230.0
+    },
+    "params": {
+      "span_half_x": 750.0,
+      "span_half_y": 420.0,
+      "forjado_h": 250.0,
+      "slab_hole_r": 84.0,
+      "revest_h": 15.0,
+      "falseado_inner_half": 100.0,
+      "falseado_brick_t": 40.0,
+      "falseado_bot_z": -600.0,
+      "bajante_od": 110.0,
+      "bajante_wall": 3.2,
+      "copa_od": 118.0,
+      "fibra_t": 25.0,
+      "bv_h": 3.0,
+      "pit_inner_half": 125.0,
+      "pit_brick_t": 70.0,
+      "pit_brick_h": 115.0,
+      "pit_mortar_bed_h": 32.0,
+      "slope": 0.03,
+      "hc_min_h": 115.0,
+      "mortero16_h": 18.0,
+      "refuerzo_h": 4.0,
+      "refuerzo_ext_w": 240.0,
+      "membrana_h": 4.0,
+      "solape_mm": 100.0,
+      "mortero18_h": 15.0,
+      "rasilla_h": 20.0,
+      "rasilla_l": 280.0,
+      "rasilla_w": 140.0,
+      "rasilla_joint": 6.0,
+      "caz_outer_half": 120.0,
+      "caz_wall": 3.0,
+      "caz_bot_z": 35.0,
+      "caz_flange_z": 139.0,
+      "caz_flange_w": 36.0,
+      "weir_id": 104.0,
+      "weir_top_z": 98.0,
+      "tail_bot_z": -45.0,
+      "bell_od": 164.0,
+      "bell_skirt_z": 65.0,
+      "bell_dome_z": 126.0,
+      "rejilla_outer_half": 124.0,
+      "rejilla_inner_half": 109.0,
+      "rejilla_top_z": 182.0,
+      "rejilla_t": 10.0
+    },
+    "layers": [
+      {
+        "code": "RASILLA",
+        "name": "Rasilla de Aspe + Rejilla Sifónica",
+        "thickness_mm": "20 mm (280×140×20)",
+        "spec": "Pavimento fijo de rasilla cerámica extrusionada de Aspe (280×140×20 mm) con junta de 6 mm, enrasada perimetralmente con el cerco y rejilla ranurada atornillada de la cazoleta sifónica.",
+        "color": "#C65A42",
+        "mesh_keys": [
+          "D3_Rasilla",
+          "D3_RejillaFrame",
+          "D3_RejillaGrate"
+        ],
+        "explode_z": 240.0
+      },
+      {
+        "code": "M-1:8",
+        "name": "Mortero de Agarre 1:8",
+        "thickness_mm": "15 mm",
+        "spec": "Mortero bastardo/cemento de agarre de dosificación 1:8 extendido en capa continua de 15 mm para recibido de la rasilla y el cerco de la rejilla.",
+        "color": "#BFB7AC",
+        "mesh_keys": [
+          "D3_Mortero18"
+        ],
+        "explode_z": 195.0
+      },
+      {
+        "code": "IMP",
+        "name": "Membrana Impermeabilizante + Refuerzo",
+        "thickness_mm": "4 mm + 4 mm refuerzo (solape 10 cm)",
+        "spec": "Doble sistema impermeabilizante: refuerzo inferior de lámina adherida penetrando hasta la embocadura de la bajante y membrana principal solapada ≥100 mm sobre el ala de la cazoleta.",
+        "color": "#232528",
+        "mesh_keys": [
+          "D3_Membrana",
+          "D3_RefuerzoMembrana"
+        ],
+        "explode_z": 150.0
+      },
+      {
+        "code": "CAZ-SIF",
+        "name": "Cazoleta Sifónica (Campana + Sello Hidráulico)",
+        "thickness_mm": "240×240 mm · Sello 33 mm",
+        "spec": "Cazoleta sifónica registrable con cubeta receptora, rebosadero central Ø104 mm, campana sifónica Ø164 mm sumergida 33 mm bajo lámina de agua (sello hidráulico 60 mm) y tornillo central de fijación a rejilla.",
+        "color": "#949CA4",
+        "mesh_keys": [
+          "D3_CazoletaBody",
+          "D3_CampanaSifonica",
+          "D3_WaterSeal"
+        ],
+        "explode_z": 105.0
+      },
+      {
+        "code": "M-1:6",
+        "name": "Mortero de Regularización 1:6",
+        "thickness_mm": "18 mm",
+        "spec": "Capa de regularización superficial de mortero de cemento y arena 1:6 sobre el hormigón celular y sobre la caja de ladrillo hueco, creando un soporte liso para la membrana.",
+        "color": "#A69E92",
+        "mesh_keys": [
+          "D3_Mortero16",
+          "D3_PitMortarBed"
+        ],
+        "explode_z": 70.0
+      },
+      {
+        "code": "HC",
+        "name": "Hormigón Celular (3%) + Caja Ladrillo Hueco",
+        "thickness_mm": "115–132 mm (LHD 70 mm)",
+        "spec": "Hormigón celular aligerado con formación de pendiente al 3% hacia el sumidero, contenido perimetralmente por caja de ladrillo hueco doble (70×115 mm) alrededor de la cazoleta.",
+        "color": "#D7D2C7",
+        "mesh_keys": [
+          "D3_HormigonCelular",
+          "D3_PitBricks"
+        ],
+        "explode_z": 35.0
+      },
+      {
+        "code": "BV",
+        "name": "Barrera Cortavapor",
+        "thickness_mm": "3 mm",
+        "spec": "Barrera cortavapor continua dispuesta entre el forjado y el hormigón celular, interrumpida limpiamente en el paso estanco de la bajante.",
+        "color": "#2E3136",
+        "mesh_keys": [
+          "D3_BarreraCortavapor"
+        ],
+        "explode_z": 15.0
+      },
+      {
+        "code": "FORJ",
+        "name": "Forjado + Bajante Ø110 + Fibra Vidrio + Falseado",
+        "thickness_mm": "250 mm / Ø110 + 25 mm + LHS 4 cm",
+        "spec": "Forjado estructural (250 mm) con revestimiento inferior (15 mm), paso de bajante PVC Ø110 mm envuelta en manta acústica/térmica de fibra de vidrio (25 mm) y falseado con tabique de ladrillo hueco sencillo del 4 (40 mm) revestido.",
+        "color": "#C6CBD0",
+        "mesh_keys": [
+          "D3_Forjado",
+          "D3_Revestimiento",
+          "D3_FalseadoBricks",
+          "D3_FibraVidrio",
+          "D3_Bajante"
+        ],
+        "explode_z": 0.0
+      }
+    ]
+  },
+  "detalle4_plots": {
+    "id": "detalle4_plots",
+    "category": "azoteas",
+    "category_label": "Azoteas Planas",
+    "code": "DET-04 · AZOTEA INVERTIDA PLOTS",
+    "slide": "AZ-08 · Págs. 26, 52 y 55 (Azotea Invertida con Pavimento sobre Soportes)",
+    "title": "Azotea Invertida Transitable · Pavimento Flotante sobre Soportes (PLOTS)",
+    "subtitle": "Losas armadas 400×400 con junta abierta, plots regulables, XPS sobre membrana bicapa y peto con albardilla",
+    "scale_2d": "1:5",
+    "normativa": "AZ-08 (IVE Typ. 4-5) · CTE DB-HS1 / DB-HE1",
+    "bounds_mm": {
+      "x_min": 0.0,
+      "x_max": 1220.0,
+      "y_min": -440.0,
+      "y_max": 440.0,
+      "z_min": -260.0,
+      "z_max": 860.0
+    },
+    "params": {
+      "deck_end_x": 1020.0,
+      "junta_eps_w": 15.0,
+      "enfoscado_int_w": 15.0,
+      "peto_brick_w": 140.0,
+      "enfoscado_ext_w": 20.0,
+      "albardilla_h": 45.0,
+      "albardilla_overhang": 25.0,
+      "peto_top_z": 820.0,
+      "forjado_h": 260.0,
+      "compresion_h": 50.0,
+      "slope": 0.025,
+      "fp_min_h": 50.0,
+      "fp_reg_h": 20.0,
+      "i_h": 6.0,
+      "i_turnup_h": 210.0,
+      "cs_h": 3.0,
+      "at_h": 80.0,
+      "plot_h": 85.0,
+      "plot_step": 404.0,
+      "tile_l": 400.0,
+      "tile_w": 400.0,
+      "tile_h": 40.0,
+      "tile_joint": 4.0
+    },
+    "layers": [
+      {
+        "code": "PF",
+        "name": "Pavimento Flotante (Losas Armadas 400×400)",
+        "thickness_mm": "40 mm (junta abierta 4 mm)",
+        "spec": "Baldosas armadas de hormigón prefabricado 400×400×40 mm colocadas en seco con junta abierta de 4 mm para drenaje directo hacia el plano inferior impermeabilizado.",
+        "color": "#B3ADA3",
+        "mesh_keys": [
+          "D4_Losas"
+        ],
+        "explode_z": 260.0
+      },
+      {
+        "code": "PLOT",
+        "name": "Soportes Regulables (PLOTS) + Separadores",
+        "thickness_mm": "75–105 mm (H nom. 85 mm)",
+        "spec": "Pedestales regulables roscados de polipropileno reciclado con base Ø180 mm, disco repartidor de carga y cabezal Ø140 mm con crucetas separadoras de 4 mm absorbiendo la pendiente.",
+        "color": "#2F353D",
+        "mesh_keys": [
+          "D4_Plots"
+        ],
+        "explode_z": 200.0
+      },
+      {
+        "code": "AT",
+        "name": "Aislamiento Térmico Invertido (XPS)",
+        "thickness_mm": "80 mm (300 kPa)",
+        "spec": "Planchas rígidas de poliestireno extruido XPS dispuestas sobre la impermeabilización, con junta perimetral y conductividad térmica λ = 0,034 W/m·K.",
+        "color": "#F3E48C",
+        "mesh_keys": [
+          "D4_AT_XPS"
+        ],
+        "explode_z": 150.0
+      },
+      {
+        "code": "CS",
+        "name": "Capa Separadora Geotextil Antipunzonante",
+        "thickness_mm": "3 mm (300 g/m²)",
+        "spec": "Fieltro geotextil de polipropileno no tejido (300 g/m²) bajo XPS para evitar compatibilidad química y punzonamiento de la lámina.",
+        "color": "#D7EBF5",
+        "mesh_keys": [
+          "D4_CS_Geotextile"
+        ],
+        "explode_z": 110.0
+      },
+      {
+        "code": "I",
+        "name": "Membrana Impermeabilizante Bicapa SBS",
+        "thickness_mm": "6 mm (4 + 4 LBM) + entrega",
+        "spec": "Sistema bicapa bituminoso SBS con refuerzo perimetral y entrega vertical de 210 mm rematada con perfil metálico sobre el peto.",
+        "color": "#26292E",
+        "mesh_keys": [
+          "D4_I_Membrane"
+        ],
+        "explode_z": 75.0
+      },
+      {
+        "code": "FP",
+        "name": "Formación de Pendientes (2,5% Hormigón Ligero)",
+        "thickness_mm": "50–76 mm + 20 mm reg.",
+        "spec": "Hormigón ligero con pendiente mínima del 2,5% regularizado mediante capa de mortero de cemento 1:6 fratasada de 20 mm.",
+        "color": "#C4BDB2",
+        "mesh_keys": [
+          "D4_FP_Core",
+          "D4_FP_Reg"
+        ],
+        "explode_z": 35.0
+      },
+      {
+        "code": "SR",
+        "name": "Soporte Resistente (Forjado Unidireccional)",
+        "thickness_mm": "260 mm (210 + 50)",
+        "spec": "Forjado unidireccional de semiviguetas pretensadas, bovedilla cerámica y capa de compresión de 50 mm HA-25 con zuncho perimetral.",
+        "color": "#C6CBD0",
+        "mesh_keys": [
+          "D4_SR_Forjado",
+          "D4_SR_Bovedillas",
+          "D4_SR_Zuncho"
+        ],
+        "explode_z": 0.0
+      },
+      {
+        "code": "PETO",
+        "name": "Peto de Fábrica + Barrera Antihumedad + Albardilla",
+        "thickness_mm": "140 mm LHD + Albardilla",
+        "spec": "Peto de fábrica de ladrillo perforado/hueco 140 mm enfoscado interior/exterior, barrera antihumedad bajo coronación y albardilla de piedra artificial con doble goterón.",
+        "color": "#D4886A",
+        "mesh_keys": [
+          "D4_Peto_Bricks",
+          "D4_Peto_Enfoscado",
+          "D4_Albardilla",
+          "D4_Barrera"
+        ],
+        "explode_z": 0.0
+      }
+    ]
+  },
+  "detalle5_alero_teja": {
+    "id": "detalle5_alero_teja",
+    "category": "teja",
+    "category_label": "Tejados de Teja",
+    "code": "DET-05 · ALERO TEJA CURVA + PALOMEROS",
+    "slide": "CLASE p.43 · L2 pp.24, 35-38 (QTT-14 Alero de Teja Curva)",
+    "title": "Tejado de Teja Curva sobre Tabiquillos Palomeros · Alero y Canalón Visto",
+    "subtitle": "Tabiquillos aligerados calados, tablero cerámico machihembrado, mortero M-2,5 y teja curva canal/cobija con vuelo 5 cm",
+    "scale_2d": "1:6",
+    "normativa": "CTE DB-HS1 2.4.4.2.2 · NTE-QTT-14 · UNE 136020",
+    "bounds_mm": {
+      "x_min": -80.0,
+      "x_max": 1240.0,
+      "y_min": -520.0,
+      "y_max": 520.0,
+      "z_min": -340.0,
+      "z_max": 620.0
+    },
+    "params": {
+      "slope": 0.3,
+      "wall_x0": 150.0,
+      "wall_x1": 290.0,
+      "cham_x1": 340.0,
+      "int_x1": 400.0,
+      "forjado_h": 260.0,
+      "compresion_h": 50.0,
+      "cornice_overhang": 90.0,
+      "at_h": 80.0,
+      "tablero_z_eaves": 115.0,
+      "tablero_h": 40.0,
+      "reg_h": 25.0,
+      "mortar_bed_h": 22.0,
+      "tile_len": 450.0,
+      "tile_r_wide": 98.0,
+      "tile_r_narrow": 76.0,
+      "tile_t": 12.0,
+      "tile_solape": 140.0,
+      "tile_pitch_y": 240.0,
+      "vuelo_alero": 55.0,
+      "gutter_cx": 20.0,
+      "gutter_cz": 45.0,
+      "gutter_r": 65.0
+    },
+    "layers": [
+      {
+        "code": "TEJA",
+        "name": "Cobertura de Teja Curva (Canal y Cobija)",
+        "thickness_mm": "450×200×160 mm (e=12 mm)",
+        "spec": "Teja cerámica curva cónica dispuesta en canales y cobijas con solape mínimo 140 mm (pend. 30%), separación libre ≥35 mm entre cobijas y vuelo de 55 mm sobre canalón con 1ª cobija cortada.",
+        "color": "#C95A36",
+        "mesh_keys": [
+          "D5_Teja_Canal",
+          "D5_Teja_Cobija"
+        ],
+        "explode_z": 240.0
+      },
+      {
+        "code": "MOR",
+        "name": "Mortero de Agarre M-2,5 (Recalce y Macizado)",
+        "thickness_mm": "22 mm + recalce 1ª hilada",
+        "spec": "Mortero mixto M-2,5 (1:8) en cordones longitudinales discontinuos para ventilación, recalzando la primera hilada de canales y macizando el frente del alero (QTT-14).",
+        "color": "#AEA69A",
+        "mesh_keys": [
+          "D5_Mortero_Agarre"
+        ],
+        "explode_z": 185.0
+      },
+      {
+        "code": "CAN",
+        "name": "Canalón Visto Semicircular de Zinc + Ganchos",
+        "thickness_mm": "Ø130 mm · Zinc 0,8 mm",
+        "spec": "Canalón visto semicircular de zinc prepatinado/galvanizado (pendiente ≥1%) colgado mediante ganchos de pletina galvanizada atornillados al alero cada 500 mm.",
+        "color": "#7E93A6",
+        "mesh_keys": [
+          "D5_Canalon",
+          "D5_Ganchos"
+        ],
+        "explode_z": 140.0
+      },
+      {
+        "code": "TAB",
+        "name": "Tablero Cerámico Machihembrado + Capa Compresión",
+        "thickness_mm": "40 mm + 25 mm M-5",
+        "spec": "Tablero de bardos/rasillones cerámicos machihembrados de 40 mm recibidos con mortero, coronado con capa de regularización/compresión M-5 de 25 mm.",
+        "color": "#D97F5D",
+        "mesh_keys": [
+          "D5_Tablero",
+          "D5_Regularizacion"
+        ],
+        "explode_z": 100.0
+      },
+      {
+        "code": "PAL",
+        "name": "Tabiquillos Palomeros Aligerados (Ventilación 25%)",
+        "thickness_mm": "LHD 70 mm · paso 500 mm",
+        "spec": "Tabiquillos conejeros calados con un 25% de huecos para ventilación cruzada de cámara bajo faldón, replanteados con lienza al 30% y rematados con maestra superior de mortero.",
+        "color": "#CC6E4B",
+        "mesh_keys": [
+          "D5_Tabiquillos"
+        ],
+        "explode_z": 55.0
+      },
+      {
+        "code": "AT",
+        "name": "Aislamiento Térmico sobre Forjado (Lana Mineral)",
+        "thickness_mm": "80 mm",
+        "spec": "Manta de lana mineral/fibra de vidrio de 80 mm extendida de forma continua sobre la cara superior del forjado horizontal entre tabiquillos palomeros.",
+        "color": "#E6BD42",
+        "mesh_keys": [
+          "D5_Aislamiento"
+        ],
+        "explode_z": 25.0
+      },
+      {
+        "code": "SR",
+        "name": "Forjado Unidireccional + Cornisa Alero + Fachada",
+        "thickness_mm": "260 mm + Fachada capuchina",
+        "spec": "Forjado de semiviguetas y bovedillas con zuncho de borde y galce/cornisa armada con goterón sobre fachada de fábrica con aislamiento intermedio.",
+        "color": "#C6CBD0",
+        "mesh_keys": [
+          "D5_Forjado",
+          "D5_Bovedillas",
+          "D5_Fachada"
+        ],
+        "explode_z": 0.0
+      }
+    ]
+  },
+  "detalle6_cumbrera_teja": {
+    "id": "detalle6_cumbrera_teja",
+    "category": "teja",
+    "category_label": "Tejados de Teja",
+    "code": "DET-06 · CUMBRERA VENTILADA EN SECO",
+    "slide": "L2 pp.33 y 118 (Detalle Cumbrera Ventilada de Teja Curva)",
+    "title": "Cumbrera Ventilada en Seco de Teja Curva sobre Doble Rastrelado",
+    "subtitle": "Teja caballete con clip, banda ventilada plisada, soporte metálico regulable y microventilación en doble rastrel",
+    "scale_2d": "1:5",
+    "normativa": "CTE DB-HS1 2.4.4.2.5 · UNE 136020 · QTT-10",
+    "bounds_mm": {
+      "x_min": -760.0,
+      "x_max": 760.0,
+      "y_min": -480.0,
+      "y_max": 480.0,
+      "z_min": -280.0,
+      "z_max": 360.0
+    },
+    "params": {
+      "half_span_x": 760.0,
+      "slope": 0.32,
+      "tablero_h": 40.0,
+      "reg_h": 20.0,
+      "at_h": 60.0,
+      "lamina_h": 2.0,
+      "contrarastrel_h": 30.0,
+      "contrarastrel_w": 40.0,
+      "rastrel_h": 30.0,
+      "rastrel_w": 40.0,
+      "tile_len": 450.0,
+      "tile_r_wide": 98.0,
+      "tile_r_narrow": 76.0,
+      "tile_t": 12.0,
+      "tile_solape": 140.0,
+      "tile_pitch_y": 240.0,
+      "ridge_gap_half": 28.0,
+      "caballete_batten_w": 45.0,
+      "caballete_batten_h": 55.0
+    },
+    "layers": [
+      {
+        "code": "CAB",
+        "name": "Teja de Cumbrera (Caballete) con Clip Inoxidable",
+        "thickness_mm": "440×220×14 mm + clip",
+        "spec": "Piezas especiales de cumbrera curva con solape ≥50 mm fijadas en seco mediante ganchos/clips de acero inoxidable sobre rastrel de cumbrera.",
+        "color": "#B8492A",
+        "mesh_keys": [
+          "D6_Caballetes",
+          "D6_Clips"
+        ],
+        "explode_z": 260.0
+      },
+      {
+        "code": "RMV",
+        "name": "Banda / Remate de Cumbrera Ventilado + Soporte",
+        "thickness_mm": "Ancho 320 mm · Aluminio/Butilo",
+        "spec": "Lámina microperforada de aluminio plisado con bandas autoadhesivas de butilo adaptadas al perfil de las cobijas, permitiendo salida de aire caliente sin entrada de agua, apoyada en rastrel elevado por soporte metálico del caballete.",
+        "color": "#5C6873",
+        "mesh_keys": [
+          "D6_Remate_Ventilado",
+          "D6_Soporte_Caballete",
+          "D6_Rastrel_Cumbrera"
+        ],
+        "explode_z": 210.0
+      },
+      {
+        "code": "TEJA",
+        "name": "Teja Curva Cerámica (Canal y Cobija)",
+        "thickness_mm": "450×200×160 mm · 5 cm paso libre",
+        "spec": "Hiladas superiores de teja canal y cobija dejando apertura libre de 50 mm en cumbrera para tiraje ascendente continuo de la cámara de aire.",
+        "color": "#C95A36",
+        "mesh_keys": [
+          "D6_Teja_Canal",
+          "D6_Teja_Cobija"
+        ],
+        "explode_z": 160.0
+      },
+      {
+        "code": "RAST",
+        "name": "Doble Rastrelado de Madera Tratada (Microventilación)",
+        "thickness_mm": "Contrarastrel 40×30 + Rastrel 40×30",
+        "spec": "Sistema de doble enrastrelado en madera de pino tratada autoclave creando una cámara de microventilación libre de ≥30 mm bajo teja.",
+        "color": "#C49556",
+        "mesh_keys": [
+          "D6_Rastreles",
+          "D6_Contrarastreles"
+        ],
+        "explode_z": 100.0
+      },
+      {
+        "code": "IMP",
+        "name": "Lámina Impermeable Transpirable bajo Teja",
+        "thickness_mm": "2 mm (Sd ≤ 0,05 m)",
+        "spec": "Membrana transpirable de alta difusión al vapor de agua e impermeable al viento y lluvia accidental sobre el aislamiento.",
+        "color": "#45769E",
+        "mesh_keys": [
+          "D6_Lamina_Transpirable"
+        ],
+        "explode_z": 60.0
+      },
+      {
+        "code": "AT",
+        "name": "Aislamiento Térmico XPS sobre Faldón",
+        "thickness_mm": "60 mm",
+        "spec": "Planchas rígidas machihembradas de XPS de 60 mm continuas en ambos faldones hasta la línea de cumbrera para rotura de puente térmico.",
+        "color": "#F3E48C",
+        "mesh_keys": [
+          "D6_AT_XPS"
+        ],
+        "explode_z": 30.0
+      },
+      {
+        "code": "SOP",
+        "name": "Soporte Inclinado (Tablero Cerámico + Viga Cumbrera)",
+        "thickness_mm": "40 mm bardo + 20 mm M-5",
+        "spec": "Tablero de bardo cerámico regularizado con mortero M-5 apoyado sobre viga o tabiquillo de cumbrera estructural.",
+        "color": "#C6CBD0",
+        "mesh_keys": [
+          "D6_Soporte",
+          "D6_Tablero"
+        ],
+        "explode_z": 0.0
+      }
+    ]
+  },
+  "detalle7_teja_mixta": {
+    "id": "detalle7_teja_mixta",
+    "category": "teja",
+    "category_label": "Tejados de Teja",
+    "code": "DET-07 · TEJA MIXTA + ENCUENTRO PARAMENTO",
+    "slide": "L2 pp.75, 81, 87, 88 y 118 (Teja Mixta sobre Doble Rastrel)",
+    "title": "Faldón de Teja Mixta sobre Doble Rastrel · Encuentro con Paramento Vertical",
+    "subtitle": "Perfil mixto de doble encaje sobre rastreles con contrarastrel, peine de alero, banda autoadhesiva ≥10 cm y babero zinc ≥25 cm",
+    "scale_2d": "1:5",
+    "normativa": "CTE DB-HS1 2.4.4.2.1 · NTE-QTT-13 · UNE 136020",
+    "bounds_mm": {
+      "x_min": -60.0,
+      "x_max": 1240.0,
+      "y_min": -480.0,
+      "y_max": 480.0,
+      "z_min": -260.0,
+      "z_max": 860.0
+    },
+    "params": {
+      "slope": 0.36,
+      "deck_end_x": 1000.0,
+      "wall_x0": 1000.0,
+      "wall_x1": 1160.0,
+      "wall_top_z": 840.0,
+      "forjado_h": 220.0,
+      "reg_h": 20.0,
+      "at_h": 70.0,
+      "lamina_h": 2.0,
+      "contrarastrel_h": 35.0,
+      "rastrel_h": 35.0,
+      "rastrel_w": 40.0,
+      "tile_l": 440.0,
+      "tile_w": 260.0,
+      "tile_step": 355.0,
+      "tile_h": 14.0,
+      "wave_h": 42.0,
+      "babero_up_h": 260.0,
+      "babero_lap": 120.0
+    },
+    "layers": [
+      {
+        "code": "BAB",
+        "name": "Babero de Zinc/Plomo + Banda Impermeable Autoadhesiva",
+        "thickness_mm": "Zinc 0,8 mm · ≥25 cm + ≥10 cm",
+        "spec": "Encuentro estanco con paramento vertical formado por banda impermeable autoadhesiva plisada ≥100 mm sobre teja mixta y babero metálico de zinc engatillado ≥250 mm recibido en roza y sellado.",
+        "color": "#6E8396",
+        "mesh_keys": [
+          "D7_Babero_Zinc",
+          "D7_Banda_Impermeable"
+        ],
+        "explode_z": 240.0
+      },
+      {
+        "code": "TEJA-M",
+        "name": "Teja Cerámica Mixta con Doble Encaje",
+        "thickness_mm": "440×260 mm (solape 85 mm)",
+        "spec": "Teja cerámica de encaje mixto (canal plano + cobija curva) con tacones de apoyo sobre rastrel y fijación mediante tornillo/gancho inoxidable. Primer rastrel recrecido +20 mm.",
+        "color": "#B34B30",
+        "mesh_keys": [
+          "D7_Teja_Mixta",
+          "D7_Peine_Alero"
+        ],
+        "explode_z": 185.0
+      },
+      {
+        "code": "RAST",
+        "name": "Rastrel Horizontal + Contrarastrel + Aislamiento XPS",
+        "thickness_mm": "35+35 mm rastrel · 70 mm XPS",
+        "spec": "Doble enrastrelado de pino tratado autoclave sobre lámina impermeable transpirable con aislamiento XPS de 70 mm entre contrarastreles y cámara ventilada de 35 mm.",
+        "color": "#C49556",
+        "mesh_keys": [
+          "D7_Rastreles",
+          "D7_Contrarastreles",
+          "D7_AT_XPS",
+          "D7_Lamina"
+        ],
+        "explode_z": 115.0
+      },
+      {
+        "code": "MURO",
+        "name": "Paramento Vertical Enfoscado + Remate Albardilla",
+        "thickness_mm": "LHD 140 mm + 20 mm enfoscado",
+        "spec": "Muro de cerramiento/casetón de ladrillo hueco doble enfoscado con mortero 1:6, roza perimetral para entrega de babero metálico y coronación.",
+        "color": "#D4886A",
+        "mesh_keys": [
+          "D7_Muro_Bricks",
+          "D7_Muro_Enfoscado"
+        ],
+        "explode_z": 0.0
+      },
+      {
+        "code": "FORJ",
+        "name": "Forjado Inclinado de Hormigón + Regularización",
+        "thickness_mm": "220 mm + 20 mm M-5",
+        "spec": "Faldón estructural inclinado (36%) de hormigón armado regularizado con mortero fratasado M-5 y barrera cortavapor.",
+        "color": "#C6CBD0",
+        "mesh_keys": [
+          "D7_Forjado",
+          "D7_Regularizacion"
+        ],
+        "explode_z": 0.0
+      }
+    ]
+  },
+  "detalle8_pizarra": {
+    "id": "detalle8_pizarra",
+    "category": "pizarra",
+    "category_label": "Pizarra Natural",
+    "code": "DET-08 · PIZARRA NATURAL QTP-14",
+    "slide": "L4 pp.17, 45 y 51 (QTP-14 Alero + Doble Rastrel y Ganchos)",
+    "title": "Tejado de Pizarra Natural · Alero con Emboble, Ganchos Inox y Doble Rastrel",
+    "subtitle": "Solape R=100 mm, vista V=100 mm, vuelo 50 mm en alero, ganchos vistos AISI 316 y rotura de puente térmico",
+    "scale_2d": "1:5",
+    "normativa": "NTE-QTP-14 · UNE-EN 12326 · CTE DB-HS1",
+    "bounds_mm": {
+      "x_min": -80.0,
+      "x_max": 1060.0,
+      "y_min": -440.0,
+      "y_max": 440.0,
+      "z_min": -260.0,
+      "z_max": 660.0
+    },
+    "params": {
+      "slope": 0.56,
+      "wall_x0": 110.0,
+      "wall_x1": 290.0,
+      "forjado_h": 210.0,
+      "reg_h": 20.0,
+      "at_h": 50.0,
+      "contrarastrel_h": 50.0,
+      "camara_h": 30.0,
+      "rastrel_h": 25.0,
+      "rastrel_w": 40.0,
+      "slate_l": 300.0,
+      "slate_w": 200.0,
+      "slate_t": 6.5,
+      "slate_vista": 100.0,
+      "vuelo_alero": 50.0
+    },
+    "layers": [
+      {
+        "code": "PIZ",
+        "name": "Lajas de Pizarra Natural Biselada (300×200×6,5 mm)",
+        "thickness_mm": "6,5 mm · V=100 · R=100 mm",
+        "spec": "Pizarra natural exfoliada con bordes biselados dispuesta por hiladas con recubrimiento R=100 mm, parte vista V=100 mm y doble hilada en alero (emboble) volando 50 mm.",
+        "color": "#3B424D",
+        "mesh_keys": [
+          "D8_Pizarras",
+          "D8_Pizarra_Emboble"
+        ],
+        "explode_z": 220.0
+      },
+      {
+        "code": "GAN",
+        "name": "Ganchos Vistos Acero Inoxidable + Chapa Goterón Zinc",
+        "thickness_mm": "Ø 2,7 mm AISI 316 · Chapa 0,8 mm",
+        "spec": "Sujeción por gancho inoxidable clavado al rastrel horizontal y chapa goterón metálica de zinc de arranque en el borde del alero para escupir agua y proteger la madera.",
+        "color": "#9AA4AE",
+        "mesh_keys": [
+          "D8_Ganchos",
+          "D8_Gotero_Zinc"
+        ],
+        "explode_z": 165.0
+      },
+      {
+        "code": "RAST",
+        "name": "Rastrel Horizontal + Contrarastrel Ventilado + Aislamiento",
+        "thickness_mm": "40×25 + cámara 30 + XPS 50 mm",
+        "spec": "Doble enrastrelado de madera tratada con aislamiento térmico de 50 mm encajado entre contrarastreles (rotura de puente térmico) y cámara de ventilación ≥30 mm.",
+        "color": "#C49556",
+        "mesh_keys": [
+          "D8_Rastreles",
+          "D8_Contrarastreles",
+          "D8_AT_XPS"
+        ],
+        "explode_z": 95.0
+      },
+      {
+        "code": "FORJ",
+        "name": "Forjado Unidireccional Inclinado + Muro de Apoyo",
+        "thickness_mm": "210 mm + 20 mm reg.",
+        "spec": "Forjado inclinado (56%) de viguetas y bovedillas regularizado con mortero armado y apoyado sobre muro de cerramiento enfoscado.",
+        "color": "#C6CBD0",
+        "mesh_keys": [
+          "D8_Forjado",
+          "D8_Muro"
+        ],
+        "explode_z": 0.0
+      }
+    ]
+  },
+  "detalle9_zinc": {
+    "id": "detalle9_zinc",
+    "category": "metal",
+    "category_label": "Metálicas",
+    "code": "DET-09 · ZINC JUNTA ALZADA VMZ",
+    "slide": "L6 pp.8, 11 y 12 (Cubierta Engatillada de Zinc en Junta Alzada)",
+    "title": "Cubierta Metálica de Zinc Prepatinado en Junta Alzada Engatillada",
+    "subtitle": "Bandejas modulares 580 mm con doble engatillado 25 mm, patas fijas/correderas inox, entarimado ventilado y remate peto",
+    "scale_2d": "1:5",
+    "normativa": "UNE-EN 988 · CTE DB-HS1 2.4 · Sistemas VMZINC",
+    "bounds_mm": {
+      "x_min": 0.0,
+      "x_max": 1220.0,
+      "y_min": -660.0,
+      "y_max": 660.0,
+      "z_min": -240.0,
+      "z_max": 780.0
+    },
+    "params": {
+      "slope": 0.16,
+      "deck_end_x": 1000.0,
+      "wall_x0": 1000.0,
+      "wall_x1": 1160.0,
+      "forjado_h": 200.0,
+      "bv_h": 3.0,
+      "at_h": 80.0,
+      "camara_h": 40.0,
+      "entarimado_h": 24.0,
+      "capa_dren_h": 8.0,
+      "zinc_t": 1.2,
+      "seam_h": 28.0,
+      "pan_module_y": 580.0
+    },
+    "layers": [
+      {
+        "code": "ZN",
+        "name": "Bandejas de Zinc Prepatinado en Junta Alzada (580 mm)",
+        "thickness_mm": "0,8 mm · Alzado H=25 mm · Remates",
+        "spec": "Bandejas de zinc-titanio prepatinado (módulo 580 mm) con pliegue lateral doble engatillado de 25 mm de altura, encuentro relevado contra peto cubierto con babero de zinc y coronación de albardilla metálica.",
+        "color": "#73808C",
+        "mesh_keys": [
+          "D9_Bandejas_Zinc",
+          "D9_Juntas_Alzadas",
+          "D9_Remate_Peto"
+        ],
+        "explode_z": 240.0
+      },
+      {
+        "code": "PATA",
+        "name": "Patas Fijas y Correderas Acero Inox + Capa Drenante",
+        "thickness_mm": "AISI 304 · Esterilla 8 mm",
+        "spec": "Clips de acero inoxidable (patas fijas y correderas deslizantes para absorber dilataciones térmicas del zinc) y lámina separadora estructurada drenante de 8 mm.",
+        "color": "#B8C2CC",
+        "mesh_keys": [
+          "D9_Patas_Inox",
+          "D9_Esterilla_Drenante"
+        ],
+        "explode_z": 175.0
+      },
+      {
+        "code": "MAD",
+        "name": "Entarimado Ventilado de Madera + Rastreles Cámara",
+        "thickness_mm": "24 mm entarimado + 40 mm cámara",
+        "spec": "Entarimado continuo de tablas de pino tratadas de 24 mm con separación entre juntas, apoyado sobre rastreles longitudinales de 40 mm formando cámara inferior ventilada.",
+        "color": "#C49556",
+        "mesh_keys": [
+          "D9_Entarimado",
+          "D9_Rastreles_Camara"
+        ],
+        "explode_z": 115.0
+      },
+      {
+        "code": "AT",
+        "name": "Aislamiento Térmico + Barrera de Vapor",
+        "thickness_mm": "80 mm XPS/PIR + BV 3 mm",
+        "spec": "Aislamiento térmico rígido de 80 mm entre listones sobre barrera reguladora de vapor continua.",
+        "color": "#F3E48C",
+        "mesh_keys": [
+          "D9_AT",
+          "D9_BV"
+        ],
+        "explode_z": 55.0
+      },
+      {
+        "code": "FORJ",
+        "name": "Soporte Inclinado + Muro Peto Enfoscado",
+        "thickness_mm": "200 mm forjado + 140 mm peto",
+        "spec": "Soporte resistente inclinado (16%) y peto perimetral de fábrica enfoscada rematado con vierteaguas metálico.",
+        "color": "#C6CBD0",
+        "mesh_keys": [
+          "D9_Forjado",
+          "D9_Peto"
+        ],
+        "explode_z": 0.0
+      }
+    ]
+  }
+}

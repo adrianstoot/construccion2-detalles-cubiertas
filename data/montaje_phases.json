@@ -1,0 +1,102 @@
+[
+  {
+    "phase": 1,
+    "code": "SR · VIG/BOV",
+    "title": "Viguetas pretensadas y bovedillas cerámicas",
+    "thickness": "210 mm (canto parcial)",
+    "desc": "Colocación de viguetas pretensadas cada 600 mm y entrevigado de bovedillas cerámicas aligerantes sobre sopanda.",
+    "t_start": 0.0,
+    "t_end": 2.8,
+    "color": "#C96A50"
+  },
+  {
+    "phase": 2,
+    "code": "SR · HA-25",
+    "title": "Capa de compresión y zuncho perimetral",
+    "thickness": "50 mm (+ zuncho 260 mm)",
+    "desc": "Ferralla de reparto, armadura de zuncho de borde y hormigonado HA-25 de capa de compresión de 50 mm.",
+    "t_start": 2.8,
+    "t_end": 5.2,
+    "color": "#8E969E"
+  },
+  {
+    "phase": 3,
+    "code": "PETO · LHD",
+    "title": "Peto de ladrillo hueco, enfoscado y junta EPS",
+    "thickness": "140 mm + 15/20 mm + 15 mm EPS",
+    "desc": "Fábrica LHD 140 mm por hiladas, albardilla, enfoscados int./ext. y banda desolidarizadora EPS de 15 mm.",
+    "t_start": 5.2,
+    "t_end": 8.8,
+    "color": "#B8664B"
+  },
+  {
+    "phase": 4,
+    "code": "FP · PEND.",
+    "title": "Formación de pendiente (2,5%) y regularización",
+    "thickness": "55–80 mm + 15 mm mortero 1:6",
+    "desc": "Vertido de hormigón aligerado con arlita al 2,5% y capa superior de regularización de mortero 1:6.",
+    "t_start": 8.8,
+    "t_end": 11.4,
+    "color": "#9E7E63"
+  },
+  {
+    "phase": 5,
+    "code": "BV · VAPOR",
+    "title": "Barrera de vapor bituminosa",
+    "thickness": "3 mm",
+    "desc": "Extensión continua de lámina oxiasfáltica bajo el aislamiento térmico evitando condensaciones intersticiales.",
+    "t_start": 11.4,
+    "t_end": 13.6,
+    "color": "#2E3034"
+  },
+  {
+    "phase": 6,
+    "code": "AT · XPS",
+    "title": "Aislamiento térmico rígido (XPS)",
+    "thickness": "50 mm",
+    "desc": "Planchas de poliestireno extruido XPS (300 kPa) colocadas a tope hasta la junta perimetral de EPS.",
+    "t_start": 13.6,
+    "t_end": 16.0,
+    "color": "#E0C441"
+  },
+  {
+    "phase": 7,
+    "code": "I · IMPERM.",
+    "title": "Membrana impermeabilizante y entrega 200 mm",
+    "thickness": "4 mm (LBM-40-FP)",
+    "desc": "Lámina bituminosa SBS adherida sobre XPS con remonte vertical de 200 mm sobre el enfoscado del peto.",
+    "t_start": 16.0,
+    "t_end": 18.8,
+    "color": "#1E2024"
+  },
+  {
+    "phase": 8,
+    "code": "CS · GEOTEX.",
+    "title": "Capa separadora de fieltro geotextil",
+    "thickness": "2 mm (150 g/m²)",
+    "desc": "Lámina geotextil de polipropileno desolidarizando el mortero de agarre respecto a la impermeabilización.",
+    "t_start": 18.8,
+    "t_end": 21.0,
+    "color": "#3988B5"
+  },
+  {
+    "phase": 9,
+    "code": "P · SOLADO",
+    "title": "Mortero de agarre y pavimento cerámico fijo",
+    "thickness": "20 mm agarre + 20 mm baldosa",
+    "desc": "Lecho de mortero 1:6 y colocación pieza a pieza a matajunta de baldosa cerámica 280×140×20 mm (junta 6 mm).",
+    "t_start": 21.0,
+    "t_end": 24.4,
+    "color": "#C45B42"
+  },
+  {
+    "phase": 10,
+    "code": "P · RODAPIÉ",
+    "title": "Junta elástica perimetral y rodapié cerámico",
+    "thickness": "10 mm junta + 200×15 mm rodapié",
+    "desc": "Sellado perimetral elástico y recibido de piezas verticales de rodapié protegiendo la entrega de membrana.",
+    "t_start": 24.4,
+    "t_end": 27.0,
+    "color": "#9C3B26"
+  }
+]

@@ -1,0 +1,884 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420.0 297.0" style="background:#ffffff; font-family:'Inter','Helvetica Neue',Arial,sans-serif;">
+  <rect x="0" y="0" width="420" height="297" fill="#F6F4EE"/>
+  <rect x="10" y="10" width="400" height="277" fill="#FFFFFF" stroke="#14191F" stroke-width="0.52"/>
+  <rect x="11.6" y="11.6" width="396.8" height="273.8" fill="none" stroke="#505A66" stroke-width="0.14"/>
+  <g id="sheet_frame">
+    <rect x="14.5" y="14.2" width="217.5" height="12.8" fill="#FAF8F4" stroke="#2D3742" stroke-width="0.22"/>
+    <rect x="14.5" y="14.2" width="3.0" height="12.8" fill="#9C3B26"/>
+    <text x="21" y="19.8" font-size="2.95" font-weight="700" fill="#14191F">CONSTRUCCIÓN II · TEJADOS Y AZOTEAS (UPV · ETSIE)</text>
+    <text x="21" y="24.2" font-size="2.1" fill="#505A66">CLASE p.43 · L2 pp.24, 35-38 (QTT-14 Alero de Teja Curva) | CTE DB-HS1 2.4.4.2.2 · NTE-QTT-14 · UNE 136020</text>
+    <rect x="106" y="272.5" width="148" height="11" fill="#FAF9F6" stroke="#8C95A0" stroke-width="0.18"/>
+    <text x="109.5" y="275.8" font-size="1.65" font-weight="700" fill="#505A66">SIMBOLOGÍA CONSTRUCTIVA NORMALIZADA</text>
+    <rect x="109.5" y="277.4" width="5.4" height="4.0" fill="#E2E6E9" stroke="#252B33" stroke-width="0.2"/>
+    <text x="116.2" y="280.4" font-size="1.75" fill="#14191F">HA-25</text>
+    <rect x="133.1" y="277.4" width="5.4" height="4.0" fill="#F7E4DC" stroke="#7D3522" stroke-width="0.2"/>
+    <text x="139.8" y="280.4" font-size="1.75" fill="#14191F">Cerám.</text>
+    <rect x="156.7" y="277.4" width="5.4" height="4.0" fill="#FDF0B8" stroke="#A8810A" stroke-width="0.2"/>
+    <text x="163.4" y="280.4" font-size="1.75" fill="#14191F">Aisl. AT</text>
+    <rect x="180.3" y="277.4" width="5.4" height="4.0" fill="#282C33" stroke="#101214" stroke-width="0.2"/>
+    <text x="187.0" y="280.4" font-size="1.75" fill="#14191F">Imp. SBS</text>
+    <rect x="203.9" y="277.4" width="5.4" height="4.0" fill="#E7DFD5" stroke="#5E5850" stroke-width="0.2"/>
+    <text x="210.6" y="280.4" font-size="1.75" fill="#14191F">Mortero</text>
+    <rect x="227.5" y="277.4" width="5.4" height="4.0" fill="#DCE8F0" stroke="#30495E" stroke-width="0.2"/>
+    <text x="234.2" y="280.4" font-size="1.75" fill="#14191F">Metal/Zn</text>
+    <rect x="259" y="247.5" width="149" height="37.9" fill="#FAF8F4" stroke="#14191F" stroke-width="0.40"/>
+    <rect x="259" y="247.5" width="149" height="1.9" fill="#9C3B26"/>
+    <line x1="259" y1="260.5" x2="408" y2="260.5" stroke="#3A434E" stroke-width="0.20"/>
+    <line x1="259" y1="275.0" x2="408" y2="275.0" stroke="#3A434E" stroke-width="0.20"/>
+    <line x1="332" y1="275.0" x2="332" y2="285.4" stroke="#3A434E" stroke-width="0.20"/>
+    <line x1="370" y1="275.0" x2="370" y2="285.4" stroke="#3A434E" stroke-width="0.20"/>
+    <text x="263.5" y="254.2" font-size="2.7" font-weight="700" fill="#9C3B26">DET-05 · ALERO TEJA CURVA + PALOMEROS</text>
+    <text x="263.5" y="258.5" font-size="1.85" fill="#505A66">SECCIÓN CONSTRUCTIVA MILIMÉTRICA · 2D CAD</text>
+    <text x="263.5" y="266.2" font-size="2.45" font-weight="700" fill="#14191F">Tejado de Teja Curva sobre Tabiquillos</text>
+    <text x="263.5" y="271.5" font-size="2.45" font-weight="700" fill="#14191F">Palomeros · Alero y Canalón Visto</text>
+    <text x="263.5" y="279.0" font-size="1.65" fill="#505A66">ESCALA</text>
+    <text x="263.5" y="283.6" font-size="2.4" font-weight="700" fill="#14191F">1:6 (UNE A3)</text>
+    <text x="336" y="279.0" font-size="1.65" fill="#505A66">UNIDADES</text>
+    <text x="336" y="283.6" font-size="2.4" font-weight="700" fill="#14191F">mm</text>
+    <text x="374" y="279.0" font-size="1.65" fill="#505A66">PLANO</text>
+    <text x="374" y="283.6" font-size="2.3" font-weight="700" fill="#14191F">DET-05</text>
+    <rect x="17" y="278.8" width="8.3" height="2.6" fill="#14191F" stroke="#14191F" stroke-width="0.18"/>
+    <rect x="25.3" y="278.8" width="8.3" height="2.6" fill="#FFFFFF" stroke="#14191F" stroke-width="0.18"/>
+    <rect x="33.7" y="278.8" width="16.7" height="2.6" fill="#FFFFFF" stroke="#14191F" stroke-width="0.18"/>
+    <rect x="50.3" y="278.8" width="16.7" height="2.6" fill="#14191F" stroke="#14191F" stroke-width="0.18"/>
+    <rect x="67.0" y="278.8" width="16.7" height="2.6" fill="#FFFFFF" stroke="#14191F" stroke-width="0.18"/>
+    <text x="15.5" y="276.8" font-size="1.8" fill="#14191F">0</text>
+    <text x="32.2" y="276.8" font-size="1.8" fill="#14191F">100</text>
+    <text x="48.8" y="276.8" font-size="1.8" fill="#14191F">200</text>
+    <text x="65.5" y="276.8" font-size="1.8" fill="#14191F">300</text>
+    <text x="82.2" y="276.8" font-size="1.8" fill="#14191F">400 mm</text>
+    <text x="17" y="284.4" font-size="1.8" font-weight="700" fill="#505A66">ESCALA GRÁFICA 1:6</text>
+  </g>
+  <g id="model_geometry">
+    <polygon data-layer="LADRILLO" points="157.00,235.67 180.33,235.67 180.33,225.33 157.00,225.33" fill="#F9EAE3" stroke="#7D3723" stroke-width="0.20" stroke-linejoin="round"/>
+    <polygon data-layer="LADRILLO" points="158.42,234.83 167.96,234.83 167.96,230.92 158.42,230.92" fill="#FFFFFF" stroke="#7D3723" stroke-width="0.12" stroke-linejoin="round"/>
+    <polygon data-layer="LADRILLO" points="158.42,230.08 167.96,230.08 167.96,226.17 158.42,226.17" fill="#FFFFFF" stroke="#7D3723" stroke-width="0.12" stroke-linejoin="round"/>
+    <polygon data-layer="LADRILLO" points="169.38,234.83 178.92,234.83 178.92,230.92 169.38,230.92" fill="#FFFFFF" stroke="#7D3723" stroke-width="0.12" stroke-linejoin="round"/>
+    <polygon data-layer="LADRILLO" points="169.38,230.08 178.92,230.08 178.92,226.17 169.38,226.17" fill="#FFFFFF" stroke="#7D3723" stroke-width="0.12" stroke-linejoin="round"/>
+    <polygon data-layer="LADRILLO" points="157.00,223.67 180.33,223.67 180.33,213.33 157.00,213.33" fill="#F9EAE3" stroke="#7D3723" stroke-width="0.20" stroke-linejoin="round"/>
+    <polygon data-layer="LADRILLO" points="158.42,222.83 167.96,222.83 167.96,218.92 158.42,218.92" fill="#FFFFFF" stroke="#7D3723" stroke-width="0.12" stroke-linejoin="round"/>
+    <polygon data-layer="LADRILLO" points="158.42,218.08 167.96,218.08 167.96,214.17 158.42,214.17" fill="#FFFFFF" stroke="#7D3723" stroke-width="0.12" stroke-linejoin="round"/>
+    <polygon data-layer="LADRILLO" points="169.38,222.83 178.92,222.83 178.92,218.92 169.38,218.92" fill="#FFFFFF" stroke="#7D3723" stroke-width="0.12" stroke-linejoin="round"/>
+    <polygon data-layer="LADRILLO" points="169.38,218.08 178.92,218.08 178.92,214.17 169.38,214.17" fill="#FFFFFF" stroke="#7D3723" stroke-width="0.12" stroke-linejoin="round"/>
+    <polygon data-layer="LADRILLO" points="157.00,211.67 180.33,211.67 180.33,201.33 157.00,201.33" fill="#F9EAE3" stroke="#7D3723" stroke-width="0.20" stroke-linejoin="round"/>
+    <polygon data-layer="LADRILLO" points="158.42,210.83 167.96,210.83 167.96,206.92 158.42,206.92" fill="#FFFFFF" stroke="#7D3723" stroke-width="0.12" stroke-linejoin="round"/>
+    <polygon data-layer="LADRILLO" points="158.42,206.08 167.96,206.08 167.96,202.17 158.42,202.17" fill="#FFFFFF" stroke="#7D3723" stroke-width="0.12" stroke-linejoin="round"/>
+    <polygon data-layer="LADRILLO" points="169.38,210.83 178.92,210.83 178.92,206.92 169.38,206.92" fill="#FFFFFF" stroke="#7D3723" stroke-width="0.12" stroke-linejoin="round"/>
+    <polygon data-layer="LADRILLO" points="169.38,206.08 178.92,206.08 178.92,202.17 169.38,202.17" fill="#FFFFFF" stroke="#7D3723" stroke-width="0.12" stroke-linejoin="round"/>
+    <polygon data-layer="LADRILLO" points="157.00,199.67 180.33,199.67 180.33,194.83 157.00,194.83" fill="#F9EAE3" stroke="#7D3723" stroke-width="0.20" stroke-linejoin="round"/>
+    <polygon data-layer="LADRILLO" points="158.42,198.83 167.96,198.83 167.96,197.67 158.42,197.67" fill="#FFFFFF" stroke="#7D3723" stroke-width="0.12" stroke-linejoin="round"/>
+    <polygon data-layer="LADRILLO" points="158.42,196.83 167.96,196.83 167.96,195.67 158.42,195.67" fill="#FFFFFF" stroke="#7D3723" stroke-width="0.12" stroke-linejoin="round"/>
+    <polygon data-layer="LADRILLO" points="169.38,198.83 178.92,198.83 178.92,197.67 169.38,197.67" fill="#FFFFFF" stroke="#7D3723" stroke-width="0.12" stroke-linejoin="round"/>
+    <polygon data-layer="LADRILLO" points="169.38,196.83 178.92,196.83 178.92,195.67 169.38,195.67" fill="#FFFFFF" stroke="#7D3723" stroke-width="0.12" stroke-linejoin="round"/>
+    <polygon data-layer="LADRILLO" points="146.17,193.67 157.00,193.67 157.00,179.00 146.17,179.00" fill="#F7E4DC" stroke="#7D3522" stroke-width="0.18" stroke-linejoin="round"/>
+    <polygon data-layer="MORTERO" points="155.00,235.67 157.00,235.67 157.00,193.67 155.00,193.67" fill="#EAE5DC" stroke="#5E5850" stroke-width="0.13" stroke-linejoin="round"/>
+    <polygon data-layer="AISLAMIENTO" points="180.33,235.67 188.67,235.67 188.67,222.33 180.33,222.33" fill="#FDF0B8" stroke="#A8810A" stroke-width="0.14" stroke-linejoin="round"/>
+    <polygon data-layer="LADRILLO" points="188.67,235.67 198.67,235.67 198.67,222.33 188.67,222.33" fill="#F9EAE3" stroke="#7D3723" stroke-width="0.20" stroke-linejoin="round"/>
+    <polygon data-layer="LADRILLO" points="189.58,234.67 197.75,234.67 197.75,231.56 189.58,231.56" fill="#FFFFFF" stroke="#7D3723" stroke-width="0.12" stroke-linejoin="round"/>
+    <polygon data-layer="LADRILLO" points="189.58,230.56 197.75,230.56 197.75,227.44 189.58,227.44" fill="#FFFFFF" stroke="#7D3723" stroke-width="0.12" stroke-linejoin="round"/>
+    <polygon data-layer="LADRILLO" points="189.58,226.44 197.75,226.44 197.75,223.33 189.58,223.33" fill="#FFFFFF" stroke="#7D3723" stroke-width="0.12" stroke-linejoin="round"/>
+    <polygon data-layer="MORTERO" points="198.67,235.67 201.00,235.67 201.00,222.33 198.67,222.33" fill="#F3F0EA" stroke="#5E5850" stroke-width="0.12" stroke-linejoin="round"/>
+    <polygon data-layer="FORJADO" points="142.00,187.33 335.33,187.33 335.33,179.00 142.00,179.00" fill="#E2E6E9" stroke="#252B33" stroke-width="0.26" stroke-linejoin="round"/>
+    <polygon data-layer="FORJADO" points="142.00,193.67 157.00,193.67 157.00,222.33 205.33,222.33 205.33,187.33 142.00,187.33" fill="#D7DCE0" stroke="#252B33" stroke-width="0.25" stroke-linejoin="round"/>
+    <polygon data-layer="FORJADO" points="161.17,218.17 201.17,218.17 201.17,183.17 161.17,183.17" fill="none" stroke="#14191F" stroke-width="0.16" stroke-linejoin="round"/>
+    <polygon data-layer="FORJADO" points="262.00,222.33 282.00,222.33 282.00,215.67 277.67,215.17 276.67,214.00 276.33,187.33 267.67,187.33 267.33,214.00 266.33,215.17 262.00,215.67" fill="#C7CDD2" stroke="#14191F" stroke-width="0.22" stroke-linejoin="round"/>
+    <polygon data-layer="FORJADO" points="266.33,215.13 266.50,214.94 266.50,187.33 251.39,187.33 251.39,187.58 260.65,199.36 266.33,210.47" fill="#D7DCE0" stroke="#2B3138" stroke-width="0.17" stroke-linejoin="round"/>
+    <polygon data-layer="LADRILLO" points="266.33,215.13 266.33,210.47 260.65,199.36 251.39,187.58 227.00,187.33 205.33,187.56 205.33,222.00 261.33,222.00 261.67,215.13" fill="#F7E4DC" stroke="#7D3723" stroke-width="0.20" stroke-linejoin="round"/>
+    <polygon data-layer="LADRILLO" points="218.70,205.25 218.70,220.67 205.33,220.67 205.33,205.25" fill="#FFFFFF" stroke="#7D3723" stroke-width="0.12" stroke-linejoin="round"/>
+    <polygon data-layer="LADRILLO" points="234.13,205.25 234.13,220.67 219.87,220.67 219.87,205.25" fill="#FFFFFF" stroke="#7D3723" stroke-width="0.12" stroke-linejoin="round"/>
+    <polygon data-layer="LADRILLO" points="249.57,205.25 249.57,220.67 235.30,220.67 235.30,205.25" fill="#FFFFFF" stroke="#7D3723" stroke-width="0.12" stroke-linejoin="round"/>
+    <polygon data-layer="LADRILLO" points="260.33,213.80 260.00,220.67 250.73,220.67 250.73,205.25 262.10,205.25 265.00,210.80 265.00,213.80" fill="#FFFFFF" stroke="#7D3723" stroke-width="0.12" stroke-linejoin="round"/>
+    <polygon data-layer="LADRILLO" points="218.70,204.08 205.33,204.08 205.33,188.82 218.70,188.72" fill="#FFFFFF" stroke="#7D3723" stroke-width="0.12" stroke-linejoin="round"/>
+    <polygon data-layer="LADRILLO" points="234.13,204.08 219.87,204.08 219.87,188.72 227.00,188.67 234.13,188.72" fill="#FFFFFF" stroke="#7D3723" stroke-width="0.12" stroke-linejoin="round"/>
+    <polygon data-layer="LADRILLO" points="249.57,204.08 235.30,204.08 235.30,188.72 249.57,188.82" fill="#FFFFFF" stroke="#7D3723" stroke-width="0.12" stroke-linejoin="round"/>
+    <polygon data-layer="LADRILLO" points="261.49,204.08 250.73,204.08 250.73,188.83 250.85,188.83 259.72,200.70" fill="#FFFFFF" stroke="#7D3723" stroke-width="0.12" stroke-linejoin="round"/>
+    <polygon data-layer="FORJADO" points="283.49,199.36 293.00,187.58 293.00,187.33 277.50,187.33 277.50,214.94 277.67,215.13 277.67,210.47" fill="#D7DCE0" stroke="#2B3138" stroke-width="0.17" stroke-linejoin="round"/>
+    <polygon data-layer="LADRILLO" points="335.33,187.47 320.33,187.33 293.00,187.58 283.49,199.36 277.67,210.47 277.67,215.13 282.33,215.13 282.67,222.00 335.33,222.00" fill="#F7E4DC" stroke="#7D3723" stroke-width="0.20" stroke-linejoin="round"/>
+    <polygon data-layer="LADRILLO" points="294.60,220.67 284.00,220.67 283.67,213.80 279.00,213.80 279.00,210.80 281.98,205.25 294.60,205.25" fill="#FFFFFF" stroke="#7D3723" stroke-width="0.12" stroke-linejoin="round"/>
+    <polygon data-layer="LADRILLO" points="311.37,205.25 311.37,220.67 295.77,220.67 295.77,205.25" fill="#FFFFFF" stroke="#7D3723" stroke-width="0.12" stroke-linejoin="round"/>
+    <polygon data-layer="LADRILLO" points="328.13,205.25 328.13,220.67 312.53,220.67 312.53,205.25" fill="#FFFFFF" stroke="#7D3723" stroke-width="0.12" stroke-linejoin="round"/>
+    <polygon data-layer="LADRILLO" points="335.33,205.25 335.33,220.67 329.30,220.67 329.30,205.25" fill="#FFFFFF" stroke="#7D3723" stroke-width="0.12" stroke-linejoin="round"/>
+    <polygon data-layer="LADRILLO" points="294.60,204.08 282.61,204.08 284.43,200.70 293.53,188.83 294.60,188.83" fill="#FFFFFF" stroke="#7D3723" stroke-width="0.12" stroke-linejoin="round"/>
+    <polygon data-layer="LADRILLO" points="311.37,204.08 295.77,204.08 295.77,188.82 311.37,188.72" fill="#FFFFFF" stroke="#7D3723" stroke-width="0.12" stroke-linejoin="round"/>
+    <polygon data-layer="LADRILLO" points="328.13,204.08 312.53,204.08 312.53,188.72 320.33,188.67 328.13,188.72" fill="#FFFFFF" stroke="#7D3723" stroke-width="0.12" stroke-linejoin="round"/>
+    <polygon data-layer="LADRILLO" points="335.33,204.08 329.30,204.08 329.30,188.72 335.33,188.76" fill="#FFFFFF" stroke="#7D3723" stroke-width="0.12" stroke-linejoin="round"/>
+    <polygon data-layer="AISLAMIENTO" points="180.33,179.00 210.33,179.00 210.33,165.67 180.33,165.67" fill="#FDF0B8" stroke="#A8810A" stroke-width="0.17" stroke-linejoin="round"/>
+    <polygon data-layer="AISLAMIENTO" points="222.00,179.00 292.00,179.00 292.00,165.67 222.00,165.67" fill="#FDF0B8" stroke="#A8810A" stroke-width="0.17" stroke-linejoin="round"/>
+    <polygon data-layer="AISLAMIENTO" points="303.67,179.00 335.33,179.00 335.33,165.67 303.67,165.67" fill="#FDF0B8" stroke="#A8810A" stroke-width="0.17" stroke-linejoin="round"/>
+    <polygon data-layer="LADRILLO" points="210.33,179.00 222.00,179.00 222.00,169.33 210.33,169.33" fill="#F9EAE3" stroke="#7D3723" stroke-width="0.20" stroke-linejoin="round"/>
+    <polygon data-layer="LADRILLO" points="211.25,178.17 221.08,178.17 221.08,174.58 211.25,174.58" fill="#FFFFFF" stroke="#7D3723" stroke-width="0.12" stroke-linejoin="round"/>
+    <polygon data-layer="LADRILLO" points="211.25,173.75 221.08,173.75 221.08,170.17 211.25,170.17" fill="#FFFFFF" stroke="#7D3723" stroke-width="0.12" stroke-linejoin="round"/>
+    <polygon data-layer="LADRILLO" points="213.33,168.00 219.00,168.00 219.00,158.33 213.33,158.33" fill="#F9EAE3" stroke="#7D3723" stroke-width="0.20" stroke-linejoin="round"/>
+    <polygon data-layer="LADRILLO" points="214.25,167.17 218.08,167.17 218.08,159.17 214.25,159.17" fill="#FFFFFF" stroke="#7D3723" stroke-width="0.12" stroke-linejoin="round"/>
+    <polygon data-layer="LADRILLO" points="210.33,157.00 222.00,157.00 222.00,147.33 210.33,147.33" fill="#F9EAE3" stroke="#7D3723" stroke-width="0.20" stroke-linejoin="round"/>
+    <polygon data-layer="LADRILLO" points="211.25,156.17 221.08,156.17 221.08,152.58 211.25,152.58" fill="#FFFFFF" stroke="#7D3723" stroke-width="0.12" stroke-linejoin="round"/>
+    <polygon data-layer="LADRILLO" points="211.25,151.75 221.08,151.75 221.08,148.17 211.25,148.17" fill="#FFFFFF" stroke="#7D3723" stroke-width="0.12" stroke-linejoin="round"/>
+    <polygon data-layer="MORTERO" points="210.33,146.83 222.00,143.33 222.00,140.33 210.33,143.83" fill="#D6CFC4" stroke="#5E5850" stroke-width="0.14" stroke-linejoin="round"/>
+    <polygon data-layer="LADRILLO" points="292.00,179.00 303.67,179.00 303.67,169.33 292.00,169.33" fill="#F9EAE3" stroke="#7D3723" stroke-width="0.20" stroke-linejoin="round"/>
+    <polygon data-layer="LADRILLO" points="292.92,178.17 302.75,178.17 302.75,174.58 292.92,174.58" fill="#FFFFFF" stroke="#7D3723" stroke-width="0.12" stroke-linejoin="round"/>
+    <polygon data-layer="LADRILLO" points="292.92,173.75 302.75,173.75 302.75,170.17 292.92,170.17" fill="#FFFFFF" stroke="#7D3723" stroke-width="0.12" stroke-linejoin="round"/>
+    <polygon data-layer="LADRILLO" points="295.00,168.00 300.67,168.00 300.67,158.33 295.00,158.33" fill="#F9EAE3" stroke="#7D3723" stroke-width="0.20" stroke-linejoin="round"/>
+    <polygon data-layer="LADRILLO" points="295.92,167.17 299.75,167.17 299.75,159.17 295.92,159.17" fill="#FFFFFF" stroke="#7D3723" stroke-width="0.12" stroke-linejoin="round"/>
+    <polygon data-layer="LADRILLO" points="292.00,157.00 303.67,157.00 303.67,147.33 292.00,147.33" fill="#F9EAE3" stroke="#7D3723" stroke-width="0.20" stroke-linejoin="round"/>
+    <polygon data-layer="LADRILLO" points="292.92,156.17 302.75,156.17 302.75,152.58 292.92,152.58" fill="#FFFFFF" stroke="#7D3723" stroke-width="0.12" stroke-linejoin="round"/>
+    <polygon data-layer="LADRILLO" points="292.92,151.75 302.75,151.75 302.75,148.17 292.92,148.17" fill="#FFFFFF" stroke="#7D3723" stroke-width="0.12" stroke-linejoin="round"/>
+    <polygon data-layer="LADRILLO" points="295.00,146.00 300.67,146.00 300.67,136.33 295.00,136.33" fill="#F9EAE3" stroke="#7D3723" stroke-width="0.20" stroke-linejoin="round"/>
+    <polygon data-layer="LADRILLO" points="295.92,145.17 299.75,145.17 299.75,137.17 295.92,137.17" fill="#FFFFFF" stroke="#7D3723" stroke-width="0.12" stroke-linejoin="round"/>
+    <polygon data-layer="LADRILLO" points="292.00,135.00 303.67,135.00 303.67,125.33 292.00,125.33" fill="#F9EAE3" stroke="#7D3723" stroke-width="0.20" stroke-linejoin="round"/>
+    <polygon data-layer="LADRILLO" points="292.92,134.17 302.75,134.17 302.75,130.58 292.92,130.58" fill="#FFFFFF" stroke="#7D3723" stroke-width="0.12" stroke-linejoin="round"/>
+    <polygon data-layer="LADRILLO" points="292.92,129.75 302.75,129.75 302.75,126.17 292.92,126.17" fill="#FFFFFF" stroke="#7D3723" stroke-width="0.12" stroke-linejoin="round"/>
+    <polygon data-layer="MORTERO" points="292.00,122.33 303.67,118.83 303.67,115.83 292.00,119.33" fill="#D6CFC4" stroke="#5E5850" stroke-width="0.14" stroke-linejoin="round"/>
+    <polygon data-layer="LADRILLO" points="142.00,179.00 168.67,179.00 168.67,156.33 142.00,164.33" fill="#F7E4DC" stroke="#7D3522" stroke-width="0.18" stroke-linejoin="round"/>
+    <polygon data-layer="LADRILLO" points="139.50,165.08 335.33,106.33 335.33,99.67 139.50,158.42" fill="#F5DFD4" stroke="#7D3522" stroke-width="0.22" stroke-linejoin="round"/>
+    <polygon data-layer="MORTERO" points="139.50,158.42 335.33,99.67 335.33,95.50 139.50,154.25" fill="#D7D0C4" stroke="#5E5850" stroke-width="0.17" stroke-linejoin="round"/>
+    <polygon data-layer="ZINC" points="124.50,171.50 124.59,172.91 124.87,174.30 125.32,175.65 125.95,176.92 126.74,178.09 127.67,179.16 128.74,180.09 129.92,180.88 131.19,181.51 132.53,181.96 133.92,182.24 135.33,182.33 136.75,182.24 138.14,181.96 139.48,181.51 140.75,180.88 141.93,180.09 142.99,179.16 143.93,178.09 144.72,176.92 145.34,175.65 145.80,174.30 146.07,172.91 146.17,171.50 145.17,171.50 145.08,172.78 144.83,174.05 144.42,175.26 143.85,176.42 143.13,177.49 142.29,178.45 141.32,179.30 140.25,180.02 139.10,180.58 137.88,181.00 136.62,181.25 135.33,181.33 134.05,181.25 132.79,181.00 131.57,180.58 130.42,180.02 129.35,179.30 128.38,178.45 127.53,177.49 126.82,176.42 126.25,175.26 125.84,174.05 125.58,172.78 125.50,171.50" fill="#C5D4E0" stroke="#30495E" stroke-width="0.22" stroke-linejoin="round"/>
+    <polygon data-layer="METAL_CAZ" points="123.83,171.50 146.50,168.50 147.00,163.83 147.00,165.17 145.83,170.50 125.17,172.17" fill="#8A96A2" stroke="#14191F" stroke-width="0.16" stroke-linejoin="round"/>
+    <polygon data-layer="MORTERO" points="139.50,154.25 202.17,135.45 202.17,131.78 139.50,148.58" fill="#C9C0B3" stroke="#5E5850" stroke-width="0.13" stroke-linejoin="round"/>
+    <polygon data-layer="TEJA" points="129.43,150.14 201.27,127.59 201.87,129.49 130.03,152.05" fill="#F3CEBE" stroke="#8F2F1B" stroke-width="0.22" stroke-linejoin="round"/>
+    <polygon data-layer="TEJA" points="131.58,139.18 200.92,118.30 201.55,120.37 132.21,141.26" fill="#DE8368" stroke="#7A2210" stroke-width="0.22" stroke-linejoin="round"/>
+    <polygon data-layer="MORTERO" points="179.82,142.15 251.66,120.60 251.66,116.94 179.82,138.82" fill="#C9C0B3" stroke="#5E5850" stroke-width="0.13" stroke-linejoin="round"/>
+    <polygon data-layer="TEJA" points="178.92,134.46 250.76,111.91 251.36,113.82 179.52,136.37" fill="#F3CEBE" stroke="#8F2F1B" stroke-width="0.22" stroke-linejoin="round"/>
+    <polygon data-layer="TEJA" points="178.52,125.19 250.36,102.63 251.01,104.70 179.17,127.25" fill="#DE8368" stroke="#7A2210" stroke-width="0.22" stroke-linejoin="round"/>
+    <polygon data-layer="MORTERO" points="229.31,127.31 301.15,105.76 301.15,102.09 229.31,123.97" fill="#C9C0B3" stroke="#5E5850" stroke-width="0.13" stroke-linejoin="round"/>
+    <polygon data-layer="TEJA" points="228.41,118.78 300.25,96.23 300.85,98.14 229.01,120.69" fill="#F3CEBE" stroke="#8F2F1B" stroke-width="0.22" stroke-linejoin="round"/>
+    <polygon data-layer="TEJA" points="228.01,109.51 299.85,86.96 300.50,89.02 228.66,111.57" fill="#DE8368" stroke="#7A2210" stroke-width="0.22" stroke-linejoin="round"/>
+    <polygon data-layer="MORTERO" points="278.80,112.46 335.33,95.50 335.33,91.83 278.80,109.13" fill="#C9C0B3" stroke="#5E5850" stroke-width="0.13" stroke-linejoin="round"/>
+    <polygon data-layer="TEJA" points="277.89,103.10 334.43,85.14 335.03,87.05 278.49,105.01" fill="#F3CEBE" stroke="#8F2F1B" stroke-width="0.22" stroke-linejoin="round"/>
+    <polygon data-layer="TEJA" points="277.48,93.83 334.02,75.87 334.68,77.94 278.14,95.90" fill="#DE8368" stroke="#7A2210" stroke-width="0.22" stroke-linejoin="round"/>
+    <polyline data-layer="ROTURA" points="335.33,225.00 335.33,153.67 333.67,151.85 337.00,150.15 335.33,148.33 335.33,77.00" fill="none" stroke="#46505A" stroke-width="0.14" stroke-linejoin="round"/>
+    <polyline data-layer="ROTURA" points="154.33,235.67 176.33,235.67 178.15,234.00 179.85,237.33 181.67,235.67 203.67,235.67" fill="none" stroke="#46505A" stroke-width="0.14" stroke-linejoin="round"/>
+    <path data-layer="HATCH_BRICK" d="M156.98,193.67L157.00,193.64 M154.86,193.67L157.00,191.52 M152.74,193.67L157.00,189.40 M150.61,193.67L157.00,187.28 M148.49,193.67L157.00,185.16 M146.37,193.67L157.00,183.04 M146.17,191.75L157.00,180.92 M146.17,189.63L156.80,179.00 M146.17,187.51L154.67,179.00 M146.17,185.39L152.55,179.00 M146.17,183.26L150.43,179.00 M146.17,181.14L148.31,179.00 M146.17,179.02L146.19,179.00" fill="none" stroke="#AC5E48" stroke-width="0.07"/>
+    <path data-layer="HATCH_INSUL" d="M184.50,235.67L182.38,235.00 M182.38,235.00L181.50,234.33 M181.50,234.33L182.38,233.67 M182.38,233.67L184.50,233.00 M184.50,233.00L186.62,232.33 M186.62,232.33L187.50,231.67 M187.50,231.67L186.62,231.00 M186.62,231.00L184.50,230.33 M184.50,230.33L182.38,229.67 M182.38,229.67L181.50,229.00 M181.50,229.00L182.38,228.33 M182.38,228.33L184.50,227.67 M184.50,227.67L186.62,227.00 M186.62,227.00L187.50,226.33 M187.50,226.33L186.62,225.67 M186.62,225.67L184.50,225.00 M184.50,225.00L182.38,224.33 M182.38,224.33L181.50,223.67 M181.50,223.67L182.38,223.00 M182.38,223.00L184.50,222.33" fill="none" stroke="#BA8418" stroke-width="0.09"/>
+    <path data-layer="HATCH_LIGHT" d="M142.15,180.79L143.48,180.51 M143.48,180.51L142.78,179.74 M142.78,179.74L142.15,180.79 M145.68,182.77L146.44,182.61 M146.44,182.61L146.04,182.17 M146.04,182.17L145.68,182.77 M149.24,185.80L150.28,185.58 M150.28,185.58L149.73,184.98 M149.73,184.98L149.24,185.80 M153.91,181.15L154.95,180.93 M154.95,180.93L154.40,180.32 M154.40,180.32L153.91,181.15 M156.91,184.08L158.25,183.80 M158.25,183.80L157.55,183.03 M157.55,183.03L156.91,184.08 M160.07,186.40L161.40,186.12 M161.40,186.12L160.70,185.35 M160.70,185.35L160.07,186.40 M166.22,180.47L166.97,180.31 M166.97,180.31L166.57,179.87 M166.57,179.87L166.22,180.47 M169.77,184.34L170.81,184.12 M170.81,184.12L170.26,183.52 M170.26,183.52L169.77,184.34 M173.23,185.48L173.99,185.32 M173.99,185.32L173.59,184.88 M173.59,184.88L173.23,185.48 M179.09,180.69L180.41,180.41 M180.41,180.41L179.72,179.64 M179.72,179.64L179.09,180.69 M182.01,184.18L183.34,183.90 M183.34,183.90L182.64,183.13 M182.64,183.13L182.01,184.18 M184.06,186.07L185.11,185.85 M185.11,185.85L184.56,185.25 M184.56,185.25L184.06,186.07 M191.39,180.01L192.44,179.79 M192.44,179.79L191.89,179.19 M191.89,179.19L191.39,180.01 M192.91,184.44L193.95,184.22 M193.95,184.22L193.40,183.61 M193.40,183.61L192.91,184.44 M196.45,185.64L197.50,185.42 M197.50,185.42L196.95,184.82 M196.95,184.82L196.45,185.64 M201.76,180.61L203.09,180.33 M203.09,180.33L202.39,179.56 M202.39,179.56L201.76,180.61 M206.54,183.53L207.30,183.37 M207.30,183.37L206.90,182.93 M206.90,182.93L206.54,183.53 M214.06,179.96L215.11,179.74 M215.11,179.74L214.56,179.13 M214.56,179.13L214.06,179.96 M218.54,183.88L219.30,183.72 M219.30,183.72L218.90,183.28 M218.90,183.28L218.54,183.88 M221.70,186.74L222.46,186.58 M222.46,186.58L222.06,186.14 M222.06,186.14L221.70,186.74 M226.38,180.55L227.71,180.27 M227.71,180.27L227.01,179.50 M227.01,179.50L226.38,180.55 M228.98,183.14L229.74,182.98 M229.74,182.98L229.34,182.54 M229.34,182.54L228.98,183.14 M232.14,186.31L232.90,186.15 M232.90,186.15L232.50,185.71 M232.50,185.71L232.14,186.31 M242.00,183.76L243.05,183.54 M243.05,183.54L242.50,182.93 M242.50,182.93L242.00,183.76 M244.92,186.91L245.97,186.69 M245.97,186.69L245.42,186.09 M245.42,186.09L244.92,186.91 M250.06,179.83L250.82,179.67 M250.82,179.67L250.42,179.23 M250.42,179.23L250.06,179.83 M252.92,183.34L254.25,183.06 M254.25,183.06L253.55,182.29 M253.55,182.29L252.92,183.34 M255.68,186.26L257.01,185.98 M257.01,185.98L256.31,185.21 M256.31,185.21L255.68,186.26 M261.91,181.37L263.25,181.09 M263.25,181.09L262.55,180.32 M262.55,180.32L261.91,181.37 M265.31,182.60L266.63,182.32 M266.63,182.32L265.94,181.55 M265.94,181.55L265.31,182.60 M268.92,186.59L269.68,186.43 M269.68,186.43L269.28,185.99 M269.28,185.99L268.92,186.59 M277.31,182.95L278.63,182.67 M278.63,182.67L277.94,181.90 M277.94,181.90L277.31,182.95 M281.16,185.89L282.49,185.61 M282.49,185.61L281.79,184.84 M281.79,184.84L281.16,185.89 M285.98,181.06L286.74,180.90 M286.74,180.90L286.34,180.46 M286.34,180.46L285.98,181.06 M288.99,183.99L290.03,183.77 M290.03,183.77L289.48,183.16 M289.48,183.16L288.99,183.99 M292.45,186.22L293.21,186.06 M293.21,186.06L292.81,185.62 M292.81,185.62L292.45,186.22 M297.84,180.65L299.17,180.37 M299.17,180.37L298.47,179.60 M298.47,179.60L297.84,180.65 M301.84,184.25L302.60,184.09 M302.60,184.09L302.20,183.65 M302.20,183.65L301.84,184.25 M305.16,185.57L306.20,185.35 M306.20,185.35L305.65,184.74 M305.65,184.74L305.16,185.57 M311.16,180.60L312.20,180.38 M312.20,180.38L311.65,179.77 M311.65,179.77L311.16,180.60 M314.08,184.09L315.12,183.87 M315.12,183.87L314.57,183.26 M314.57,183.26L314.08,184.09 M315.99,186.16L317.32,185.88 M317.32,185.88L316.62,185.11 M316.62,185.11L315.99,186.16 M323.46,179.92L324.22,179.76 M324.22,179.76L323.82,179.32 M323.82,179.32L323.46,179.92 M324.98,184.35L325.74,184.19 M325.74,184.19L325.34,183.75 M325.34,183.75L324.98,184.35 M328.38,185.73L329.71,185.45 M329.71,185.45L329.01,184.68 M329.01,184.68L328.38,185.73 M333.83,180.52L334.88,180.30 M334.88,180.30L334.33,179.70 M334.33,179.70L333.83,180.52" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="143.59" cy="186.68" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="144.12" cy="182.63" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="145.83" cy="186.35" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="145.48" cy="180.50" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="149.14" cy="183.52" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="148.65" cy="179.63" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="152.96" cy="185.51" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="152.98" cy="183.64" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="152.14" cy="179.82" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="156.06" cy="186.50" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="156.04" cy="182.68" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="158.69" cy="185.61" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="157.63" cy="179.92" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="161.84" cy="183.87" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="161.12" cy="180.13" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="163.40" cy="187.03" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="163.42" cy="182.90" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="164.30" cy="179.24" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="166.50" cy="186.07" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="166.48" cy="183.89" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="169.67" cy="186.11" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="170.10" cy="180.43" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="173.38" cy="183.06" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="173.28" cy="179.55" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="177.12" cy="185.37" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="176.59" cy="183.43" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="176.61" cy="179.22" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="179.43" cy="186.58" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="179.73" cy="182.76" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="181.52" cy="185.70" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="182.96" cy="179.39" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="184.67" cy="183.87" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="184.50" cy="179.59" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="187.79" cy="186.74" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="187.65" cy="182.92" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="188.77" cy="180.58" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="190.34" cy="185.84" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="191.26" cy="183.89" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="194.45" cy="186.21" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="193.48" cy="179.90" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="197.06" cy="183.13" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="196.65" cy="180.95" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="200.18" cy="186.31" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="200.04" cy="182.18" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="200.92" cy="180.00" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="203.28" cy="186.35" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="203.96" cy="182.29" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="205.36" cy="185.47" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="205.63" cy="179.31" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="208.99" cy="183.19" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="208.26" cy="179.45" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="211.87" cy="186.35" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="212.04" cy="182.53" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="211.44" cy="180.50" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="215.82" cy="185.47" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="215.10" cy="183.52" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="219.00" cy="185.51" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="218.10" cy="179.82" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="222.00" cy="182.68" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="220.42" cy="180.82" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="224.73" cy="185.61" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="223.58" cy="183.66" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="223.60" cy="179.92" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="226.81" cy="185.98" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="227.80" cy="183.87" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="229.44" cy="187.03" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="230.26" cy="179.24" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="232.44" cy="183.89" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="232.58" cy="180.23" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="235.71" cy="186.11" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="236.28" cy="184.01" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="236.06" cy="180.43" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="239.67" cy="185.24" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="239.34" cy="183.06" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="243.16" cy="185.37" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="242.57" cy="179.22" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="245.69" cy="182.76" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="245.75" cy="180.27" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="247.56" cy="185.70" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="248.67" cy="183.76" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="248.92" cy="179.39" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="250.65" cy="185.74" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="250.63" cy="183.87" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="253.83" cy="186.74" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="254.73" cy="180.58" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="257.22" cy="183.89" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="257.90" cy="179.68" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="260.49" cy="186.21" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="259.42" cy="184.11" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="259.44" cy="179.90" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="263.04" cy="185.31" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="263.02" cy="183.13" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="266.22" cy="186.31" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="266.88" cy="180.00" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="269.92" cy="182.29" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="268.42" cy="180.19" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="271.40" cy="185.47" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="272.20" cy="183.29" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="271.60" cy="179.31" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="275.51" cy="187.09" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="274.95" cy="183.19" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="277.91" cy="186.35" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="277.40" cy="180.50" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="281.06" cy="183.52" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="280.58" cy="179.63" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="285.04" cy="185.51" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="284.90" cy="183.64" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="284.06" cy="179.82" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="288.14" cy="186.50" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="287.96" cy="182.68" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="290.77" cy="185.61" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="289.56" cy="179.92" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="293.77" cy="183.87" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="293.04" cy="180.13" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="295.48" cy="187.03" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="295.34" cy="182.90" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="296.22" cy="179.24" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="298.58" cy="186.07" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="298.40" cy="183.89" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="301.75" cy="186.11" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="302.02" cy="180.43" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="304.60" cy="183.06" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="305.20" cy="179.55" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="307.24" cy="185.37" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="308.51" cy="183.43" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="308.53" cy="179.22" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="311.51" cy="186.58" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="311.65" cy="182.76" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="313.60" cy="185.70" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="314.88" cy="179.39" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="316.60" cy="183.87" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="316.42" cy="179.59" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="319.87" cy="186.74" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="319.58" cy="182.92" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="320.69" cy="180.58" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="322.42" cy="185.84" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="323.18" cy="183.89" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="326.53" cy="186.21" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="325.40" cy="179.90" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="328.99" cy="183.13" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="328.58" cy="180.95" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="332.26" cy="186.31" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="331.97" cy="182.18" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="332.84" cy="180.00" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <path data-layer="HATCH_LIGHT" d="M158.06,213.93L159.10,213.71 M159.10,213.71L158.55,213.11 M158.55,213.11L158.06,213.93 M157.62,199.22L158.95,198.94 M158.95,198.94L158.25,198.17 M158.25,198.17L157.62,199.22 M162.83,217.30L163.59,217.14 M163.59,217.14L163.19,216.70 M163.19,216.70L162.83,217.30 M162.05,202.67L163.38,202.39 M163.38,202.39L162.68,201.62 M162.68,201.62L162.05,202.67 M160.43,188.62L161.76,188.34 M161.76,188.34L161.06,187.57 M161.06,187.57L160.43,188.62 M164.53,207.53L165.58,207.31 M165.58,207.31L165.03,206.71 M165.03,206.71L164.53,207.53 M165.73,192.54L166.49,192.38 M166.49,192.38L166.09,191.94 M166.09,191.94L165.73,192.54 M169.63,209.39L170.68,209.17 M170.68,209.17L170.13,208.56 M170.13,208.56L169.63,209.39 M168.45,195.06L169.21,194.90 M169.21,194.90L168.81,194.46 M168.81,194.46L168.45,195.06 M171.62,213.76L172.95,213.48 M172.95,213.48L172.25,212.71 M172.25,212.71L171.62,213.76 M173.68,198.86L174.72,198.64 M174.72,198.64L174.17,198.04 M174.17,198.04L173.68,198.86 M176.68,217.24L177.72,217.02 M177.72,217.02L177.17,216.42 M177.17,216.42L176.68,217.24 M175.49,202.25L176.25,202.09 M176.25,202.09L175.85,201.65 M175.85,201.65L175.49,202.25 M175.40,188.11L176.16,187.95 M176.16,187.95L175.76,187.51 M175.76,187.51L175.40,188.11 M179.87,221.94L180.91,221.72 M180.91,221.72L180.36,221.11 M180.36,221.11L179.87,221.94 M180.50,207.39L181.26,207.23 M181.26,207.23L180.86,206.79 M180.86,206.79L180.50,207.39 M180.59,192.20L181.35,192.04 M181.35,192.04L180.95,191.60 M180.95,191.60L180.59,192.20 M183.77,211.24L185.10,210.96 M185.10,210.96L184.40,210.19 M184.40,210.19L183.77,211.24 M184.11,194.43L185.15,194.21 M185.15,194.21L184.60,193.61 M184.60,193.61L184.11,194.43 M188.02,213.34L188.78,213.18 M188.78,213.18L188.38,212.74 M188.38,212.74L188.02,213.34 M188.35,198.91L189.39,198.69 M189.39,198.69L188.84,198.09 M188.84,198.09L188.35,198.91 M190.81,216.71L192.14,216.43 M192.14,216.43L191.44,215.66 M191.44,215.66L190.81,216.71 M190.05,202.10L191.38,201.82 M191.38,201.82L190.68,201.05 M190.68,201.05L190.05,202.10 M195.49,221.89L196.53,221.67 M196.53,221.67L195.98,221.06 M195.98,221.06L195.49,221.89 M195.54,207.35L196.30,207.19 M196.30,207.19L195.90,206.75 M195.90,206.75L195.54,207.35 M194.78,192.06L195.54,191.90 M195.54,191.90L195.14,191.46 M195.14,191.46L194.78,192.06 M198.91,210.64L200.24,210.36 M200.24,210.36L199.54,209.59 M199.54,209.59L198.91,210.64 M198.92,196.32L199.68,196.16 M199.68,196.16L199.28,195.72 M199.28,195.72L198.92,196.32 M202.73,214.82L203.77,214.60 M203.77,214.60L203.22,213.99 M203.22,213.99L202.73,214.82 M202.40,199.92L203.16,199.76 M203.16,199.76L202.76,199.32 M202.76,199.32L202.40,199.92" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="157.51" cy="221.13" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="158.92" cy="216.18" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="157.73" cy="211.06" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="159.52" cy="206.30" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="158.63" cy="201.37" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="158.01" cy="195.87" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="159.23" cy="191.49" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="158.35" cy="188.94" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="161.30" cy="221.72" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="161.35" cy="212.39" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="161.85" cy="210.08" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="161.39" cy="206.84" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="163.25" cy="199.96" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="163.18" cy="195.65" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="162.16" cy="190.41" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="165.82" cy="217.27" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="165.80" cy="212.70" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="166.06" cy="210.34" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="166.59" cy="202.56" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="166.85" cy="197.79" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="165.01" cy="195.25" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="164.87" cy="187.65" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="170.40" cy="220.84" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="169.66" cy="216.18" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="170.44" cy="213.70" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="169.44" cy="206.01" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="169.47" cy="203.56" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="169.97" cy="198.89" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="170.21" cy="191.96" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="173.90" cy="220.49" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="173.11" cy="218.20" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="172.01" cy="211.03" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="172.08" cy="205.60" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="172.92" cy="203.20" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="174.21" cy="196.03" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="173.99" cy="190.79" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="172.82" cy="188.39" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="176.92" cy="221.68" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="176.68" cy="214.53" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="176.13" cy="209.75" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="176.44" cy="206.80" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="177.73" cy="199.63" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="176.04" cy="195.61" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="176.35" cy="192.65" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="180.11" cy="216.65" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="179.80" cy="214.65" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="180.35" cy="209.72" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="181.44" cy="202.22" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="181.13" cy="197.84" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="180.44" cy="194.53" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="183.44" cy="220.41" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="184.23" cy="217.75" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="184.16" cy="213.46" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="185.25" cy="205.96" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="184.42" cy="203.42" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="184.63" cy="198.94" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="183.35" cy="191.44" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="184.51" cy="188.89" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="186.94" cy="220.06" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="187.68" cy="217.39" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="188.68" cy="210.41" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="187.90" cy="205.56" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="187.87" cy="203.06" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="187.63" cy="195.32" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="187.13" cy="192.65" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="186.73" cy="187.77" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="192.35" cy="221.25" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="190.68" cy="214.11" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="190.42" cy="209.13" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="192.25" cy="206.75" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="192.01" cy="199.68" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="191.47" cy="194.89" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="191.20" cy="192.32" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="194.11" cy="216.51" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="195.13" cy="214.42" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="194.63" cy="209.39" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="194.59" cy="201.99" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="195.61" cy="199.89" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="195.68" cy="194.49" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="198.97" cy="220.34" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="199.94" cy="217.96" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="198.73" cy="212.63" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="199.35" cy="205.84" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="197.85" cy="203.44" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="199.01" cy="198.10" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="199.63" cy="191.32" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="198.13" cy="188.92" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="202.37" cy="222.01" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="201.97" cy="217.34" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="201.44" cy="209.80" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="202.47" cy="207.13" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="201.49" cy="202.53" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="202.78" cy="195.37" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="203.23" cy="190.70" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="202.25" cy="188.49" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <path data-layer="HATCH_LIGHT" d="M259.75,197.40L260.79,197.18 M260.79,197.18L260.24,196.57 M260.24,196.57L259.75,197.40 M262.84,195.11L264.17,194.83 M264.17,194.83L263.47,194.06 M263.47,194.06L262.84,195.11 M264.77,203.11L265.81,202.89 M265.81,202.89L265.26,202.29 M265.26,202.29L264.77,203.11 M264.77,191.64L265.81,191.42 M265.81,191.42L265.26,190.82 M265.26,190.82L264.77,191.64" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="256.72" cy="190.01" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="259.80" cy="192.74" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="258.95" cy="190.42" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="262.98" cy="201.16" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="262.35" cy="196.76" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="261.88" cy="190.99" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="266.40" cy="211.46" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="266.40" cy="197.83" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <path data-layer="HATCH_LIGHT" d="M278.26,197.86L279.59,197.58 M279.59,197.58L278.89,196.81 M278.89,196.81L278.26,197.86 M282.35,193.94L283.40,193.72 M283.40,193.72L282.85,193.11 M282.85,193.11L282.35,193.94 M284.06,191.73L285.39,191.45 M285.39,191.45L284.69,190.68 M284.69,190.68L284.06,191.73" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="278.12" cy="208.22" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="278.31" cy="203.61" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="278.77" cy="199.88" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="278.55" cy="192.85" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="278.23" cy="190.75" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="281.30" cy="200.16" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="282.67" cy="197.94" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="281.58" cy="191.12" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="284.66" cy="193.24" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="287.79" cy="193.80" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="289.42" cy="191.09" r="0.12" fill="none" stroke="#757C85" stroke-width="0.07"/>
+    <path data-layer="HATCH_INSUL" d="M180.33,172.33L181.00,168.94 M181.00,168.94L181.67,167.53 M181.67,167.53L182.33,168.94 M182.33,168.94L183.00,172.33 M183.00,172.33L183.67,175.73 M183.67,175.73L184.33,177.13 M184.33,177.13L185.00,175.73 M185.00,175.73L185.67,172.33 M185.67,172.33L186.33,168.94 M186.33,168.94L187.00,167.53 M187.00,167.53L187.67,168.94 M187.67,168.94L188.33,172.33 M188.33,172.33L189.00,175.73 M189.00,175.73L189.67,177.13 M189.67,177.13L190.33,175.73 M190.33,175.73L191.00,172.33 M191.00,172.33L191.67,168.94 M191.67,168.94L192.33,167.53 M192.33,167.53L193.00,168.94 M193.00,168.94L193.67,172.33 M193.67,172.33L194.33,175.73 M194.33,175.73L195.00,177.13 M195.00,177.13L195.67,175.73 M195.67,175.73L196.33,172.33 M196.33,172.33L197.00,168.94 M197.00,168.94L197.67,167.53 M197.67,167.53L198.33,168.94 M198.33,168.94L199.00,172.33 M199.00,172.33L199.67,175.73 M199.67,175.73L200.33,177.13 M200.33,177.13L201.00,175.73 M201.00,175.73L201.67,172.33 M201.67,172.33L202.33,168.94 M202.33,168.94L203.00,167.53 M203.00,167.53L203.67,168.94 M203.67,168.94L204.33,172.33 M204.33,172.33L205.00,175.73 M205.00,175.73L205.67,177.13 M205.67,177.13L206.33,175.73 M206.33,175.73L207.00,172.33 M207.00,172.33L207.67,168.94 M207.67,168.94L208.33,167.53 M208.33,167.53L209.00,168.94 M209.00,168.94L209.67,172.33 M209.67,172.33L210.33,175.73" fill="none" stroke="#BA8418" stroke-width="0.09"/>
+    <path data-layer="HATCH_INSUL" d="M222.00,172.33L222.67,168.94 M222.67,168.94L223.33,167.53 M223.33,167.53L224.00,168.94 M224.00,168.94L224.67,172.33 M224.67,172.33L225.33,175.73 M225.33,175.73L226.00,177.13 M226.00,177.13L226.67,175.73 M226.67,175.73L227.33,172.33 M227.33,172.33L228.00,168.94 M228.00,168.94L228.67,167.53 M228.67,167.53L229.33,168.94 M229.33,168.94L230.00,172.33 M230.00,172.33L230.67,175.73 M230.67,175.73L231.33,177.13 M231.33,177.13L232.00,175.73 M232.00,175.73L232.67,172.33 M232.67,172.33L233.33,168.94 M233.33,168.94L234.00,167.53 M234.00,167.53L234.67,168.94 M234.67,168.94L235.33,172.33 M235.33,172.33L236.00,175.73 M236.00,175.73L236.67,177.13 M236.67,177.13L237.33,175.73 M237.33,175.73L238.00,172.33 M238.00,172.33L238.67,168.94 M238.67,168.94L239.33,167.53 M239.33,167.53L240.00,168.94 M240.00,168.94L240.67,172.33 M240.67,172.33L241.33,175.73 M241.33,175.73L242.00,177.13 M242.00,177.13L242.67,175.73 M242.67,175.73L243.33,172.33 M243.33,172.33L244.00,168.94 M244.00,168.94L244.67,167.53 M244.67,167.53L245.33,168.94 M245.33,168.94L246.00,172.33 M246.00,172.33L246.67,175.73 M246.67,175.73L247.33,177.13 M247.33,177.13L248.00,175.73 M248.00,175.73L248.67,172.33 M248.67,172.33L249.33,168.94 M249.33,168.94L250.00,167.53 M250.00,167.53L250.67,168.94 M250.67,168.94L251.33,172.33 M251.33,172.33L252.00,175.73 M252.00,175.73L252.67,177.13 M252.67,177.13L253.33,175.73 M253.33,175.73L254.00,172.33 M254.00,172.33L254.67,168.94 M254.67,168.94L255.33,167.53 M255.33,167.53L256.00,168.94 M256.00,168.94L256.67,172.33 M256.67,172.33L257.33,175.73 M257.33,175.73L258.00,177.13 M258.00,177.13L258.67,175.73 M258.67,175.73L259.33,172.33 M259.33,172.33L260.00,168.94 M260.00,168.94L260.67,167.53 M260.67,167.53L261.33,168.94 M261.33,168.94L262.00,172.33 M262.00,172.33L262.67,175.73 M262.67,175.73L263.33,177.13 M263.33,177.13L264.00,175.73 M264.00,175.73L264.67,172.33 M264.67,172.33L265.33,168.94 M265.33,168.94L266.00,167.53 M266.00,167.53L266.67,168.94 M266.67,168.94L267.33,172.33 M267.33,172.33L268.00,175.73 M268.00,175.73L268.67,177.13 M268.67,177.13L269.33,175.73 M269.33,175.73L270.00,172.33 M270.00,172.33L270.67,168.94 M270.67,168.94L271.33,167.53 M271.33,167.53L272.00,168.94 M272.00,168.94L272.67,172.33 M272.67,172.33L273.33,175.73 M273.33,175.73L274.00,177.13 M274.00,177.13L274.67,175.73 M274.67,175.73L275.33,172.33 M275.33,172.33L276.00,168.94 M276.00,168.94L276.67,167.53 M276.67,167.53L277.33,168.94 M277.33,168.94L278.00,172.33 M278.00,172.33L278.67,175.73 M278.67,175.73L279.33,177.13 M279.33,177.13L280.00,175.73 M280.00,175.73L280.67,172.33 M280.67,172.33L281.33,168.94 M281.33,168.94L282.00,167.53 M282.00,167.53L282.67,168.94 M282.67,168.94L283.33,172.33 M283.33,172.33L284.00,175.73 M284.00,175.73L284.67,177.13 M284.67,177.13L285.33,175.73 M285.33,175.73L286.00,172.33 M286.00,172.33L286.67,168.94 M286.67,168.94L287.33,167.53 M287.33,167.53L288.00,168.94 M288.00,168.94L288.67,172.33 M288.67,172.33L289.33,175.73 M289.33,175.73L290.00,177.13 M290.00,177.13L290.67,175.73 M290.67,175.73L291.33,172.33 M291.33,172.33L292.00,168.94" fill="none" stroke="#BA8418" stroke-width="0.09"/>
+    <path data-layer="HATCH_INSUL" d="M303.67,172.33L304.34,168.91 M304.34,168.91L305.01,167.53 M305.01,167.53L305.69,169.03 M305.69,169.03L306.36,172.49 M306.36,172.49L307.04,175.87 M307.04,175.87L307.71,177.13 M307.71,177.13L308.38,175.52 M308.38,175.52L309.06,172.01 M309.06,172.01L309.73,168.69 M309.73,168.69L310.40,167.55 M310.40,167.55L311.08,169.27 M311.08,169.27L311.75,172.81 M311.75,172.81L312.43,176.08 M312.43,176.08L313.10,177.10 M313.10,177.10L313.77,175.28 M313.77,175.28L314.45,171.69 M314.45,171.69L315.12,168.49 M315.12,168.49L315.79,167.59 M315.79,167.59L316.47,169.52 M316.47,169.52L317.14,173.13 M317.14,173.13L317.82,176.27 M317.82,176.27L318.49,177.05 M318.49,177.05L319.16,175.02 M319.16,175.02L319.84,171.38 M319.84,171.38L320.51,168.31 M320.51,168.31L321.18,167.65 M321.18,167.65L321.86,169.78 M321.86,169.78L322.53,173.45 M322.53,173.45L323.21,176.44 M323.21,176.44L323.88,176.98 M323.88,176.98L324.55,174.74 M324.55,174.74L325.23,171.07 M325.23,171.07L325.90,168.14 M325.90,168.14L326.57,167.73 M326.57,167.73L327.25,170.06 M327.25,170.06L327.92,173.76 M327.92,173.76L328.60,176.60 M328.60,176.60L329.27,176.89 M329.27,176.89L329.94,174.46 M329.94,174.46L330.62,170.76 M330.62,170.76L331.29,168.00 M331.29,168.00L331.96,167.83 M331.96,167.83L332.64,170.35 M332.64,170.35L333.31,174.06 M333.31,174.06L333.99,176.74 M333.99,176.74L334.66,176.78 M334.66,176.78L335.33,174.17" fill="none" stroke="#BA8418" stroke-width="0.09"/>
+    <path data-layer="HATCH_BRICK" d="M142.00,177.67L168.67,177.67 M142.00,175.00L168.67,175.00 M142.00,174.33L168.67,174.33 M142.00,172.33L168.67,172.33 M142.00,169.67L168.67,169.67 M142.00,169.00L168.67,169.00 M142.00,167.00L168.67,167.00 M142.00,164.33L168.67,164.33 M144.22,163.67L168.67,163.67 M150.89,161.67L168.67,161.67 M159.78,159.00L168.67,159.00 M162.00,158.33L168.67,158.33" fill="none" stroke="#AC5E48" stroke-width="0.07"/>
+    <path data-layer="HATCH_BRICK" d="M335.33,100.18L334.94,99.79 M335.33,103.01L332.76,100.44 M335.33,105.84L330.58,101.09 M333.54,106.87L328.41,101.74 M331.36,107.53L326.23,102.40 M329.19,108.18L324.06,103.05 M327.01,108.83L321.88,103.70 M324.83,109.48L319.71,104.36 M322.66,110.14L317.53,105.01 M320.48,110.79L315.35,105.66 M318.31,111.44L313.18,106.31 M316.13,112.09L311.00,106.97 M313.95,112.75L308.83,107.62 M311.78,113.40L306.65,108.27 M309.60,114.05L304.48,108.92 M307.43,114.70L302.30,109.58 M305.25,115.36L300.12,110.23 M303.08,116.01L297.95,110.88 M300.90,116.66L295.77,111.53 M298.73,117.32L293.60,112.19 M296.55,117.97L291.42,112.84 M294.37,118.62L289.25,113.49 M292.20,119.27L287.07,114.15 M290.02,119.93L284.89,114.80 M287.85,120.58L282.72,115.45 M285.67,121.23L280.54,116.10 M283.50,121.88L278.37,116.76 M281.32,122.54L276.19,117.41 M279.14,123.19L274.02,118.06 M276.97,123.84L271.84,118.71 M274.79,124.50L269.66,119.37 M272.62,125.15L267.49,120.02 M270.44,125.80L265.31,120.67 M268.26,126.45L263.14,121.33 M266.09,127.11L260.96,121.98 M263.91,127.76L258.79,122.63 M261.74,128.41L256.61,123.28 M259.56,129.06L254.43,123.94 M257.39,129.72L252.26,124.59 M255.21,130.37L250.08,125.24 M253.04,131.02L247.91,125.89 M250.86,131.68L245.73,126.55 M248.68,132.33L243.56,127.20 M246.51,132.98L241.38,127.85 M244.33,133.63L239.20,128.51 M242.16,134.29L237.03,129.16 M239.98,134.94L234.85,129.81 M237.81,135.59L232.68,130.46 M235.63,136.24L230.50,131.12 M233.45,136.90L228.33,131.77 M231.28,137.55L226.15,132.42 M229.10,138.20L223.97,133.07 M226.93,138.86L221.80,133.73 M224.75,139.51L219.62,134.38 M222.58,140.16L217.45,135.03 M220.40,140.81L215.27,135.69 M218.22,141.47L213.10,136.34 M216.05,142.12L210.92,136.99 M213.87,142.77L208.74,137.64 M211.70,143.42L206.57,138.30 M209.52,144.08L204.39,138.95 M207.35,144.73L202.22,139.60 M205.17,145.38L200.04,140.25 M202.99,146.04L197.87,140.91 M200.82,146.69L195.69,141.56 M198.64,147.34L193.51,142.21 M196.47,147.99L191.34,142.87 M194.29,148.65L189.16,143.52 M192.11,149.30L186.99,144.17 M189.94,149.95L184.81,144.82 M187.76,150.60L182.64,145.48 M185.59,151.26L180.46,146.13 M183.41,151.91L178.28,146.78 M181.24,152.56L176.11,147.43 M179.06,153.22L173.93,148.09 M176.89,153.87L171.76,148.74 M174.71,154.52L169.58,149.39 M172.53,155.17L167.41,150.05 M170.36,155.83L165.23,150.70 M168.18,156.48L163.05,151.35 M166.01,157.13L160.88,152.00 M163.83,157.78L158.70,152.66 M161.66,158.44L156.53,153.31 M159.48,159.09L154.35,153.96 M157.30,159.74L152.18,154.61 M155.13,160.39L150.00,155.27 M152.95,161.05L147.82,155.92 M150.78,161.70L145.65,156.57 M148.60,162.35L143.47,157.22 M146.43,163.01L141.30,157.88 M144.25,163.66L139.50,158.91 M142.07,164.31L139.50,161.74 M139.90,164.96L139.50,164.57" fill="none" stroke="#AC5E48" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="139.67" cy="157.35" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="140.48" cy="156.30" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="139.73" cy="155.25" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="141.96" cy="157.42" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="141.54" cy="156.48" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="141.12" cy="154.57" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="141.68" cy="153.65" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="142.64" cy="156.67" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="143.26" cy="154.80" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="144.83" cy="155.95" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="144.53" cy="154.93" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="144.35" cy="153.01" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="145.93" cy="156.40" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="146.24" cy="154.42" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="146.19" cy="153.49" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="147.40" cy="154.63" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="147.52" cy="153.67" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="148.98" cy="154.89" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="148.86" cy="152.86" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="148.73" cy="151.81" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="150.14" cy="155.11" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="150.19" cy="153.03" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="150.86" cy="152.02" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="151.85" cy="154.59" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="152.03" cy="153.51" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="152.33" cy="151.52" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="153.37" cy="153.69" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="153.49" cy="151.74" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="153.85" cy="150.62" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="154.70" cy="152.88" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="154.89" cy="151.94" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="155.30" cy="149.87" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="156.46" cy="153.08" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="156.98" cy="152.27" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="157.07" cy="150.29" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="157.67" cy="151.47" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="158.25" cy="150.54" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="160.08" cy="151.67" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="159.66" cy="150.77" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="159.79" cy="148.58" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="161.20" cy="151.88" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="160.68" cy="149.93" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="161.57" cy="148.76" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="162.71" cy="151.39" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="162.72" cy="150.38" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="162.30" cy="149.22" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="164.44" cy="150.60" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="163.92" cy="148.42" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="164.58" cy="147.77" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="165.89" cy="149.93" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="165.79" cy="148.88" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="165.17" cy="147.50" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="166.64" cy="150.14" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="167.41" cy="149.05" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="167.36" cy="147.05" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="166.81" cy="146.20" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="168.30" cy="148.53" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="168.78" cy="147.22" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="169.92" cy="148.71" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="170.07" cy="147.75" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="169.94" cy="145.95" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="171.25" cy="147.64" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="171.34" cy="145.81" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="171.70" cy="144.71" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="173.25" cy="147.41" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="173.35" cy="146.21" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="173.46" cy="144.23" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="174.27" cy="147.75" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="174.20" cy="145.60" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="174.87" cy="144.68" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="175.63" cy="145.46" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="176.36" cy="144.55" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="177.80" cy="146.02" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="178.05" cy="144.06" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="177.75" cy="143.05" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="178.69" cy="146.19" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="178.72" cy="144.21" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="179.02" cy="143.20" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="180.98" cy="145.70" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="180.72" cy="144.70" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="180.84" cy="142.75" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="181.87" cy="145.59" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="182.21" cy="144.57" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="181.73" cy="142.78" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="181.64" cy="141.72" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="184.05" cy="144.08" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="183.40" cy="143.30" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="183.48" cy="141.23" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="185.54" cy="144.23" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="185.49" cy="142.48" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="184.66" cy="141.39" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="186.18" cy="143.00" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="186.39" cy="140.99" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="187.73" cy="142.91" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="188.19" cy="140.84" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="189.16" cy="143.29" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="189.64" cy="141.36" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="189.41" cy="139.41" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="190.87" cy="142.49" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="191.40" cy="141.57" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="190.96" cy="139.66" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="192.34" cy="142.41" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="193.05" cy="141.42" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="192.71" cy="139.55" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="193.80" cy="141.01" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="194.45" cy="140.00" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="194.40" cy="138.36" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="195.13" cy="141.18" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="195.45" cy="140.17" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="195.42" cy="138.19" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="197.24" cy="139.72" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="197.46" cy="138.40" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="196.94" cy="137.20" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="198.36" cy="139.81" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="198.17" cy="138.12" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="199.04" cy="137.07" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="199.98" cy="139.36" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="199.90" cy="138.34" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="199.69" cy="137.25" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="201.80" cy="139.52" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="201.89" cy="138.17" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="201.36" cy="137.08" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="202.64" cy="138.38" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="202.87" cy="136.36" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="203.21" cy="135.24" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="204.41" cy="138.26" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="204.22" cy="137.17" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="204.27" cy="135.09" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="206.16" cy="136.49" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="205.68" cy="135.53" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="207.94" cy="137.22" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="207.52" cy="135.32" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="207.45" cy="134.15" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="208.63" cy="137.05" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="209.25" cy="135.17" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="209.35" cy="133.96" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="211.05" cy="135.31" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="210.98" cy="134.14" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="211.88" cy="135.16" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="212.41" cy="133.99" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="213.87" cy="135.38" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="213.38" cy="134.17" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="213.74" cy="132.19" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="214.74" cy="135.15" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="214.61" cy="134.10" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="214.76" cy="132.10" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="216.24" cy="134.27" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="217.07" cy="132.28" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="217.67" cy="134.13" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="218.13" cy="132.11" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="219.30" cy="134.30" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="219.35" cy="132.37" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="219.36" cy="130.49" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="220.80" cy="132.20" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="221.22" cy="130.37" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="222.55" cy="133.47" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="222.48" cy="132.62" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="222.61" cy="130.44" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="223.05" cy="129.47" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="224.17" cy="132.21" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="224.08" cy="131.04" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="223.68" cy="129.14" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="225.27" cy="132.04" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="225.28" cy="130.91" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="226.03" cy="128.96" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="227.53" cy="131.05" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="227.36" cy="129.13" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="228.96" cy="130.88" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="228.85" cy="128.99" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="228.20" cy="127.97" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="230.04" cy="131.10" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="230.19" cy="129.16" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="229.83" cy="127.52" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="231.33" cy="129.13" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="231.34" cy="128.00" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="232.66" cy="129.31" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="232.96" cy="127.55" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="232.99" cy="126.53" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="234.46" cy="129.16" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="234.90" cy="128.07" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="234.48" cy="126.05" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="235.80" cy="129.34" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="236.53" cy="127.62" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="235.86" cy="126.50" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="237.18" cy="128.14" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="237.27" cy="126.06" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="238.06" cy="124.97" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="238.77" cy="127.56" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="238.80" cy="126.56" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="239.53" cy="124.61" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="240.80" cy="126.35" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="240.38" cy="124.44" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="241.78" cy="125.91" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="242.51" cy="124.93" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="243.11" cy="126.36" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="243.67" cy="124.45" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="243.64" cy="123.42" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="245.46" cy="125.88" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="244.67" cy="124.94" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="244.70" cy="122.97" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="246.80" cy="124.46" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="246.89" cy="123.49" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="246.40" cy="122.28" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="247.78" cy="125.89" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="248.28" cy="125.07" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="248.19" cy="123.03" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="248.06" cy="121.98" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="249.59" cy="124.58" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="249.56" cy="123.56" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="249.38" cy="121.49" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="250.78" cy="123.10" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="251.20" cy="122.01" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="252.46" cy="123.62" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="252.36" cy="121.59" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="252.83" cy="120.49" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="253.76" cy="123.17" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="254.53" cy="122.08" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="253.66" cy="120.00" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="255.73" cy="121.74" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="255.85" cy="120.74" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="256.89" cy="122.30" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="257.34" cy="120.40" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="258.32" cy="121.81" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="258.91" cy="119.93" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="258.22" cy="119.27" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="260.37" cy="121.40" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="259.74" cy="120.41" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="260.20" cy="119.21" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="261.15" cy="119.94" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="261.82" cy="118.69" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="261.76" cy="117.77" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="263.03" cy="120.42" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="263.06" cy="119.18" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="263.17" cy="117.24" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="264.21" cy="120.10" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="264.53" cy="119.09" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="264.39" cy="117.05" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="265.69" cy="118.60" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="265.80" cy="117.50" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="267.47" cy="119.06" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="267.64" cy="117.00" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="267.61" cy="116.23" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="269.37" cy="119.01" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="269.25" cy="116.98" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="268.89" cy="116.08" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="270.61" cy="118.52" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="270.66" cy="117.42" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="270.12" cy="115.59" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="271.99" cy="117.59" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="272.10" cy="115.41" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="271.86" cy="114.56" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="273.37" cy="116.99" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="273.30" cy="115.82" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="273.11" cy="114.74" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="274.78" cy="117.42" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="274.77" cy="116.29" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="274.64" cy="114.26" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="276.79" cy="116.16" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="276.25" cy="114.20" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="276.80" cy="113.27" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="278.26" cy="115.66" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="278.32" cy="114.66" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="278.51" cy="112.75" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="279.49" cy="116.15" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="279.11" cy="114.17" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="279.24" cy="113.20" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="281.46" cy="114.12" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="280.98" cy="113.30" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="282.25" cy="114.61" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="282.69" cy="112.78" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="282.62" cy="111.76" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="284.32" cy="114.09" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="284.39" cy="113.24" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="284.46" cy="111.26" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="285.31" cy="114.04" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="285.82" cy="113.23" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="285.83" cy="111.11" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="287.53" cy="112.70" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="286.62" cy="111.60" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="288.77" cy="112.49" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="288.23" cy="111.53" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="288.98" cy="109.58" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="289.85" cy="112.71" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="290.42" cy="111.78" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="289.98" cy="109.88" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="291.21" cy="111.29" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="291.96" cy="109.34" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="292.93" cy="111.15" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="293.47" cy="110.22" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="293.07" cy="108.54" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="294.70" cy="111.63" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="294.90" cy="109.72" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="295.03" cy="108.71" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="296.54" cy="111.14" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="295.67" cy="110.17" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="295.74" cy="108.53" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="297.57" cy="109.36" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="297.78" cy="107.99" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="297.12" cy="106.97" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="299.24" cy="109.81" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="299.54" cy="108.79" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="299.49" cy="106.80" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="300.87" cy="107.99" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="300.14" cy="106.94" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="301.70" cy="108.23" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="302.12" cy="107.13" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="303.39" cy="108.40" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="303.47" cy="107.30" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="303.29" cy="105.24" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="305.27" cy="108.65" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="305.29" cy="106.67" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="305.05" cy="105.70" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="306.72" cy="108.00" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="306.30" cy="107.08" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="306.81" cy="105.17" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="308.28" cy="107.27" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="308.07" cy="105.32" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="308.29" cy="104.02" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="309.63" cy="106.47" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="309.21" cy="105.53" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="309.53" cy="104.27" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="311.26" cy="106.61" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="311.44" cy="105.68" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="310.85" cy="103.47" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="312.65" cy="106.44" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="312.74" cy="105.46" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="312.24" cy="104.27" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="313.84" cy="105.06" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="313.71" cy="104.00" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="315.13" cy="104.85" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="316.08" cy="103.83" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="315.81" cy="102.74" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="316.74" cy="104.99" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="317.39" cy="103.99" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="317.27" cy="101.93" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="317.14" cy="101.12" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="318.63" cy="104.24" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="318.48" cy="102.21" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="319.94" cy="103.44" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="319.70" cy="102.35" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="320.39" cy="100.50" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="321.49" cy="103.80" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="321.27" cy="101.85" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="321.67" cy="100.61" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="321.21" cy="99.79" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="323.34" cy="102.06" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="323.26" cy="100.90" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="323.52" cy="99.50" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="324.95" cy="102.19" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="324.96" cy="101.05" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="324.85" cy="99.65" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="325.93" cy="102.48" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="325.69" cy="101.27" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="325.91" cy="99.59" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="327.24" cy="100.44" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="327.56" cy="99.42" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="329.26" cy="101.20" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="328.86" cy="98.94" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="328.96" cy="97.97" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="330.11" cy="99.36" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="330.63" cy="97.55" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="332.30" cy="98.87" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="332.02" cy="98.00" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="333.48" cy="99.68" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="333.92" cy="97.86" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="334.96" cy="97.83" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <circle data-layer="HATCH_LIGHT" cx="335.11" cy="96.70" r="0.11" fill="#757C85" stroke="#757C85" stroke-width="0.07"/>
+    <path data-layer="HATCH_BRICK" d="M198.48,130.56L201.32,127.72 M195.04,131.64L198.10,128.58 M191.61,132.72L194.66,129.66 M188.17,133.79L191.23,130.74 M184.74,134.87L187.79,131.82 M181.30,135.95L184.36,132.90 M177.87,137.03L180.92,133.97 M174.43,138.11L177.49,135.05 M171.00,139.19L174.05,136.13 M167.56,140.27L170.62,137.21 M164.13,141.34L167.18,138.29 M160.69,142.42L163.75,139.37 M157.25,143.50L160.31,140.45 M153.82,144.58L156.87,141.52 M150.38,145.66L153.44,142.60 M146.95,146.74L150.00,143.68 M143.51,147.81L146.57,144.76 M140.08,148.89L143.13,145.84 M136.64,149.97L139.70,146.92 M133.21,151.05L136.26,147.99 M129.99,151.91L132.83,149.07" fill="none" stroke="#AC5E48" stroke-width="0.07"/>
+    <path data-layer="HATCH_BRICK" d="M198.68,121.24L201.08,118.83 M195.30,122.25L198.54,119.02 M191.93,123.27L195.17,120.03 M188.56,124.29L191.79,121.05 M185.18,125.30L188.42,122.06 M181.81,126.32L185.05,123.08 M178.44,127.33L181.68,124.10 M175.06,128.35L178.30,125.11 M171.69,129.37L174.93,126.13 M168.32,130.38L171.56,127.14 M164.95,131.40L168.18,128.16 M161.57,132.41L164.81,129.18 M158.20,133.43L161.44,130.19 M154.83,134.45L158.06,131.21 M151.45,135.46L154.69,132.22 M148.08,136.48L151.32,133.24 M144.71,137.49L147.95,134.26 M141.33,138.51L144.57,135.27 M137.96,139.53L141.20,136.29 M134.59,140.54L137.83,137.30 M132.05,140.73L134.45,138.32" fill="none" stroke="#AC5E48" stroke-width="0.07"/>
+    <path data-layer="HATCH_BRICK" d="M247.97,114.88L250.80,112.04 M244.53,115.96L247.59,112.90 M241.10,117.04L244.15,113.98 M237.66,118.11L240.72,115.06 M234.23,119.19L237.28,116.14 M230.79,120.27L233.85,117.22 M227.35,121.35L230.41,118.30 M223.92,122.43L226.97,119.37 M220.48,123.51L223.54,120.45 M217.05,124.59L220.10,121.53 M213.61,125.66L216.67,122.61 M210.18,126.74L213.23,123.69 M206.74,127.82L209.80,124.77 M203.31,128.90L206.36,125.84 M199.87,129.98L202.93,126.92 M196.44,131.06L199.49,128.00 M193.00,132.14L196.06,129.08 M189.56,133.21L192.62,130.16 M186.13,134.29L189.18,131.24 M182.69,135.37L185.75,132.32 M179.48,136.23L182.31,133.39" fill="none" stroke="#AC5E48" stroke-width="0.07"/>
+    <path data-layer="HATCH_BRICK" d="M250.90,104.74L250.99,104.65 M247.47,105.81L250.43,102.85 M244.03,106.89L247.34,103.58 M240.60,107.97L243.91,104.66 M237.16,109.05L240.47,105.74 M233.72,110.13L237.03,106.82 M230.29,111.21L233.60,107.90 M226.85,112.29L230.16,108.98 M223.42,113.36L226.73,110.05 M219.98,114.44L223.29,111.13 M216.55,115.52L219.86,112.21 M213.11,116.60L216.42,113.29 M209.68,117.68L212.99,114.37 M206.24,118.76L209.55,115.45 M202.80,119.83L206.11,116.52 M199.37,120.91L202.68,117.60 M195.93,121.99L199.24,118.68 M192.50,123.07L195.81,119.76 M189.06,124.15L192.37,120.84 M185.63,125.23L188.94,121.92 M182.19,126.31L185.50,123.00 M179.10,127.04L182.07,124.07 M178.54,125.24L178.63,125.15" fill="none" stroke="#AC5E48" stroke-width="0.07"/>
+    <path data-layer="HATCH_BRICK" d="M297.46,99.20L300.29,96.37 M294.02,100.28L297.08,97.22 M290.58,101.36L293.64,98.30 M287.15,102.44L290.20,99.38 M283.71,103.51L286.77,100.46 M280.28,104.59L283.33,101.54 M276.84,105.67L279.90,102.62 M273.41,106.75L276.46,103.69 M269.97,107.83L273.03,104.77 M266.54,108.91L269.59,105.85 M263.10,109.98L266.16,106.93 M259.67,111.06L262.72,108.01 M256.23,112.14L259.28,109.09 M252.79,113.22L255.85,110.16 M249.36,114.30L252.41,111.24 M245.92,115.38L248.98,112.32 M242.49,116.46L245.54,113.40 M239.05,117.53L242.11,114.48 M235.62,118.61L238.67,115.56 M232.18,119.69L235.24,116.64 M228.97,120.55L231.80,117.71" fill="none" stroke="#AC5E48" stroke-width="0.07"/>
+    <path data-layer="HATCH_BRICK" d="M300.39,89.06L300.48,88.97 M296.95,90.13L299.92,87.17 M293.52,91.21L296.83,87.90 M290.08,92.29L293.39,88.98 M286.65,93.37L289.96,90.06 M283.21,94.45L286.52,91.14 M279.78,95.53L283.09,92.22 M276.34,96.61L279.65,93.30 M272.91,97.68L276.22,94.37 M269.47,98.76L272.78,95.45 M266.03,99.84L269.34,96.53 M262.60,100.92L265.91,97.61 M259.16,102.00L262.47,98.69 M255.73,103.08L259.04,99.77 M252.29,104.15L255.60,100.84 M248.86,105.23L252.17,101.92 M245.42,106.31L248.73,103.00 M241.99,107.39L245.30,104.08 M238.55,108.47L241.86,105.16 M235.11,109.55L238.42,106.24 M231.68,110.63L234.99,107.32 M228.59,111.36L231.55,108.39 M228.03,109.56L228.12,109.47" fill="none" stroke="#AC5E48" stroke-width="0.07"/>
+    <path data-layer="HATCH_BRICK" d="M332.56,87.83L334.62,85.77 M329.10,88.93L332.18,85.85 M325.65,90.03L328.72,86.95 M322.19,91.13L325.27,88.05 M318.74,92.22L321.81,89.15 M315.28,93.32L318.36,90.24 M311.83,94.42L314.91,91.34 M308.38,95.51L311.45,92.44 M304.92,96.61L308.00,93.54 M301.47,97.71L304.54,94.63 M298.01,98.81L301.09,95.73 M294.56,99.90L297.63,96.83 M291.10,101.00L294.18,97.93 M287.65,102.10L290.72,99.02 M284.19,103.20L287.27,100.12 M280.74,104.29L283.82,101.22 M278.29,104.38L280.36,102.32" fill="none" stroke="#AC5E48" stroke-width="0.07"/>
+    <path data-layer="HATCH_BRICK" d="M332.05,78.77L334.25,76.57 M328.60,79.87L331.93,76.54 M325.14,80.96L328.47,77.63 M321.69,82.06L325.02,78.73 M318.23,83.16L321.56,79.83 M314.78,84.26L318.11,80.92 M311.32,85.35L314.66,82.02 M307.87,86.45L311.20,83.12 M304.41,87.55L307.75,84.22 M300.96,88.65L304.29,85.31 M297.51,89.74L300.84,86.41 M294.05,90.84L297.38,87.51 M290.60,91.94L293.93,88.61 M287.14,93.04L290.47,89.70 M283.69,94.13L287.02,90.80 M280.23,95.23L283.57,91.90 M277.92,95.19L280.11,93.00" fill="none" stroke="#AC5E48" stroke-width="0.07"/>
+    <line data-layer="COTAS" x1="130.33" y1="160.67" x2="130.33" y2="140.67" stroke="#165C3A" stroke-width="0.08"/>
+    <line data-layer="COTAS" x1="139.50" y1="154.25" x2="139.50" y2="140.67" stroke="#165C3A" stroke-width="0.08"/>
+    <line data-layer="COTAS" x1="128.33" y1="142.33" x2="141.50" y2="142.33" stroke="#165C3A" stroke-width="0.12"/>
+    <line data-layer="COTAS" x1="129.50" y1="143.17" x2="131.17" y2="141.50" stroke="#165C3A" stroke-width="0.25"/>
+    <line data-layer="COTAS" x1="138.67" y1="143.17" x2="140.33" y2="141.50" stroke="#165C3A" stroke-width="0.25"/>
+    <line data-layer="COTAS" x1="210.33" y1="179.00" x2="210.33" y2="230.67" stroke="#165C3A" stroke-width="0.08"/>
+    <line data-layer="COTAS" x1="303.67" y1="179.00" x2="303.67" y2="230.67" stroke="#165C3A" stroke-width="0.08"/>
+    <line data-layer="COTAS" x1="208.33" y1="232.33" x2="305.67" y2="232.33" stroke="#165C3A" stroke-width="0.12"/>
+    <line data-layer="COTAS" x1="209.50" y1="233.17" x2="211.17" y2="231.50" stroke="#165C3A" stroke-width="0.25"/>
+    <line data-layer="COTAS" x1="302.83" y1="233.17" x2="304.50" y2="231.50" stroke="#165C3A" stroke-width="0.25"/>
+    <line data-layer="COTAS" x1="335.33" y1="222.33" x2="347.83" y2="222.33" stroke="#165C3A" stroke-width="0.08"/>
+    <line data-layer="COTAS" x1="335.33" y1="179.00" x2="347.83" y2="179.00" stroke="#165C3A" stroke-width="0.08"/>
+    <line data-layer="COTAS" x1="346.17" y1="224.33" x2="346.17" y2="177.00" stroke="#165C3A" stroke-width="0.12"/>
+    <line data-layer="COTAS" x1="345.33" y1="223.17" x2="347.00" y2="221.50" stroke="#165C3A" stroke-width="0.25"/>
+    <line data-layer="COTAS" x1="345.33" y1="179.83" x2="347.00" y2="178.17" stroke="#165C3A" stroke-width="0.25"/>
+    <line data-layer="COTAS" x1="335.33" y1="179.00" x2="347.83" y2="179.00" stroke="#165C3A" stroke-width="0.08"/>
+    <line data-layer="COTAS" x1="335.33" y1="106.33" x2="347.83" y2="106.33" stroke="#165C3A" stroke-width="0.08"/>
+    <line data-layer="COTAS" x1="346.17" y1="181.00" x2="346.17" y2="104.33" stroke="#165C3A" stroke-width="0.12"/>
+    <line data-layer="COTAS" x1="345.33" y1="179.83" x2="347.00" y2="178.17" stroke="#165C3A" stroke-width="0.25"/>
+    <line data-layer="COTAS" x1="345.33" y1="107.17" x2="347.00" y2="105.50" stroke="#165C3A" stroke-width="0.25"/>
+    <line data-layer="CALLOUTS" x1="185.33" y1="125.17" x2="162.00" y2="83.17" stroke="#2D3742" stroke-width="0.12"/>
+    <line data-layer="CALLOUTS" x1="162.00" y1="83.17" x2="128.67" y2="83.17" stroke="#2D3742" stroke-width="0.12"/>
+    <line data-layer="CALLOUTS" x1="212.00" y1="124.50" x2="168.67" y2="98.17" stroke="#2D3742" stroke-width="0.12"/>
+    <line data-layer="CALLOUTS" x1="168.67" y1="98.17" x2="128.67" y2="98.17" stroke="#2D3742" stroke-width="0.12"/>
+    <line data-layer="CALLOUTS" x1="163.67" y1="145.00" x2="145.33" y2="113.17" stroke="#2D3742" stroke-width="0.12"/>
+    <line data-layer="CALLOUTS" x1="145.33" y1="113.17" x2="128.67" y2="113.17" stroke="#2D3742" stroke-width="0.12"/>
+    <line data-layer="CALLOUTS" x1="132.00" y1="180.17" x2="127.00" y2="134.00" stroke="#2D3742" stroke-width="0.12"/>
+    <line data-layer="CALLOUTS" x1="127.00" y1="134.00" x2="118.67" y2="134.00" stroke="#2D3742" stroke-width="0.12"/>
+    <line data-layer="CALLOUTS" x1="245.33" y1="128.67" x2="283.67" y2="55.67" stroke="#2D3742" stroke-width="0.12"/>
+    <line data-layer="CALLOUTS" x1="283.67" y1="55.67" x2="312.00" y2="55.67" stroke="#2D3742" stroke-width="0.12"/>
+    <line data-layer="CALLOUTS" x1="216.17" y1="160.67" x2="287.00" y2="69.83" stroke="#2D3742" stroke-width="0.12"/>
+    <line data-layer="CALLOUTS" x1="287.00" y1="69.83" x2="312.00" y2="69.83" stroke="#2D3742" stroke-width="0.12"/>
+    <line data-layer="CALLOUTS" x1="258.67" y1="172.33" x2="235.33" y2="244.83" stroke="#2D3742" stroke-width="0.12"/>
+    <line data-layer="CALLOUTS" x1="235.33" y1="244.83" x2="175.33" y2="244.83" stroke="#2D3742" stroke-width="0.12"/>
+    <circle data-layer="ZINC" cx="124.50" cy="171.50" r="1.17" fill="#C5D4E0" stroke="#30495E" stroke-width="0.17"/>
+    <circle data-layer="CALLOUTS" cx="185.33" cy="125.17" r="0.90" fill="#FFFFFF" stroke="#161D24" stroke-width="0.12"/>
+    <circle data-layer="CALLOUTS" cx="185.33" cy="125.17" r="0.44" fill="#9C3B26" stroke="#9C3B26" stroke-width="0.07"/>
+    <circle data-layer="CALLOUTS" cx="127.12" cy="83.17" r="1.45" fill="#FAF7F2" stroke="#9C3B26" stroke-width="0.14"/>
+    <circle data-layer="CALLOUTS" cx="212.00" cy="124.50" r="0.90" fill="#FFFFFF" stroke="#161D24" stroke-width="0.12"/>
+    <circle data-layer="CALLOUTS" cx="212.00" cy="124.50" r="0.44" fill="#9C3B26" stroke="#9C3B26" stroke-width="0.07"/>
+    <circle data-layer="CALLOUTS" cx="127.12" cy="98.17" r="1.45" fill="#FAF7F2" stroke="#9C3B26" stroke-width="0.14"/>
+    <circle data-layer="CALLOUTS" cx="163.67" cy="145.00" r="0.90" fill="#FFFFFF" stroke="#161D24" stroke-width="0.12"/>
+    <circle data-layer="CALLOUTS" cx="163.67" cy="145.00" r="0.44" fill="#9C3B26" stroke="#9C3B26" stroke-width="0.07"/>
+    <circle data-layer="CALLOUTS" cx="127.12" cy="113.17" r="1.45" fill="#FAF7F2" stroke="#9C3B26" stroke-width="0.14"/>
+    <circle data-layer="CALLOUTS" cx="132.00" cy="180.17" r="0.90" fill="#FFFFFF" stroke="#161D24" stroke-width="0.12"/>
+    <circle data-layer="CALLOUTS" cx="132.00" cy="180.17" r="0.44" fill="#9C3B26" stroke="#9C3B26" stroke-width="0.07"/>
+    <circle data-layer="CALLOUTS" cx="117.12" cy="134.00" r="1.45" fill="#FAF7F2" stroke="#9C3B26" stroke-width="0.14"/>
+    <circle data-layer="CALLOUTS" cx="245.33" cy="128.67" r="0.90" fill="#FFFFFF" stroke="#161D24" stroke-width="0.12"/>
+    <circle data-layer="CALLOUTS" cx="245.33" cy="128.67" r="0.44" fill="#9C3B26" stroke="#9C3B26" stroke-width="0.07"/>
+    <circle data-layer="CALLOUTS" cx="313.55" cy="55.67" r="1.45" fill="#FAF7F2" stroke="#9C3B26" stroke-width="0.14"/>
+    <circle data-layer="CALLOUTS" cx="216.17" cy="160.67" r="0.90" fill="#FFFFFF" stroke="#161D24" stroke-width="0.12"/>
+    <circle data-layer="CALLOUTS" cx="216.17" cy="160.67" r="0.44" fill="#9C3B26" stroke="#9C3B26" stroke-width="0.07"/>
+    <circle data-layer="CALLOUTS" cx="313.55" cy="69.83" r="1.45" fill="#FAF7F2" stroke="#9C3B26" stroke-width="0.14"/>
+    <circle data-layer="CALLOUTS" cx="258.67" cy="172.33" r="0.90" fill="#FFFFFF" stroke="#161D24" stroke-width="0.12"/>
+    <circle data-layer="CALLOUTS" cx="258.67" cy="172.33" r="0.44" fill="#9C3B26" stroke="#9C3B26" stroke-width="0.07"/>
+    <circle data-layer="CALLOUTS" cx="173.78" cy="244.83" r="1.45" fill="#FAF7F2" stroke="#9C3B26" stroke-width="0.14"/>
+    <polyline data-layer="AGUA_FLUJO" points="248.67,100.67 182.00,120.67 136.67,162.33 135.33,169.50" fill="none" stroke="#0B72B9" stroke-width="0.22" stroke-linecap="round"/>
+    <polygon points="136.63,167.98 135.33,169.50 134.67,167.61" fill="#0B72B9"/>
+    <polyline data-layer="AGUA_FLUJO" points="175.33,163.00 235.33,159.00 312.00,149.00" fill="none" stroke="#1985A1" stroke-width="0.17" stroke-linecap="round" stroke-dasharray="4.0,2.5"/>
+    <polygon points="310.46,148.36 312.00,149.00 310.68,150.01" fill="#1985A1"/>
+    <polyline data-layer="AGUA_FLUJO" points="208.67,108.17 242.00,98.17" fill="none" stroke="#165C3A" stroke-width="0.16" stroke-linecap="round"/>
+    <polygon points="240.38,97.78 242.00,98.17 240.86,99.38" fill="#165C3A"/>
+    <text data-layer="COTAS" x="225.33" y="96.92" font-size="1.99" font-weight="500" fill="#165C3A" text-anchor="middle">Pend. 30% (16,7°)</text>
+    <text data-layer="COTAS" x="134.92" y="141.50" font-size="2.04" font-weight="500" fill="#165C3A" text-anchor="middle">55 (vuelo)</text>
+    <text data-layer="COTAS" x="257.00" y="231.50" font-size="2.04" font-weight="500" fill="#165C3A" text-anchor="middle">Paso tabiquillos ~500 mm</text>
+    <text data-layer="COTAS" x="345.33" y="200.67" font-size="2.04" font-weight="500" fill="#165C3A" text-anchor="middle" transform="rotate(-90.0 345.33 200.67)">260</text>
+    <text data-layer="COTAS" x="345.33" y="142.67" font-size="2.04" font-weight="500" fill="#165C3A" text-anchor="middle" transform="rotate(-90.0 345.33 142.67)">Cámara palomeros</text>
+    <text data-layer="CALLOUTS" x="127.12" y="83.82" font-size="1.76" font-weight="700" fill="#9C3B26" text-anchor="middle">1</text>
+    <text data-layer="CALLOUTS" x="124.77" y="82.72" font-size="2.23" font-weight="700" fill="#14191F" text-anchor="end">TEJA COBIJA CERÁMICA (L=450 mm)</text>
+    <text data-layer="NOTES" x="124.77" y="85.12" font-size="1.76" font-weight="500" fill="#505A66" text-anchor="end">Solape 140 mm · 1ª cobija cortada en alero</text>
+    <text data-layer="CALLOUTS" x="127.12" y="98.82" font-size="1.76" font-weight="700" fill="#9C3B26" text-anchor="middle">2</text>
+    <text data-layer="CALLOUTS" x="124.77" y="97.72" font-size="2.23" font-weight="700" fill="#14191F" text-anchor="end">TEJA CANAL CERÁMICA + RECALCE</text>
+    <text data-layer="NOTES" x="124.77" y="100.12" font-size="1.76" font-weight="500" fill="#505A66" text-anchor="end">Vuelo 55 mm · paso entre cobijas ≥35 mm</text>
+    <text data-layer="CALLOUTS" x="127.12" y="113.82" font-size="1.76" font-weight="700" fill="#9C3B26" text-anchor="middle">3</text>
+    <text data-layer="CALLOUTS" x="124.77" y="112.72" font-size="2.23" font-weight="700" fill="#14191F" text-anchor="end">MORTERO DE AGARRE M-2,5 (1:8)</text>
+    <text data-layer="NOTES" x="124.77" y="115.12" font-size="1.76" font-weight="500" fill="#505A66" text-anchor="end">Cordones ventilados + macizado de alero (QTT-14)</text>
+    <text data-layer="CALLOUTS" x="117.12" y="134.65" font-size="1.76" font-weight="700" fill="#9C3B26" text-anchor="middle">4</text>
+    <text data-layer="CALLOUTS" x="114.77" y="133.55" font-size="2.23" font-weight="700" fill="#14191F" text-anchor="end">CANALÓN VISTO DE ZINC Ø130</text>
+    <text data-layer="NOTES" x="114.77" y="135.95" font-size="1.76" font-weight="500" fill="#505A66" text-anchor="end">Ganchos pletina galvanizada cada 500 mm</text>
+    <text data-layer="CALLOUTS" x="313.55" y="56.32" font-size="1.76" font-weight="700" fill="#9C3B26" text-anchor="middle">5</text>
+    <text data-layer="CALLOUTS" x="315.90" y="55.22" font-size="2.23" font-weight="700" fill="#14191F" text-anchor="start">TABLERO BARDO + CAPA M-5</text>
+    <text data-layer="NOTES" x="315.90" y="57.62" font-size="1.76" font-weight="500" fill="#505A66" text-anchor="start">Bardo machihembrado 40 mm + reg. 25 mm</text>
+    <text data-layer="CALLOUTS" x="313.55" y="70.48" font-size="1.76" font-weight="700" fill="#9C3B26" text-anchor="middle">6</text>
+    <text data-layer="CALLOUTS" x="315.90" y="69.38" font-size="2.23" font-weight="700" fill="#14191F" text-anchor="start">TABIQUILLO PALOMERO CALADO</text>
+    <text data-layer="NOTES" x="315.90" y="71.78" font-size="1.76" font-weight="500" fill="#505A66" text-anchor="start">LHD calado 25% ventilación + maestra</text>
+    <text data-layer="CALLOUTS" x="173.78" y="245.48" font-size="1.76" font-weight="700" fill="#9C3B26" text-anchor="middle">7</text>
+    <text data-layer="CALLOUTS" x="171.43" y="244.38" font-size="2.23" font-weight="700" fill="#14191F" text-anchor="end">LANA MINERAL (80 mm) + FORJADO</text>
+    <text data-layer="NOTES" x="171.43" y="246.78" font-size="1.76" font-weight="500" fill="#505A66" text-anchor="end">Aislamiento continuo s/ forjado + cornisa goterón</text>
+  </g>
+</svg>
