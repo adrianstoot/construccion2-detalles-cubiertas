@@ -3,70 +3,71 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Construcción II · Tejados y Azoteas — Modelos 3D Fotorrealistas y Planos 2D Milimétricos</title>
+  <title>ConstrucciÃ³n II Â· Tejados y Azoteas â€” Modelos 3D Fotorrealistas y Planos 2D MilimÃ©tricos</title>
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
   <header class="topbar">
     <div class="topbar-inner">
       <div class="brand">
-        <div class="brand-mark">UPV·C2</div>
+        <div class="brand-mark">UPVÂ·C2</div>
         <div>
-          <div class="brand-kicker">Construcción II · ETSIE · Tejados y Azoteas (10 Detalles)</div>
-          <h1 class="brand-title">Atlas Constructivo 3D Fotorrealista &amp; 2D CAD Milimétrico</h1>
+          <div class="brand-kicker">ConstrucciÃ³n II Â· ETSIE Â· Tejados y Azoteas (10 Detalles)</div>
+          <h1 class="brand-title">Atlas Constructivo 3D Fotorrealista &amp; 2D CAD MilimÃ©trico</h1>
         </div>
       </div>
 
-      <div class="cat-filter-row" id="category-filters" role="group" aria-label="Filtrar por tipología">
+      <div class="cat-filter-row" id="category-filters" role="group" aria-label="Filtrar por tipologÃ­a">
         <button class="cat-pill active" data-cat="all">Todos (10)</button>
         <button class="cat-pill" data-cat="azoteas">Azoteas (5)</button>
         <button class="cat-pill" data-cat="teja">Tejados Teja (3)</button>
         <button class="cat-pill" data-cat="pizarra">Pizarra (1)</button>
-        <button class="cat-pill" data-cat="metal">Metálicas Zinc (1)</button>
-        <a href="https://adrianstoot.github.io/rooflab-hydro-3d/" target="_blank" class="cat-pill cat-pill-hydro">🌊 Hydro 3D</a>
+        <button class="cat-pill" data-cat="metal">MetÃ¡licas Zinc (1)</button>
+        <button class="cat-pill" id="top-pill-bim" style="background:linear-gradient(135deg,#f59e0b 0%,#d97706 100%);color:#080c12;font-weight:800;border:none;cursor:pointer;">ðŸ—ï¸ Biblioteca BIM (Fabricantes)</button>
+        <a href="https://adrianstoot.github.io/rooflab-hydro-3d/" target="_blank" class="cat-pill cat-pill-hydro">ðŸŒŠ Hydro 3D</a>
       </div>
     </div>
 
     <div class="topbar-catalog">
       <nav class="detail-tabs" id="detail-tabs" aria-label="Selector de 10 detalles constructivos">
         <button class="detail-tab active" data-detail="detalle1" data-cat="azoteas">
-          <span class="tab-code">DET-01 · IVE D.20</span>
+          <span class="tab-code">DET-01 Â· IVE D.20</span>
           <span class="tab-name">1. Azotea Convencional (+Montaje)</span>
         </button>
         <button class="detail-tab" data-detail="detalle2_qat16" data-cat="azoteas">
-          <span class="tab-code">DET-02A · NTE QAT-16</span>
+          <span class="tab-code">DET-02A Â· NTE QAT-16</span>
           <span class="tab-name">2A. Encuentro Cazoleta</span>
         </button>
         <button class="detail-tab" data-detail="detalle2_qat17" data-cat="azoteas">
-          <span class="tab-code">DET-02B · NTE QAT-17</span>
-          <span class="tab-name">2B. Canalón Cinc (35 cm)</span>
+          <span class="tab-code">DET-02B Â· NTE QAT-17</span>
+          <span class="tab-name">2B. CanalÃ³n Cinc (35 cm)</span>
         </button>
         <button class="detail-tab" data-detail="detalle3" data-cat="azoteas">
-          <span class="tab-code">DET-03 · DIAP. 21</span>
-          <span class="tab-name">3. Cazoleta Sifónica</span>
+          <span class="tab-code">DET-03 Â· DIAP. 21</span>
+          <span class="tab-name">3. Cazoleta SifÃ³nica</span>
         </button>
         <button class="detail-tab" data-detail="detalle4_plots" data-cat="azoteas">
-          <span class="tab-code">DET-04 · AZ-08 P.55</span>
+          <span class="tab-code">DET-04 Â· AZ-08 P.55</span>
           <span class="tab-name">4. Invertida sobre PLOTS</span>
         </button>
         <button class="detail-tab" data-detail="detalle5_alero_teja" data-cat="teja">
-          <span class="tab-code">DET-05 · TEJA CURVA</span>
-          <span class="tab-name">5. Palomeros + Alero Canalón</span>
+          <span class="tab-code">DET-05 Â· TEJA CURVA</span>
+          <span class="tab-name">5. Palomeros + Alero CanalÃ³n</span>
         </button>
         <button class="detail-tab" data-detail="detalle6_cumbrera_teja" data-cat="teja">
-          <span class="tab-code">DET-06 · TEJA CURVA</span>
+          <span class="tab-code">DET-06 Â· TEJA CURVA</span>
           <span class="tab-name">6. Cumbrera Ventilada Seco</span>
         </button>
         <button class="detail-tab" data-detail="detalle7_teja_mixta" data-cat="teja">
-          <span class="tab-code">DET-07 · TEJA MIXTA</span>
+          <span class="tab-code">DET-07 Â· TEJA MIXTA</span>
           <span class="tab-name">7. Doble Rastrel + Paramento</span>
         </button>
         <button class="detail-tab" data-detail="detalle8_pizarra" data-cat="pizarra">
-          <span class="tab-code">DET-08 · NTE QTP-14</span>
+          <span class="tab-code">DET-08 Â· NTE QTP-14</span>
           <span class="tab-name">8. Pizarra + Ganchos Inox</span>
         </button>
         <button class="detail-tab" data-detail="detalle9_zinc" data-cat="metal">
-          <span class="tab-code">DET-09 · VMZINC L6</span>
+          <span class="tab-code">DET-09 Â· VMZINC L6</span>
           <span class="tab-name">9. Zinc Junta Alzada</span>
         </button>
       </nav>
@@ -78,52 +79,53 @@
     <section class="hero-header">
       <div>
         <div class="hero-meta-row">
-          <span class="pill pill-accent" id="hero-code">IVE · TIPOLOGÍA 1</span>
-          <span class="pill" id="hero-slide">Diapositiva 1 · Pág. 20 (Análisis Cartillas IVE)</span>
-          <span class="pill pill-scale" id="hero-scale">Escala 2D 1:5 · Precisión 1:1 mm</span>
-          <span class="pill" id="hero-normativa">Cartillas IVE · CTE DB-HS1 / DB-HE1</span>
+          <span class="pill pill-accent" id="hero-code">IVE Â· TIPOLOGÃA 1</span>
+          <span class="pill" id="hero-slide">Diapositiva 1 Â· PÃ¡g. 20 (AnÃ¡lisis Cartillas IVE)</span>
+          <span class="pill pill-scale" id="hero-scale">Escala 2D 1:5 Â· PrecisiÃ³n 1:1 mm</span>
+          <span class="pill" id="hero-normativa">Cartillas IVE Â· CTE DB-HS1 / DB-HE1</span>
         </div>
-        <h2 class="hero-title" id="hero-title">Azotea Transitable · No Ventilada · Convencional · Pavimento Fijo</h2>
-        <p class="hero-subtitle" id="hero-subtitle">Encuentro con peto de fábrica y secuencia escalonada de capas (P, CS, I, AT, BV, FP, SR)</p>
+        <h2 class="hero-title" id="hero-title">Azotea Transitable Â· No Ventilada Â· Convencional Â· Pavimento Fijo</h2>
+        <p class="hero-subtitle" id="hero-subtitle">Encuentro con peto de fÃ¡brica y secuencia escalonada de capas (P, CS, I, AT, BV, FP, SR)</p>
       </div>
 
       <div class="mode-bar" role="tablist">
         <button class="mode-btn active" data-mode="montaje">Secuencia Montaje 3D+2D</button>
-        <button class="mode-btn" data-mode="video">Vídeo Montaje 30s (HD)</button>
+        <button class="mode-btn" data-mode="video">VÃ­deo Montaje 30s (HD)</button>
         <button class="mode-btn" data-mode="renders">Renders Fotorrealistas</button>
         <button class="mode-btn" data-mode="webgl">Visor 3D Interactivo</button>
         <button class="mode-btn" data-mode="cad2d" id="mode-cad2d-btn">Plano 2D Acabado (E 1:5)</button>
         <button class="mode-btn" data-mode="split">Comparativa 3D + 2D</button>
-        <a href="https://adrianstoot.github.io/rooflab-hydro-3d/" target="_blank" class="mode-btn" style="background:linear-gradient(135deg,#00d2ff 0%,#0284c7 100%);color:#041019;text-decoration:none;font-weight:800;">🌊 Simulador de Agua (HYDRO 3D)</a>
+        <button class="mode-btn" data-mode="bim" id="mode-bim-btn" style="border-color:#f59e0b;color:#fde68a;font-weight:800;">ðŸ—ï¸ Biblioteca BIM &amp; Montaje Real (Fabricantes)</button>
+        <a href="https://adrianstoot.github.io/rooflab-hydro-3d/" target="_blank" class="mode-btn" style="background:linear-gradient(135deg,#00d2ff 0%,#0284c7 100%);color:#041019;text-decoration:none;font-weight:800;">ðŸŒŠ Simulador de Agua (HYDRO 3D)</a>
       </div>
     </section>
 
     <!-- Studio Viewport + Layer Inspector -->
-    <section class="studio-grid">
+    <section class="studio-grid" id="studio-grid">
       <div class="stage-card">
         <div class="stage-toolbar" id="stage-toolbar">
           <!-- Montaje Controls -->
           <div class="tool-group" id="controls-montaje" style="width:100%; justify-content:space-between;">
             <div class="tool-group">
-              <button class="btn-tool btn-play" id="mnt-play">▶ Reproducir (30s)</button>
-              <button class="btn-tool" id="mnt-prev">◀ Fase</button>
-              <button class="btn-tool" id="mnt-next">Fase ▶</button>
+              <button class="btn-tool btn-play" id="mnt-play">â–¶ Reproducir (30s)</button>
+              <button class="btn-tool" id="mnt-prev">â—€ Fase</button>
+              <button class="btn-tool" id="mnt-next">Fase â–¶</button>
               <button class="btn-tool" id="mnt-reset">Reiniciar</button>
             </div>
             <div class="slider-wrap" style="flex:1; max-width:440px;">
-              <span class="pill pill-accent" id="mnt-phase-pill">FASE 10 / 10</span>
+              <span class="pill pill-accent" id="mnt-phase-pill">FASE 12 / 12</span>
               <input id="mnt-slider" type="range" min="0" max="300" value="300" style="flex:1; width:auto;" />
               <span id="mnt-time-readout">30.0s / 30.0s</span>
             </div>
             <div class="tool-group">
-              <button class="btn-tool" id="mnt-toggle-2d-sheet">Ver Lámina 2D Montaje</button>
+              <button class="btn-tool" id="mnt-toggle-2d-sheet">Ver LÃ¡mina 2D Montaje</button>
             </div>
           </div>
 
           <!-- WebGL Controls -->
           <div class="tool-group" id="controls-webgl" style="display:none;">
-            <button class="btn-tool" data-cam="iso">Vista Isométrica</button>
-            <button class="btn-tool" data-cam="front">Sección Frontal</button>
+            <button class="btn-tool" data-cam="iso">Vista IsomÃ©trica</button>
+            <button class="btn-tool" data-cam="front">SecciÃ³n Frontal</button>
             <button class="btn-tool" data-cam="top">Planta Cenital</button>
             <button class="btn-tool" id="btn-wireframe">Malla CAD</button>
             <div class="slider-wrap">
@@ -136,20 +138,39 @@
           <!-- 2D CAD Controls -->
           <div class="tool-group" id="controls-cad2d" style="display:none;">
             <button class="btn-tool" id="cad-zoom-in">Zoom +</button>
-            <button class="btn-tool" id="cad-zoom-out">Zoom −</button>
+            <button class="btn-tool" id="cad-zoom-out">Zoom âˆ’</button>
             <button class="btn-tool" id="cad-zoom-reset">Encajar A3 (1:5)</button>
-            <button class="btn-tool" id="cad-toggle-montaje" style="display:none;">Alternar Plano 2D Montaje (01–10)</button>
+            <button class="btn-tool" id="cad-toggle-montaje" style="display:none;">Alternar Plano 2D Montaje (01â€“12)</button>
             <span class="pill" id="cad-zoom-readout">100%</span>
           </div>
 
           <!-- Renders / Split / Video info -->
           <div class="tool-group" id="controls-info" style="display:none;">
             <span class="pill">Motor Cycles / Raytracing PBR Fotorrealista</span>
-            <span class="pill" id="bounds-readout">Envolvente: 1175 × 960 × 1080 mm</span>
+            <span class="pill" id="bounds-readout">Envolvente: 1175 Ã— 960 Ã— 1080 mm</span>
           </div>
 
           <div class="tool-group" id="controls-reset-wrap" style="display:none;">
             <button class="btn-tool" id="btn-reset-layers">Mostrar todas las capas</button>
+          </div>
+
+          <!-- BIM Commercial Library & Piece-by-Piece Assembler Controls -->
+          <div class="tool-group" id="controls-bim" style="display:none; width:100%; justify-content:space-between;">
+            <div class="tool-group">
+              <button class="btn-tool btn-play" id="bim-assembly-play">â–¶ Montaje Pieza a Pieza</button>
+              <div class="slider-wrap">
+                <label for="bim-assembly-slider">Progreso Montaje:</label>
+                <input id="bim-assembly-slider" type="range" min="4" max="100" value="100" />
+                <span id="bim-assembly-pct">100%</span>
+              </div>
+            </div>
+            <div class="slider-wrap">
+              <label for="bim-explode-slider">Desmontar / Explotar Capas:</label>
+              <input id="bim-explode-slider" type="range" min="0" max="100" value="0" />
+            </div>
+            <div class="tool-group">
+              <button class="btn-tool" id="bim-quick-catalog-btn" style="border-color:#38bdf8;color:#7dd3fc;">ðŸ“š CatÃ¡logo Oficial (12 Familias Â· 24 Fabricantes)</button>
+            </div>
           </div>
         </div>
 
@@ -160,14 +181,14 @@
               <div class="montaje-3d-wrap" id="montaje-webgl-wrap">
                 <div class="hud-stage-tag" id="mnt-3d-tag">MONTAJE 3D POR PIEZAS Y CAPAS (1:1 mm)</div>
                 <div class="hud-active-card" id="mnt-active-card">
-                  <div class="hud-active-code" id="mnt-card-code">FASE 10 · P · RODAPIÉ</div>
-                  <div class="hud-active-title" id="mnt-card-title">Junta elástica perimetral y rodapié cerámico</div>
-                  <div class="hud-active-desc" id="mnt-card-desc">Sellado perimetral elástico y recibido de piezas verticales de rodapié.</div>
+                  <div class="hud-active-code" id="mnt-card-code">FASE 12 Â· P Â· RODAPIÃ‰</div>
+                  <div class="hud-active-title" id="mnt-card-title">Junta elÃ¡stica perimetral y rodapiÃ© cerÃ¡mico</div>
+                  <div class="hud-active-desc" id="mnt-card-desc">Sellado perimetral elÃ¡stico y recibido de piezas verticales de rodapiÃ©.</div>
                 </div>
               </div>
               <div class="montaje-2d-wrap">
                 <div class="montaje-2d-head">
-                  <span>SECCIÓN 2D SINCRONIZADA (ESCALA 1:5)</span>
+                  <span>SECCIÃ“N 2D SINCRONIZADA (ESCALA 1:5)</span>
                   <span class="pill pill-scale" id="mnt-2d-status">DETALLE 2D ACABADO 100%</span>
                 </div>
                 <div class="montaje-2d-svg" id="montaje-2d-svg-box"></div>
@@ -181,7 +202,7 @@
             <div class="video-wrap">
               <video id="montaje-video" controls preload="metadata" poster="renders/detalle1_hero.png">
                 <source src="renders/detalle1_montaje_30s.mp4" type="video/mp4" />
-                Tu navegador no soporta vídeo HTML5 MP4.
+                Tu navegador no soporta vÃ­deo HTML5 MP4.
               </video>
             </div>
           </div>
@@ -196,7 +217,7 @@
             <div id="webgl-canvas-wrap">
               <div class="hud-hover" id="webgl-hover"></div>
               <div class="hud-badge" id="webgl-hud">
-                Orbita: arrastrar · Zoom: rueda · Pan: botón derecho · Clic en capa para inspeccionar
+                Orbita: arrastrar Â· Zoom: rueda Â· Pan: botÃ³n derecho Â· Clic en capa para inspeccionar
               </div>
             </div>
           </div>
@@ -213,17 +234,20 @@
               <img id="split-3d-img" src="" alt="Render 3D Cycles" />
             </div>
             <div class="split-half">
-              <span class="split-label" id="split-2d-label">SECCIÓN TÉCNICA 2D MILIMÉTRICA (E 1:5)</span>
+              <span class="split-label" id="split-2d-label">SECCIÃ“N TÃ‰CNICA 2D MILIMÃ‰TRICA (E 1:5)</span>
               <img id="split-2d-img" src="" alt="Plano 2D CAD" />
             </div>
           </div>
+
+          <!-- Mode 5: Biblioteca BIM de Productos Reales y Montaje 3D Pieza a Pieza -->
+          <div class="pane bim-pane" id="pane-bim"></div>
         </div>
       </div>
 
       <!-- Constructive Layer Inspector -->
       <aside class="sidebar-card">
         <div class="sidebar-head">
-          <h3 id="sidebar-title">Fases de Montaje (10)</h3>
+          <h3 id="sidebar-title">Fases de Montaje (12)</h3>
           <span class="pill" id="sidebar-hint">Clic para saltar a fase</span>
         </div>
         <div class="layers-list" id="layers-list"></div>
@@ -234,16 +258,16 @@
     <section class="bottom-grid">
       <div class="panel-card">
         <h3>
-          <span>Cuadro Técnico de Especificaciones y Dosificaciones</span>
-          <span class="pill pill-scale">Tolerancia geométrica: 0,0 mm</span>
+          <span>Cuadro TÃ©cnico de Especificaciones y Dosificaciones</span>
+          <span class="pill pill-scale">Tolerancia geomÃ©trica: 0,0 mm</span>
         </h3>
         <table class="spec-table">
           <thead>
             <tr>
-              <th style="width:95px;">Código</th>
+              <th style="width:95px;">CÃ³digo</th>
               <th style="width:230px;">Elemento Constructivo</th>
               <th style="width:155px;">Espesor / Cota</th>
-              <th>Descripción Técnica y Normativa</th>
+              <th>DescripciÃ³n TÃ©cnica y Normativa</th>
             </tr>
           </thead>
           <tbody id="spec-tbody"></tbody>
@@ -252,10 +276,10 @@
 
       <div class="panel-card">
         <h3>
-          <span>Descargas Técnicas (3D + CAD 2D + Vídeo)</span>
+          <span>Descargas TÃ©cnicas (3D + CAD 2D + VÃ­deo)</span>
         </h3>
         <p style="margin:0 0 12px 0; color:var(--ink-secondary); font-size:12.5px;">
-          Todos los archivos 2D, 3D y el vídeo de montaje comparten la misma definición paramétrica milimétrica.
+          Todos los archivos 2D, 3D y el vÃ­deo de montaje comparten la misma definiciÃ³n paramÃ©trica milimÃ©trica.
         </p>
         <div class="downloads-list" id="downloads-list"></div>
       </div>

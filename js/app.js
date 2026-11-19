@@ -2,6 +2,9 @@ import * as THREE from './vendor/three.module.min.js';
 import { OrbitControls } from './vendor/OrbitControls.js';
 import { GLTFLoader } from './vendor/GLTFLoader.js';
 import { RoomEnvironment } from './vendor/RoomEnvironment.js';
+import { BIMLibraryController } from './bim/bim_ui.js';
+
+let bimController = null;
 
 const DETAIL_FILES = {
   detalle1: {
@@ -186,6 +189,8 @@ async function init() {
   ]);
   manifest = await resM.json();
   montajePhases = await resP.json();
+  bimController = new BIMLibraryController();
+  window.bimController = bimController;
   bindEvents();
   await initMontaje2DSVG();
   selectDetail('detalle1');
@@ -214,7 +219,7 @@ function bindEvents() {
     btn.addEventListener('click', () => selectDetail(btn.dataset.detail));
   });
 
-  document.querySelectorAll('.mode-btn').forEach((btn) => {
+  document.querySelectorAll('.mode-btn[data-mode]').forEach((btn) => {
     btn.addEventListener('click', () => {
       const m = btn.dataset.mode;
       if ((m === 'montaje' || m === 'video') && activeDetailId !== 'detalle1') {
@@ -223,6 +228,13 @@ function bindEvents() {
       setMode(m);
     });
   });
+
+  const topPillBim = document.getElementById('top-pill-bim');
+  if (topPillBim) {
+    topPillBim.addEventListener('click', () => {
+      setMode('bim');
+    });
+  }
 
   document.getElementById('btn-reset-layers').addEventListener('click', () => {
     hiddenLayers.clear();
@@ -255,7 +267,7 @@ function bindEvents() {
     mntPlaying = false;
     updateMontajePlayButton();
     const cur = getMontajePhaseAtTime(mntTime);
-    const nxt = Math.min(10, cur + 1);
+    const nxt = Math.min(montajePhases.length || 12, cur + 1);
     jumpToMontajePhase(nxt);
   });
   document.getElementById('mnt-slider').addEventListener('input', (e) => {
@@ -444,7 +456,7 @@ function selectDetail(detailId) {
 
 function setMode(mode) {
   activeMode = mode;
-  document.querySelectorAll('.mode-btn').forEach((b) => {
+  document.querySelectorAll('.mode-btn[data-mode]').forEach((b) => {
     b.classList.toggle('active', b.dataset.mode === mode);
   });
 
@@ -454,12 +466,19 @@ function setMode(mode) {
   document.getElementById('pane-webgl').classList.toggle('active', mode === 'webgl');
   document.getElementById('pane-cad2d').classList.toggle('active', mode === 'cad2d');
   document.getElementById('pane-split').classList.toggle('active', mode === 'split');
+  const paneBim = document.getElementById('pane-bim');
+  if (paneBim) paneBim.classList.toggle('active', mode === 'bim');
+
+  const studioGrid = document.getElementById('studio-grid');
+  if (studioGrid) studioGrid.classList.toggle('bim-mode-active', mode === 'bim');
 
   document.getElementById('controls-montaje').style.display = mode === 'montaje' ? 'flex' : 'none';
   document.getElementById('controls-webgl').style.display = mode === 'webgl' ? 'flex' : 'none';
   document.getElementById('controls-cad2d').style.display = mode === 'cad2d' ? 'flex' : 'none';
   document.getElementById('controls-info').style.display = (mode === 'renders' || mode === 'split' || mode === 'video') ? 'flex' : 'none';
   document.getElementById('controls-reset-wrap').style.display = mode === 'webgl' ? 'flex' : 'none';
+  const controlsBim = document.getElementById('controls-bim');
+  if (controlsBim) controlsBim.style.display = mode === 'bim' ? 'flex' : 'none';
 
   if (mode !== 'montaje') {
     mntPlaying = false;
@@ -483,6 +502,8 @@ function setMode(mode) {
     } else {
       handleMontajeResize();
     }
+  } else if (mode === 'bim' && bimController) {
+    bimController.initWorkspace();
   }
   renderSidebar();
 }
@@ -495,7 +516,9 @@ function renderSidebar() {
     document.getElementById('sidebar-title').textContent = `Fases de Montaje (${montajePhases.length})`;
     document.getElementById('sidebar-hint').textContent = 'Clic para ir a fase';
     const curPh = getMontajePhaseAtTime(mntTime);
-    const finished = mntTime >= 27.0;
+    const nPh = montajePhases.length || 12;
+    const tEndAll = (montajePhases[nPh - 1] && montajePhases[nPh - 1].t_end) || 27.5;
+    const finished = mntTime >= tEndAll;
 
     montajePhases.forEach((ph) => {
       const isCur = !finished && ph.phase === curPh;
@@ -525,6 +548,7 @@ function renderSidebar() {
       });
       list.appendChild(div);
     });
+    if (bimController) bimController.renderDetailCommercialProductsBlock(activeDetailId);
     return;
   }
 
@@ -564,6 +588,7 @@ function renderSidebar() {
     });
     list.appendChild(div);
   });
+  if (bimController) bimController.renderDetailCommercialProductsBlock(activeDetailId);
 }
 
 function renderSpecTable() {
@@ -650,35 +675,65 @@ function initMontajeThree() {
     mntCamera.position.set(center.x - rad * 1.35, center.y + rad * 0.85, center.z + rad * 1.45);
     mntControls.update();
 
-    // Parse every piece PH01..PH10 and compute smooth staggered timing inside its phase
+    // Parse every piece PH01..PH12 with strict numeric ordering and in-situ animation mode
+    const nPh = montajePhases.length || 12;
     const byPhase = new Map();
-    for (let i = 1; i <= 10; i++) byPhase.set(i, []);
+    for (let i = 1; i <= nPh; i++) byPhase.set(i, []);
     root.traverse((child) => {
-      if (!child.name) return;
-      const m = child.name.match(/^PH(\d{2})_/);
-      if (m && child.isMesh) {
+      if (!child.isMesh) return;
+      const rawName = (child.name && /^PH\d{2}_/.test(child.name)) ? child.name : ((child.parent && child.parent.name) || '');
+      const m = rawName.match(/^PH(\d{2})_/);
+      if (m) {
         const ph = Number(m[1]);
-        byPhase.get(ph).push(child);
+        if (byPhase.has(ph)) {
+          child.userData.sortName = rawName;
+          byPhase.get(ph).push(child);
+        }
       }
     });
 
     mntPieces = [];
-    for (let ph = 1; ph <= 10; ph++) {
+    const slopeAng = Math.atan(0.025);
+    for (let ph = 1; ph <= nPh; ph++) {
       const phMeta = montajePhases[ph - 1];
-      const list = byPhase.get(ph).sort((a, b) => a.name.localeCompare(b.name));
-      const span = (phMeta.t_end - phMeta.t_start) * 0.88;
-      const pieceDur = Math.min(0.65, Math.max(0.28, span * 0.45));
+      if (!phMeta) continue;
+      const list = byPhase.get(ph).sort((a, b) =>
+        (a.userData.sortName || a.name).localeCompare(b.userData.sortName || b.name, undefined, { numeric: true })
+      );
+      const span = (phMeta.t_end - phMeta.t_start) * 0.90;
+      const pieceDur = Math.min(0.62, Math.max(0.24, span * 0.42));
       list.forEach((node, idx) => {
         const frac = list.length > 1 ? idx / (list.length - 1) : 0;
         const ts = phMeta.t_start + frac * Math.max(0.05, span - pieceDur);
         const te = ts + pieceDur;
+
+        const sn = node.userData.sortName || node.name;
+        let animType = 'PLACE';
+        if (sn.includes('__POURZ') || sn.includes('__TROWELZ')) {
+          animType = 'GROW_Y';
+          node.geometry.computeBoundingBox();
+          const minY = node.geometry.boundingBox.min.y;
+          node.geometry.translate(0, -minY, 0);
+          node.position.y += minY;
+        } else if (sn.includes('__ROLLX')) {
+          animType = 'ROLL_X';
+          node.geometry.computeBoundingBox();
+          const minX = node.geometry.boundingBox.min.x;
+          const minY = node.geometry.boundingBox.min.y;
+          node.geometry.translate(-minX, -minY, 0);
+          node.geometry.rotateZ(-slopeAng);
+          node.position.set(node.position.x + minX, node.position.y + minY, node.position.z);
+          node.rotation.z = slopeAng;
+        }
+
         mntPieces.push({
           node,
           phase: ph,
+          animType,
           tStart: ts,
           tEnd: te,
           origPos: node.position.clone(),
-          dropY: 0.24,
+          dropY: 0.045,
         });
       });
     }
@@ -709,7 +764,7 @@ function getMontajePhaseAtTime(t) {
   for (const ph of montajePhases) {
     if (t >= ph.t_start && t < ph.t_end) return ph.phase;
   }
-  return 10;
+  return montajePhases.length || 12;
 }
 
 function jumpToMontajePhase(phNum) {
@@ -729,28 +784,40 @@ function easeOutCubic(x) {
 }
 
 function applyMontajeAtTime(t) {
+  const nPh = montajePhases.length || 12;
   const activePh = getMontajePhaseAtTime(t);
-  const finished = t >= 27.0;
+  const tFinish = (montajePhases[nPh - 1] && montajePhases[nPh - 1].t_end) || 27.5;
+  const finished = t >= tFinish;
   const phMeta = montajePhases[activePh - 1];
 
-  // Update 3D pieces
+  // Update 3D pieces with physically grounded animation per type
   for (const p of mntPieces) {
     if (t < p.tStart) {
       p.node.visible = false;
     } else if (t >= p.tEnd) {
       p.node.visible = true;
       p.node.position.copy(p.origPos);
+      p.node.scale.set(1, 1, 1);
     } else {
       p.node.visible = true;
       const u = easeOutCubic((t - p.tStart) / (p.tEnd - p.tStart));
-      p.node.position.set(p.origPos.x, p.origPos.y + p.dropY * (1.0 - u), p.origPos.z);
+      if (p.animType === 'GROW_Y') {
+        p.node.position.copy(p.origPos);
+        p.node.scale.set(1, 0.015 + 0.985 * u, 1);
+      } else if (p.animType === 'ROLL_X') {
+        p.node.position.copy(p.origPos);
+        p.node.scale.set(0.012 + 0.988 * u, 1, 1);
+      } else {
+        p.node.scale.set(1, 1, 1);
+        p.node.position.set(p.origPos.x, p.origPos.y + p.dropY * (1.0 - u), p.origPos.z);
+      }
     }
   }
 
   // Update Live 2D SVG phases
   const svgBox = document.getElementById('montaje-2d-svg-box');
   if (svgBox) {
-    for (let i = 1; i <= 10; i++) {
+    for (let i = 1; i <= nPh; i++) {
       const g = svgBox.querySelector(`#phase_${i}`);
       if (g) {
         const show = finished ? true : (i <= activePh);
@@ -763,18 +830,18 @@ function applyMontajeAtTime(t) {
   // Update HUD text & slider
   document.getElementById('mnt-slider').value = String(Math.round((t / 30.0) * 300));
   document.getElementById('mnt-time-readout').textContent = `${t.toFixed(1)}s / 30.0s`;
-  document.getElementById('mnt-phase-pill').textContent = finished ? 'COMPLETADO 10/10' : `FASE ${String(activePh).padStart(2, '0')} / 10`;
+  document.getElementById('mnt-phase-pill').textContent = finished ? `COMPLETADO ${nPh}/${nPh}` : `FASE ${String(activePh).padStart(2, '0')} / ${nPh}`;
 
   if (finished) {
-    document.getElementById('mnt-card-code').textContent = 'MONTAJE COMPLETADO · 10 / 10 FASES';
+    document.getElementById('mnt-card-code').textContent = `MONTAJE COMPLETADO · ${nPh} / ${nPh} FASES`;
     document.getElementById('mnt-card-title').textContent = 'Azotea Transitable · Detalle Constructivo Finalizado';
-    document.getElementById('mnt-card-desc').textContent = 'Todas las capas y piezas montadas al 100% con tolerancia 0,0 mm (SR + Peto LHD + FP + BV + XPS + I + CS + Pavimento P y Rodapié).';
+    document.getElementById('mnt-card-desc').textContent = 'Ejecución en orden real al 100%: viguetas, bovedillas cerámicas reales, ferralla + HA-25, fábrica LHD, enfoscados, EPS + FP 2,5%, BV, XPS, membrana SBS, geotextil, pavimento P y rodapié.';
     document.getElementById('mnt-2d-status').textContent = 'PLANO 2D ACABADO 100%';
   } else if (phMeta) {
     document.getElementById('mnt-card-code').textContent = `FASE ${String(activePh).padStart(2, '0')} · ${phMeta.code} (${phMeta.thickness})`;
     document.getElementById('mnt-card-title').textContent = phMeta.title;
     document.getElementById('mnt-card-desc').textContent = phMeta.desc;
-    document.getElementById('mnt-2d-status').textContent = `PROGRESO 2D · FASE ${String(activePh).padStart(2, '0')}/10`;
+    document.getElementById('mnt-2d-status').textContent = `PROGRESO 2D · FASE ${String(activePh).padStart(2, '0')}/${nPh}`;
   }
 
   document.querySelectorAll('.step-chip').forEach((chip) => {
