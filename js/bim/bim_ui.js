@@ -1,18 +1,18 @@
-﻿/**
+/**
  * =============================================================================
- * ROOFLAB ETSIE Â· CONSTRUCCIÃ“N II (UPV)
+ * ROOFLAB ETSIE · CONSTRUCCIÓN II (UPV)
  * CONTROLADOR DE INTERFAZ DE LA BIBLIOTECA BIM DE PRODUCTOS REALES
  * =============================================================================
- * Integra todas las funcionalidades del Master Prompt dentro de la aplicaciÃ³n:
- * 1. Selector visual jerÃ¡rquico: MATERIALES -> FAMILIA -> FABRICANTE -> MODELO -> CONFIGURACIÃ“N
+ * Integra todas las funcionalidades del Master Prompt dentro de la aplicación:
+ * 1. Selector visual jerárquico: MATERIALES -> FAMILIA -> FABRICANTE -> MODELO -> CONFIGURACIÓN
  * 2. Ensamblador 3D Pieza a Pieza (DEMO A: Tejado) y Capa a Capa (DEMO B: Azotea)
  * 3. Plano CAD 2D de Replanteo sincronizado con el modelo 3D
- * 4. Ficha TÃ©cnica Digital Oficial (SecciÃ³n 3.1 a 3.5) + Variantes Oficiales
- * 5. Comparador TÃ©cnico de Productos Comerciales
+ * 4. Ficha Técnica Digital Oficial (Sección 3.1 a 3.5) + Variantes Oficiales
+ * 5. Comparador Técnico de Productos Comerciales
  * 6. Motor de Compatibilidad Constructiva en tiempo real
- * 7. Administrador del CatÃ¡logo con Historial de Versiones (SecciÃ³n 14)
- * 8. Generador de DocumentaciÃ³n (Informe PDF/ImpresiÃ³n, CSV Excel y JSON BIM)
- * 9. VinculaciÃ³n con los 10 Detalles Constructivos existentes y con HYDRO 3D
+ * 7. Administrador del Catálogo con Historial de Versiones (Sección 14)
+ * 8. Generador de Documentación (Informe PDF/Impresión, CSV Excel y JSON BIM)
+ * 9. Vinculación con los 10 Detalles Constructivos existentes y con HYDRO 3D
  */
 
 import {
@@ -41,7 +41,7 @@ export class BIMLibraryController {
     this.currentCompatibility = null;
     this.selectedPieceMeta = null;
 
-    // Estado del Explorador de CatÃ¡logo y Comparador
+    // Estado del Explorador de Catálogo y Comparador
     this.catalogFilter = {
       familyId: 'ALL',
       manufacturerId: 'ALL',
@@ -72,7 +72,7 @@ export class BIMLibraryController {
   }
 
   /**
-   * Inicializa el entorno 3D y 2D dentro de #pane-bim cuando se activa la pestaÃ±a o al arrancar.
+   * Inicializa el entorno 3D y 2D dentro de #pane-bim cuando se activa la pestaña o al arrancar.
    */
   initWorkspace() {
     const container = document.getElementById('pane-bim');
@@ -109,21 +109,21 @@ export class BIMLibraryController {
   _renderWorkspaceLayout(container) {
     container.innerHTML = `
       <div class="bim-workspace-grid">
-        <!-- COLUMNA IZQUIERDA: CONFIGURADOR JERÃRQUICO DE SISTEMA, PRODUCTOS Y GEOMETRÃA -->
+        <!-- COLUMNA IZQUIERDA: CONFIGURADOR JERÁRQUICO DE SISTEMA, PRODUCTOS Y GEOMETRÍA -->
         <aside class="bim-left-col">
           <div class="bim-card">
             <div class="bim-card-header">
-              <span class="bim-badge-accent">SECCIÃ“N 5 & 15 Â· DEMOSTRACIONES REALES</span>
-              <h3>Sistema Constructivo y GeometrÃ­a</h3>
+              <span class="bim-badge-accent">SECCIÓN 5 & 15 · DEMOSTRACIONES REALES</span>
+              <h3>Sistema Constructivo y Geometría</h3>
             </div>
             <div class="bim-demo-switcher">
               <button class="bim-demo-btn active" data-demo="demoA_tejado" id="btn-demo-a">
-                <strong>DEMO A Â· Tejado Pieza a Pieza</strong>
+                <strong>DEMO A · Tejado Pieza a Pieza</strong>
                 <span>Teja Borja / Escandella / Pizarra CUPA / VMZINC + Rastrel + Thermochip</span>
               </button>
               <button class="bim-demo-btn" data-demo="demoB_azotea" id="btn-demo-b">
-                <strong>DEMO B Â· Azotea Capa a Capa</strong>
-                <span>DANOSA / Sika + URSA XPS + Plots Peygran + Gres AragÃ³n + Jimten</span>
+                <strong>DEMO B · Azotea Capa a Capa</strong>
+                <span>DANOSA / Sika + URSA XPS + Plots Peygran + Gres Aragón + Jimten</span>
               </button>
             </div>
 
@@ -132,15 +132,15 @@ export class BIMLibraryController {
 
           <div class="bim-card">
             <div class="bim-card-header">
-              <span class="bim-badge-accent">MATERIALES â†’ FAMILIA â†’ FABRICANTE â†’ MODELO</span>
-              <h3>AsignaciÃ³n Comercial y Variantes Oficiales</h3>
+              <span class="bim-badge-accent">MATERIALES → FAMILIA → FABRICANTE → MODELO</span>
+              <h3>Asignación Comercial y Variantes Oficiales</h3>
             </div>
             <div id="bim-product-selectors" class="bim-selectors-list"></div>
           </div>
 
           <div class="bim-card">
             <div class="bim-card-header">
-              <span class="bim-badge-accent">SECCIÃ“N 7 Â· CAPAS Y COMPONENTES 3D</span>
+              <span class="bim-badge-accent">SECCIÓN 7 · CAPAS Y COMPONENTES 3D</span>
               <h3>Control de Capas (Ocultar / Rayos X / Aislar)</h3>
             </div>
             <div id="bim-layers-control-list" class="bim-layers-list"></div>
@@ -154,12 +154,12 @@ export class BIMLibraryController {
 
             <!-- HUD Superior del Visor 3D -->
             <div class="bim-viewport-hud-top">
-              <div class="bim-hud-title" id="bim-hud-system-title">DEMO A â€” Tejado ventilado pieza a pieza</div>
+              <div class="bim-hud-title" id="bim-hud-system-title">DEMO A — Tejado ventilado pieza a pieza</div>
               <div class="bim-hud-cam-bar">
-                <button class="bim-cam-btn" data-cam="iso" title="Vista AxonomÃ©trica">AxonomÃ©trica</button>
+                <button class="bim-cam-btn" data-cam="iso" title="Vista Axonométrica">Axonométrica</button>
                 <button class="bim-cam-btn" data-cam="top" title="Planta de Replanteo">Planta</button>
                 <button class="bim-cam-btn" data-cam="front" title="Alzado de Alero / Peto">Alzado</button>
-                <button class="bim-cam-btn" data-cam="side" title="SecciÃ³n Constructiva">SecciÃ³n</button>
+                <button class="bim-cam-btn" data-cam="side" title="Sección Constructiva">Sección</button>
                 <button class="bim-cam-btn" data-cam="detail" title="Zoom Encuentro Singular">Zoom Detalle</button>
               </div>
             </div>
@@ -167,7 +167,7 @@ export class BIMLibraryController {
             <!-- Inspector flotante de Pieza Individual 3D (Clic en cualquier teja, rastrel, plot o baldosa) -->
             <div class="bim-piece-inspector" id="bim-piece-inspector">
               <div class="bim-pi-hint">
-                ðŸ’¡ <strong>InspecciÃ³n Interactiva 3D:</strong> Haz clic sobre cualquier teja, canal, cobija, laja de pizarra, rastrel, plot Peygran, plancha XPS o baldosa para inspeccionar su cÃ³digo de pieza y abrir su Ficha TÃ©cnica Oficial.
+                💡 <strong>Inspección Interactiva 3D:</strong> Haz clic sobre cualquier teja, canal, cobija, laja de pizarra, rastrel, plot Peygran, plancha XPS o baldosa para inspeccionar su código de pieza y abrir su Ficha Técnica Oficial.
               </div>
             </div>
           </div>
@@ -176,13 +176,13 @@ export class BIMLibraryController {
           <div class="bim-replanteo-2d-box">
             <div class="bim-rep2d-header">
               <div>
-                <strong>ðŸ“ PLANO CAD 2D DE REPLANTEO AUTOMÃTICO</strong>
-                <span id="bim-rep2d-subtitle">Sincronizado en tiempo real con las dimensiones Ãºtiles del fabricante</span>
+                <strong>📐 PLANO CAD 2D DE REPLANTEO AUTOMÁTICO</strong>
+                <span id="bim-rep2d-subtitle">Sincronizado en tiempo real con las dimensiones útiles del fabricante</span>
               </div>
               <div class="bim-rep2d-legend">
                 <span><i style="background:#b65338"></i> Pieza entera</span>
                 <span><i style="background:#f59e0b"></i> Pieza de corte en borde</span>
-                <span><i style="background:#fbbf24"></i> LÃ­nea de rastrel / Plot</span>
+                <span><i style="background:#fbbf24"></i> Línea de rastrel / Plot</span>
                 <span><i style="background:#00e5ff"></i> Pieza seleccionada</span>
               </div>
             </div>
@@ -192,11 +192,11 @@ export class BIMLibraryController {
           </div>
         </section>
 
-        <!-- COLUMNA DERECHA: MOTOR DE COMPATIBILIDAD, CALCULADORA DE REPLANTEO Y EXPORTACIÃ“N -->
+        <!-- COLUMNA DERECHA: MOTOR DE COMPATIBILIDAD, CALCULADORA DE REPLANTEO Y EXPORTACIÓN -->
         <aside class="bim-right-col">
           <div class="bim-card">
             <div class="bim-card-header">
-              <span class="bim-badge-accent">SECCIÃ“N 9 Â· REGLAS VERIFICABLES</span>
+              <span class="bim-badge-accent">SECCIÓN 9 · REGLAS VERIFICABLES</span>
               <h3>Motor de Compatibilidad Constructiva</h3>
             </div>
             <div id="bim-compatibility-panel" class="bim-compat-list"></div>
@@ -204,7 +204,7 @@ export class BIMLibraryController {
 
           <div class="bim-card">
             <div class="bim-card-header">
-              <span class="bim-badge-accent">SECCIÃ“N 12 Â· MEDICIONES EXACTAS</span>
+              <span class="bim-badge-accent">SECCIÓN 12 · MEDICIONES EXACTAS</span>
               <h3>Calculadora de Replanteo y Pesos</h3>
             </div>
             <div id="bim-replanteo-kpis" class="bim-kpi-grid"></div>
@@ -213,7 +213,7 @@ export class BIMLibraryController {
                 <thead>
                   <tr>
                     <th>Componente / Producto Real</th>
-                    <th>TeÃ³rica</th>
+                    <th>Teórica</th>
                     <th>Montaje</th>
                     <th>Pedido</th>
                     <th>Peso</th>
@@ -226,26 +226,26 @@ export class BIMLibraryController {
 
           <div class="bim-card">
             <div class="bim-card-header">
-              <span class="bim-badge-accent">SECCIÃ“N 10, 13 & 14 Â· DOCUMENTACIÃ“N Y GESTIÃ“N</span>
-              <h3>CatÃ¡logo, Informes y ConexiÃ³n HYDRO 3D</h3>
+              <span class="bim-badge-accent">SECCIÓN 10, 13 & 14 · DOCUMENTACIÓN Y GESTIÓN</span>
+              <h3>Catálogo, Informes y Conexión HYDRO 3D</h3>
             </div>
             <div class="bim-actions-stack">
               <button class="bim-action-btn primary" id="btn-open-catalog-modal">
-                ðŸ“š Explorar CatÃ¡logo Completo (12 Familias Â· 24 Fabricantes)
+                📚 Explorar Catálogo Completo (12 Familias · 24 Fabricantes)
               </button>
               <button class="bim-action-btn" id="btn-open-comparator-modal">
-                âš–ï¸ Comparador TÃ©cnico de Productos
+                ⚖️ Comparador Técnico de Productos
               </button>
               <button class="bim-action-btn" id="btn-open-admin-modal">
-                ðŸ› ï¸ Administrar CatÃ¡logo / Alta de Producto (Versiones)
+                🛠️ Administrar Catálogo / Alta de Producto (Versiones)
               </button>
               <button class="bim-action-btn hydro-sync" id="btn-sync-hydro3d">
-                ðŸŒŠ Enviar Azotea Comercial a ROOFLAB HYDRO 3D
+                🌊 Enviar Azotea Comercial a ROOFLAB HYDRO 3D
               </button>
               <div class="bim-export-row">
-                <button class="bim-export-btn" id="btn-export-bim-pdf" title="Generar Informe TÃ©cnico Imprimible / PDF">ðŸ“„ Informe PDF</button>
-                <button class="bim-export-btn" id="btn-export-bim-csv" title="Descargar Mediciones en CSV Excel">ðŸ“Š Tabla CSV</button>
-                <button class="bim-export-btn" id="btn-export-bim-json" title="Exportar EspecificaciÃ³n BIM JSON">ðŸ“¦ BIM JSON</button>
+                <button class="bim-export-btn" id="btn-export-bim-pdf" title="Generar Informe Técnico Imprimible / PDF">📄 Informe PDF</button>
+                <button class="bim-export-btn" id="btn-export-bim-csv" title="Descargar Mediciones en CSV Excel">📊 Tabla CSV</button>
+                <button class="bim-export-btn" id="btn-export-bim-json" title="Exportar Especificación BIM JSON">📦 BIM JSON</button>
               </div>
             </div>
           </div>
@@ -264,14 +264,14 @@ export class BIMLibraryController {
       });
     });
 
-    // Eventos de cÃ¡mara 3D
+    // Eventos de cámara 3D
     container.querySelectorAll('.bim-cam-btn').forEach((btn) => {
       btn.addEventListener('click', () => {
         if (this.assembler3D) this.assembler3D.setCameraPreset(btn.dataset.cam);
       });
     });
 
-    // Botones de Modales y ExportaciÃ³n
+    // Botones de Modales y Exportación
     document.getElementById('btn-open-catalog-modal')?.addEventListener('click', () => {
       this.openCatalogExplorerModal();
     });
@@ -309,9 +309,9 @@ export class BIMLibraryController {
           const pct = Math.round(p * 100);
           if (progSlider) progSlider.value = String(pct);
           if (progLabel) progLabel.textContent = `${pct}%`;
-          playBtn.textContent = isPlaying ? 'â¸ Pausar Montaje' : 'â–¶ Montaje Pieza a Pieza';
+          playBtn.textContent = isPlaying ? '⏸ Pausar Montaje' : '▶ Montaje Pieza a Pieza';
         });
-        playBtn.textContent = playing ? 'â¸ Pausar Montaje' : 'â–¶ Montaje Pieza a Pieza';
+        playBtn.textContent = playing ? '⏸ Pausar Montaje' : '▶ Montaje Pieza a Pieza';
       });
     }
 
@@ -321,7 +321,7 @@ export class BIMLibraryController {
         if (progLabel) progLabel.textContent = `${val}%`;
         if (this.assembler3D) {
           this.assembler3D.isPlayingAssembly = false;
-          if (playBtn) playBtn.textContent = 'â–¶ Montaje Pieza a Pieza';
+          if (playBtn) playBtn.textContent = '▶ Montaje Pieza a Pieza';
           this.assembler3D.setAssemblyProgress(val / 100);
         }
       });
@@ -342,7 +342,7 @@ export class BIMLibraryController {
   }
 
   /**
-   * Recalcula el replanteo geomÃ©trico, evalÃºa reglas de compatibilidad,
+   * Recalcula el replanteo geométrico, evalúa reglas de compatibilidad,
    * reconstruye el modelo 3D pieza a pieza y actualiza el plano 2D y tablas.
    */
   recalculateAndRenderAll() {
@@ -365,8 +365,8 @@ export class BIMLibraryController {
     if (hudTitle) {
       hudTitle.textContent =
         cfg.systemType === 'tejado'
-          ? `DEMO A Â· ${this.currentReplanteo.products.covering.brand} (${this.currentReplanteo.replanteoParams.mainPiecesAssembly} piezas Â· Paso ${this.currentReplanteo.replanteoParams.battenStepMm} mm)`
-          : `DEMO B Â· Azotea ${cfg.roofSubType.replace('_', ' ').toUpperCase()} (${this.currentReplanteo.products.waterproofing.brand} + ${this.currentReplanteo.products.insulation.brand})`;
+          ? `DEMO A · ${this.currentReplanteo.products.covering.brand} (${this.currentReplanteo.replanteoParams.mainPiecesAssembly} piezas · Paso ${this.currentReplanteo.replanteoParams.battenStepMm} mm)`
+          : `DEMO B · Azotea ${cfg.roofSubType.replace('_', ' ').toUpperCase()} (${this.currentReplanteo.products.waterproofing.brand} + ${this.currentReplanteo.products.insulation.brand})`;
     }
 
     this._renderGeometryInputs(cfg);
@@ -400,7 +400,7 @@ export class BIMLibraryController {
 
       box.innerHTML = `
         <div class="bim-form-row">
-          <label>Longitud horiz. faldÃ³n (m)
+          <label>Longitud horiz. faldón (m)
             <input type="number" step="0.2" min="2.0" max="15.0" id="bim-inp-len" value="${cfg.geometry.lengthHorizM}">
           </label>
           <label>Ancho de alero (m)
@@ -408,10 +408,10 @@ export class BIMLibraryController {
           </label>
         </div>
         <div class="bim-form-row">
-          <label>Pendiente faldÃ³n (%) [MÃ­n. ${cov.installation.minSlopePct}%]
+          <label>Pendiente faldón (%) [Mín. ${cov.installation.minSlopePct}%]
             <input type="number" step="1" min="2" max="120" id="bim-inp-slope" value="${cfg.geometry.slopePct}">
           </label>
-          <label>Paso de rastrel (mm) [${minStep}â€“${maxStep}]
+          <label>Paso de rastrel (mm) [${minStep}–${maxStep}]
             <input type="number" step="2" min="80" max="2500" id="bim-inp-step" value="${currStep}">
           </label>
         </div>
@@ -420,8 +420,8 @@ export class BIMLibraryController {
             <input type="number" step="1" min="0" max="20" id="bim-inp-waste" value="${cfg.geometry.wastePct}">
           </label>
           <div class="bim-auto-step-wrap">
-            <button class="bim-mini-btn" id="bim-btn-reset-step" title="Ajustar al paso nominal oficial de la ficha tÃ©cnica">
-              â†º Paso Oficial (${cov.geometry.usefulLengthNominalMm} mm)
+            <button class="bim-mini-btn" id="bim-btn-reset-step" title="Ajustar al paso nominal oficial de la ficha técnica">
+              ↺ Paso Oficial (${cov.geometry.usefulLengthNominalMm} mm)
             </button>
           </div>
         </div>
@@ -454,11 +454,11 @@ export class BIMLibraryController {
     } else {
       box.innerHTML = `
         <div class="bim-form-row full">
-          <label>SubtipologÃ­a Constructiva de Azotea
+          <label>Subtipología Constructiva de Azotea
             <select id="bim-sel-roof-subtype">
               <option value="invertida_plots" ${cfg.roofSubType === 'invertida_plots' ? 'selected' : ''}>Azotea Invertida Transitable sobre Plots Regulables Peygran</option>
-              <option value="convencional_fija" ${cfg.roofSubType === 'convencional_fija' ? 'selected' : ''}>Azotea Convencional (Aislamiento bajo ImpermeabilizaciÃ³n + Pavimento)</option>
-              <option value="ajardinada" ${cfg.roofSubType === 'ajardinada' ? 'selected' : ''}>Cubierta Ajardinada Extensiva EcolÃ³gica (OptigrÃ¼n FKD 25 + Sedum)</option>
+              <option value="convencional_fija" ${cfg.roofSubType === 'convencional_fija' ? 'selected' : ''}>Azotea Convencional (Aislamiento bajo Impermeabilización + Pavimento)</option>
+              <option value="ajardinada" ${cfg.roofSubType === 'ajardinada' ? 'selected' : ''}>Cubierta Ajardinada Extensiva Ecológica (Optigrün FKD 25 + Sedum)</option>
             </select>
           </label>
         </div>
@@ -471,10 +471,10 @@ export class BIMLibraryController {
           </label>
         </div>
         <div class="bim-form-row">
-          <label>Pendiente FormaciÃ³n (%)
+          <label>Pendiente Formación (%)
             <input type="number" step="0.2" min="0.0" max="8.0" id="bim-inp-flat-slope" value="${cfg.geometry.slopePct}">
           </label>
-          <label>Remonte en Peto (mm) [CTE â‰¥200]
+          <label>Remonte en Peto (mm) [CTE ≥200]
             <input type="number" step="10" min="100" max="500" id="bim-inp-flat-turnup" value="${cfg.geometry.parapetTurnupMm}">
           </label>
         </div>
@@ -505,7 +505,7 @@ export class BIMLibraryController {
 
   /**
    * Renderiza los selectores de producto comercial y variantes dimensionales oficiales
-   * para cada capa del sistema activo (SecciÃ³n 5 y SecciÃ³n 11).
+   * para cada capa del sistema activo (Sección 5 y Sección 11).
    */
   _renderProductSelectors(cfg) {
     const container = document.getElementById('bim-product-selectors');
@@ -515,22 +515,22 @@ export class BIMLibraryController {
       cfg.systemType === 'tejado'
         ? [
             { key: 'coveringId', label: '1. Cobertura Exterior (Teja / Pizarra / Zinc / Panel)', role: 'roof_covering' },
-            { key: 'battenSystemId', label: '2. Rastreles, Contrarastreles y LÃ¡mina', role: 'batten_system' },
-            { key: 'supportPanelId', label: '3. Panel SÃ¡ndwich Estructural Bajo Teja', role: 'support_panel' },
-            { key: 'fastenerId', label: '4. FijaciÃ³n MecÃ¡nica (Clips / Ganchos / Patas Inox)', role: 'fastener' },
-            { key: 'gutterId', label: '5. CanalÃ³n Perimetral de Alero', role: 'gutter_unit' },
+            { key: 'battenSystemId', label: '2. Rastreles, Contrarastreles y Lámina', role: 'batten_system' },
+            { key: 'supportPanelId', label: '3. Panel Sándwich Estructural Bajo Teja', role: 'support_panel' },
+            { key: 'fastenerId', label: '4. Fijación Mecánica (Clips / Ganchos / Patas Inox)', role: 'fastener' },
+            { key: 'gutterId', label: '5. Canalón Perimetral de Alero', role: 'gutter_unit' },
           ]
         : [
             { key: 'waterproofingId', label: '1. Membrana Impermeabilizante (Bituminosa / PVC)', role: 'waterproofing' },
-            { key: 'insulationId', label: '2. Aislamiento TÃ©rmico (XPS / Lana de Roca)', role: 'insulation' },
+            { key: 'insulationId', label: '2. Aislamiento Térmico (XPS / Lana de Roca)', role: 'insulation' },
             { key: 'separatorBotId', label: '3. Geotextil Separador Antipunzonante', role: 'separator' },
             ...(cfg.roofSubType === 'ajardinada'
-              ? [{ key: 'greenRoofId', label: '4. Sistema Cubierta Ajardinada EcolÃ³gica', role: 'green_roof_system' }]
+              ? [{ key: 'greenRoofId', label: '4. Sistema Cubierta Ajardinada Ecológica', role: 'green_roof_system' }]
               : [
                   { key: 'plotsId', label: '4. Plots Regulables Autonivelantes', role: 'plots' },
-                  { key: 'pavementId', label: '5. Pavimento TÃ©cnico PorcelÃ¡nico 20 mm', role: 'pavement' },
+                  { key: 'pavementId', label: '5. Pavimento Técnico Porcelánico 20 mm', role: 'pavement' },
                 ]),
-            { key: 'drainUnitId', label: '6. Cazoleta SifÃ³nica / Sumidero de EvacuaciÃ³n', role: 'drain_unit' },
+            { key: 'drainUnitId', label: '6. Cazoleta Sifónica / Sumidero de Evacuación', role: 'drain_unit' },
           ];
 
     container.innerHTML = slots
@@ -572,8 +572,8 @@ export class BIMLibraryController {
                   )
                   .join('')}
               </select>
-              <button class="bim-btn-datasheet" data-datasheet-id="${currentProd.id}" title="Abrir Ficha TÃ©cnica Oficial de ${currentProd.model}">
-                ðŸ“„ Ficha
+              <button class="bim-btn-datasheet" data-datasheet-id="${currentProd.id}" title="Abrir Ficha Técnica Oficial de ${currentProd.model}">
+                📄 Ficha
               </button>
             </div>
             ${variantsHtml}
@@ -591,7 +591,7 @@ export class BIMLibraryController {
         this.selectedPieceMeta = null;
 
         // Si en DEMO A cambia la cobertura, sincronizamos el paso de rastrel nominal oficial
-        // y sugerimos la fijaciÃ³n compatible si el usuario no quiere forzar un error
+        // y sugerimos la fijación compatible si el usuario no quiere forzar un error
         if (slotKey === 'coveringId') {
           delete cfg.geometry.customBattenStepMm;
           const cov = this.store.getProductById(newProdId);
@@ -607,7 +607,7 @@ export class BIMLibraryController {
       });
     });
 
-    // Eventos de cambio de variante dimensional oficial (recalcula espesor, ancho Ãºtil, paso y 3D en tiempo real)
+    // Eventos de cambio de variante dimensional oficial (recalcula espesor, ancho útil, paso y 3D en tiempo real)
     container.querySelectorAll('.bim-variant-select').forEach((vSel) => {
       vSel.addEventListener('change', () => {
         const prodId = vSel.dataset.prodId;
@@ -619,7 +619,7 @@ export class BIMLibraryController {
       });
     });
 
-    // Botones de Ficha TÃ©cnica Digital Oficial
+    // Botones de Ficha Técnica Digital Oficial
     container.querySelectorAll('.bim-btn-datasheet').forEach((btn) => {
       btn.addEventListener('click', () => {
         this.openProductDatasheetModal(btn.dataset.datasheetId);
@@ -641,17 +641,17 @@ export class BIMLibraryController {
           </div>
           <div class="bim-lc-actions">
             <button class="bim-lc-btn ${l.visible ? 'active' : ''}" data-action="vis" data-key="${l.key}" title="Mostrar / Ocultar Capa">
-              ${l.visible ? 'ðŸ‘ï¸' : 'ðŸš«'}
+              ${l.visible ? '👁️' : '🚫'}
             </button>
             <button class="bim-lc-btn ${l.transparent ? 'active' : ''}" data-action="xray" data-key="${l.key}" title="Modo Transparente Rayos X">
-              ðŸ‘»
+              👻
             </button>
             <button class="bim-lc-btn" data-action="iso" data-key="${l.key}" title="Aislar solo esta capa">
-              ðŸŽ¯
+              🎯
             </button>
             ${
               l.productId
-                ? `<button class="bim-lc-btn" data-action="doc" data-prod="${l.productId}" title="Ver Ficha TÃ©cnica Oficial">ðŸ“„</button>`
+                ? `<button class="bim-lc-btn" data-action="doc" data-prod="${l.productId}" title="Ver Ficha Técnica Oficial">📄</button>`
                 : ''
             }
           </div>
@@ -689,7 +689,7 @@ export class BIMLibraryController {
     if (!pieceMeta) {
       box.innerHTML = `
         <div class="bim-pi-hint">
-          ðŸ’¡ <strong>InspecciÃ³n Interactiva 3D:</strong> Haz clic sobre cualquier teja, canal, cobija, laja de pizarra, rastrel, plot Peygran, plancha XPS o baldosa para inspeccionar su cÃ³digo de pieza y abrir su Ficha TÃ©cnica Oficial.
+          💡 <strong>Inspección Interactiva 3D:</strong> Haz clic sobre cualquier teja, canal, cobija, laja de pizarra, rastrel, plot Peygran, plancha XPS o baldosa para inspeccionar su código de pieza y abrir su Ficha Técnica Oficial.
         </div>
       `;
       return;
@@ -702,12 +702,12 @@ export class BIMLibraryController {
           <span class="bim-pi-code">${pieceMeta.pieceCode}</span>
           <strong>${pieceMeta.layerName}</strong>
           <span class="bim-pi-role">${pieceMeta.roleLabel}</span>
-          <span class="bim-pi-dims">ðŸ“ ${pieceMeta.dimensionsMm} Â· âš–ï¸ ${pieceMeta.weightKg} kg</span>
+          <span class="bim-pi-dims">📐 ${pieceMeta.dimensionsMm} · ⚖️ ${pieceMeta.weightKg} kg</span>
         </div>
         <div class="bim-pi-right">
           ${
             prod
-              ? `<button class="bim-pi-doc-btn" id="btn-pi-open-doc">ðŸ“„ Ficha TÃ©cnica (${prod.manufacturerName})</button>`
+              ? `<button class="bim-pi-doc-btn" id="btn-pi-open-doc">📄 Ficha Técnica (${prod.manufacturerName})</button>`
               : ''
           }
         </div>
@@ -726,22 +726,22 @@ export class BIMLibraryController {
     const { alerts, summary } = this.currentCompatibility;
     const statusHeader =
       summary.errCount > 0
-        ? `<div class="bim-compat-banner error">âŒ ${summary.errCount} Incompatibilidad(es) Constructiva(s) Detectada(s)</div>`
+        ? `<div class="bim-compat-banner error">❌ ${summary.errCount} Incompatibilidad(es) Constructiva(s) Detectada(s)</div>`
         : summary.warnCount > 0
-        ? `<div class="bim-compat-banner warning">âš ï¸ DiseÃ±o VÃ¡lido con ${summary.warnCount} Advertencia(s) TÃ©cnica(s)</div>`
-        : `<div class="bim-compat-banner ok">âœ… Compatibilidad Constructiva 100% Verificada (${summary.okCount} reglas)</div>`;
+        ? `<div class="bim-compat-banner warning">⚠️ Diseño Válido con ${summary.warnCount} Advertencia(s) Técnica(s)</div>`
+        : `<div class="bim-compat-banner ok">✅ Compatibilidad Constructiva 100% Verificada (${summary.okCount} reglas)</div>`;
 
     panel.innerHTML =
       statusHeader +
       alerts
         .map((a) => {
-          const icon = a.severity === 'error' ? 'âŒ' : a.severity === 'warning' ? 'âš ï¸' : 'âœ…';
+          const icon = a.severity === 'error' ? '❌' : a.severity === 'warning' ? '⚠️' : '✅';
           return `
             <div class="bim-alert-card ${a.severity}">
               <div class="bim-alert-title">${icon} ${a.problem}</div>
-              <div class="bim-alert-row"><strong>ParÃ¡metro:</strong> ${a.affectedParam}</div>
+              <div class="bim-alert-row"><strong>Parámetro:</strong> ${a.affectedParam}</div>
               <div class="bim-alert-row"><strong>Fuente:</strong> ${a.source}</div>
-              <div class="bim-alert-row"><strong>SoluciÃ³n:</strong> ${a.solution}</div>
+              <div class="bim-alert-row"><strong>Solución:</strong> ${a.solution}</div>
             </div>
           `;
         })
@@ -757,14 +757,14 @@ export class BIMLibraryController {
     if (rep.systemType === 'tejado') {
       kpiBox.innerHTML = `
         <div class="bim-kpi">
-          <span>Superficie Real FaldÃ³n</span>
-          <strong>${rep.geometry.realAreaM2} mÂ²</strong>
-          <small>L=${rep.geometry.rafterLengthM} m (${rep.geometry.slopePct}% / ${rep.geometry.slopeDeg}Â°)</small>
+          <span>Superficie Real Faldón</span>
+          <strong>${rep.geometry.realAreaM2} m²</strong>
+          <small>L=${rep.geometry.rafterLengthM} m (${rep.geometry.slopePct}% / ${rep.geometry.slopeDeg}°)</small>
         </div>
         <div class="bim-kpi">
           <span>Replanteo Cobertura</span>
           <strong>${rep.replanteoParams.mainPiecesAssembly} uds</strong>
-          <small>${rep.replanteoParams.numRows} hiladas Ã— ${rep.replanteoParams.numCols} cols</small>
+          <small>${rep.replanteoParams.numRows} hiladas × ${rep.replanteoParams.numCols} cols</small>
         </div>
         <div class="bim-kpi">
           <span>Paso Rastrel / Solape</span>
@@ -774,20 +774,20 @@ export class BIMLibraryController {
         <div class="bim-kpi">
           <span>Peso Total Cubierta</span>
           <strong>${rep.summary.totalWeightKg} kg</strong>
-          <small>${rep.summary.weightPerM2Kg} kg/mÂ² Â· U=${rep.summary.uValueWmk} W/mÂ²K</small>
+          <small>${rep.summary.weightPerM2Kg} kg/m² · U=${rep.summary.uValueWmk} W/m²K</small>
         </div>
       `;
     } else {
       kpiBox.innerHTML = `
         <div class="bim-kpi">
           <span>Superficie / Remonte</span>
-          <strong>${rep.geometry.flatAreaM2} mÂ²</strong>
-          <small>+${rep.geometry.turnupAreaM2} mÂ² petos (h=${rep.geometry.parapetTurnupMm} mm)</small>
+          <strong>${rep.geometry.flatAreaM2} m²</strong>
+          <small>+${rep.geometry.turnupAreaM2} m² petos (h=${rep.geometry.parapetTurnupMm} mm)</small>
         </div>
         <div class="bim-kpi">
           <span>Pavimento / Sustrato</span>
-          <strong>${rep.roofSubType === 'ajardinada' ? `${rep.geometry.flatAreaM2} mÂ²` : `${rep.replanteoParams.assemblyTilesCount} uds`}</strong>
-          <small>${rep.roofSubType === 'ajardinada' ? 'OptigrÃ¼n FKD 25 + Sedum' : `${rep.replanteoParams.fullTilesCount} enteras + ${rep.replanteoParams.cutBorderTilesCount} borde`}</small>
+          <strong>${rep.roofSubType === 'ajardinada' ? `${rep.geometry.flatAreaM2} m²` : `${rep.replanteoParams.assemblyTilesCount} uds`}</strong>
+          <small>${rep.roofSubType === 'ajardinada' ? 'Optigrün FKD 25 + Sedum' : `${rep.replanteoParams.fullTilesCount} enteras + ${rep.replanteoParams.cutBorderTilesCount} borde`}</small>
         </div>
         <div class="bim-kpi">
           <span>Plots / Planchas XPS</span>
@@ -797,7 +797,7 @@ export class BIMLibraryController {
         <div class="bim-kpi">
           <span>Peso Total Sistema</span>
           <strong>${rep.summary.totalWeightKg} kg</strong>
-          <small>${rep.summary.weightPerM2Kg} kg/mÂ² Â· U=${rep.summary.uValueWmk} W/mÂ²K</small>
+          <small>${rep.summary.weightPerM2Kg} kg/m² · U=${rep.summary.uValueWmk} W/m²K</small>
         </div>
       `;
     }
@@ -808,8 +808,8 @@ export class BIMLibraryController {
         <tr>
           <td>
             <div class="bim-boq-prod">
-              <strong>${item.manufacturerName} Â· ${item.model}</strong>
-              <span>${item.roleLabel} Â· ${item.dimensionsStr}</span>
+              <strong>${item.manufacturerName} · ${item.model}</strong>
+              <span>${item.roleLabel} · ${item.dimensionsStr}</span>
             </div>
           </td>
           <td>${item.theoreticalQty} <small>${item.unit}</small></td>
@@ -823,7 +823,7 @@ export class BIMLibraryController {
   }
 
   // ===========================================================================
-  // VINCULACIÃ“N CON LOS 10 DETALLES CONSTRUCTIVOS EXISTENTES (SECCIÃ“N 10)
+  // VINCULACIÓN CON LOS 10 DETALLES CONSTRUCTIVOS EXISTENTES (SECCIÓN 10)
   // ===========================================================================
   renderDetailCommercialProductsBlock(detailId) {
     const existingPanel = document.getElementById('detail-bim-commercial-box');
@@ -837,8 +837,8 @@ export class BIMLibraryController {
 
     const html = `
       <div class="detail-bim-header">
-        <span>ðŸ·ï¸ PRODUCTOS COMERCIALES REALES ASIGNADOS</span>
-        <button class="detail-bim-open-btn" id="btn-detail-go-bim">Abrir en Montaje BIM 3D â†’</button>
+        <span>🏷️ PRODUCTOS COMERCIALES REALES ASIGNADOS</span>
+        <button class="detail-bim-open-btn" id="btn-detail-go-bim">Abrir en Montaje BIM 3D →</button>
       </div>
       <div class="detail-bim-list">
         ${products
@@ -846,13 +846,13 @@ export class BIMLibraryController {
             (p, idx) => `
           <div class="detail-bim-item">
             <div class="detail-bim-info">
-              <strong>${p.manufacturerName} Â· ${p.brand}</strong>
+              <strong>${p.manufacturerName} · ${p.brand}</strong>
               <span>${p.model}</span>
-              <small>ðŸ“ ${p.geometry.lengthNominalMm}Ã—${p.geometry.widthNominalMm}Ã—${p.geometry.thicknessMm} mm Â· Ref: ${p.refCode}</small>
+              <small>📐 ${p.geometry.lengthNominalMm}×${p.geometry.widthNominalMm}×${p.geometry.thicknessMm} mm · Ref: ${p.refCode}</small>
             </div>
             <div class="detail-bim-btns">
-              <button class="detail-bim-doc-btn" data-doc-id="${p.id}" title="Ver Ficha TÃ©cnica Oficial">ðŸ“„ Ficha</button>
-              <button class="detail-bim-swap-btn" data-swap-idx="${idx}" data-role="${p.role}" title="Sustituir por otro fabricante compatible">â‡„</button>
+              <button class="detail-bim-doc-btn" data-doc-id="${p.id}" title="Ver Ficha Técnica Oficial">📄 Ficha</button>
+              <button class="detail-bim-swap-btn" data-swap-idx="${idx}" data-role="${p.role}" title="Sustituir por otro fabricante compatible">⇄</button>
             </div>
           </div>
         `
@@ -924,10 +924,10 @@ export class BIMLibraryController {
   }
 
   // ===========================================================================
-  // SINCRONIZACIÃ“N DIRECTA CON EL SIMULADOR DE AGUA ROOFLAB HYDRO 3D (SECCIÃ“N 10)
+  // SINCRONIZACIÓN DIRECTA CON EL SIMULADOR DE AGUA ROOFLAB HYDRO 3D (SECCIÓN 10)
   // ===========================================================================
   syncAndOpenHydro3D() {
-    // Calculamos la configuraciÃ³n comercial de la DEMO B (Azotea) para enviarla a HYDRO 3D
+    // Calculamos la configuración comercial de la DEMO B (Azotea) para enviarla a HYDRO 3D
     const flatCfg = this.demoConfigs.demoB_azotea;
     const flatRep = BIMReplanteoCalculator.calculateFlatRoof(flatCfg, this.store);
     const payload = {
@@ -975,58 +975,58 @@ export class BIMLibraryController {
     } catch (e) {
       console.warn(e);
     }
-    window.location.href = 'https://adrianstoot.github.io/rooflab-hydro-3d/?bimSync=1';
+    window.location.href = './hydro3d.html?bimSync=1';
   }
 
   // ===========================================================================
-  // MODALES: FICHA TÃ‰CNICA DIGITAL, CATÃLOGO COMPLETO, COMPARADOR Y ADMIN
+  // MODALES: FICHA TÉCNICA DIGITAL, CATÁLOGO COMPLETO, COMPARADOR Y ADMIN
   // ===========================================================================
   _injectModals() {
     if (document.getElementById('bim-modals-root')) return;
     const root = document.createElement('div');
     root.id = 'bim-modals-root';
     root.innerHTML = `
-      <!-- 1. MODAL DE FICHA TÃ‰CNICA DIGITAL OFICIAL (SECCIÃ“N 3) -->
+      <!-- 1. MODAL DE FICHA TÉCNICA DIGITAL OFICIAL (SECCIÓN 3) -->
       <div class="bim-modal-backdrop" id="bim-datasheet-modal" hidden>
         <div class="bim-modal-dialog large">
           <div class="bim-modal-header">
-            <div id="bim-ds-header-title">Ficha TÃ©cnica Digital Oficial</div>
-            <button class="bim-modal-close" data-close-modal="bim-datasheet-modal">âœ•</button>
+            <div id="bim-ds-header-title">Ficha Técnica Digital Oficial</div>
+            <button class="bim-modal-close" data-close-modal="bim-datasheet-modal">✕</button>
           </div>
           <div class="bim-modal-body" id="bim-ds-body"></div>
         </div>
       </div>
 
-      <!-- 2. MODAL EXPLORADOR DEL CATÃLOGO GENERAL DE FABRICANTES (SECCIÃ“N 2 Y 5) -->
+      <!-- 2. MODAL EXPLORADOR DEL CATÁLOGO GENERAL DE FABRICANTES (SECCIÓN 2 Y 5) -->
       <div class="bim-modal-backdrop" id="bim-catalog-modal" hidden>
         <div class="bim-modal-dialog xlarge">
           <div class="bim-modal-header">
             <div>
-              <strong>ðŸ“š CatÃ¡logo BIM de Productos Comerciales Reales (12 Familias Â· 24 Fabricantes)</strong>
+              <strong>📚 Catálogo BIM de Productos Comerciales Reales (12 Familias · 24 Fabricantes)</strong>
             </div>
-            <button class="bim-modal-close" data-close-modal="bim-catalog-modal">âœ•</button>
+            <button class="bim-modal-close" data-close-modal="bim-catalog-modal">✕</button>
           </div>
           <div class="bim-modal-body" id="bim-cat-body"></div>
         </div>
       </div>
 
-      <!-- 3. MODAL COMPARADOR TÃ‰CNICO DE PRODUCTOS (SECCIÃ“N 5) -->
+      <!-- 3. MODAL COMPARADOR TÉCNICO DE PRODUCTOS (SECCIÓN 5) -->
       <div class="bim-modal-backdrop" id="bim-comparator-modal" hidden>
         <div class="bim-modal-dialog xlarge">
           <div class="bim-modal-header">
-            <div><strong>âš–ï¸ Comparador TÃ©cnico de Productos Comerciales</strong></div>
-            <button class="bim-modal-close" data-close-modal="bim-comparator-modal">âœ•</button>
+            <div><strong>⚖️ Comparador Técnico de Productos Comerciales</strong></div>
+            <button class="bim-modal-close" data-close-modal="bim-comparator-modal">✕</button>
           </div>
           <div class="bim-modal-body" id="bim-comp-body"></div>
         </div>
       </div>
 
-      <!-- 4. MODAL ADMINISTRADOR DEL CATÃLOGO Y CONTROL DE VERSIONES (SECCIÃ“N 14) -->
+      <!-- 4. MODAL ADMINISTRADOR DEL CATÁLOGO Y CONTROL DE VERSIONES (SECCIÓN 14) -->
       <div class="bim-modal-backdrop" id="bim-admin-modal" hidden>
         <div class="bim-modal-dialog large">
           <div class="bim-modal-header">
-            <div><strong>ðŸ› ï¸ AdministraciÃ³n del CatÃ¡logo BIM y Versiones de Ficha TÃ©cnica</strong></div>
-            <button class="bim-modal-close" data-close-modal="bim-admin-modal">âœ•</button>
+            <div><strong>🛠️ Administración del Catálogo BIM y Versiones de Ficha Técnica</strong></div>
+            <button class="bim-modal-close" data-close-modal="bim-admin-modal">✕</button>
           </div>
           <div class="bim-modal-body" id="bim-admin-body"></div>
         </div>
@@ -1050,7 +1050,7 @@ export class BIMLibraryController {
   }
 
   /**
-   * Abre la Ficha TÃ©cnica Digital Oficial de un producto con sus 5 bloques reglamentarios (SecciÃ³n 3).
+   * Abre la Ficha Técnica Digital Oficial de un producto con sus 5 bloques reglamentarios (Sección 3).
    */
   openProductDatasheetModal(productId) {
     const p = this.store.getProductById(productId);
@@ -1066,79 +1066,79 @@ export class BIMLibraryController {
 
     titleEl.innerHTML = `
       <span class="bim-verif-pill" style="color:${vBadge.color};background:${vBadge.bg}">${vBadge.icon} ${vBadge.label}</span>
-      <strong>${p.manufacturerName} Â· ${p.brand} â€” ${p.model}</strong>
+      <strong>${p.manufacturerName} · ${p.brand} — ${p.model}</strong>
     `;
 
     bodyEl.innerHTML = `
       <div class="bim-ds-grid">
-        <!-- 3.1. IDENTIFICACIÃ“N -->
+        <!-- 3.1. IDENTIFICACIÓN -->
         <div class="bim-ds-section">
-          <h4>3.1. IdentificaciÃ³n Comercial y Trazabilidad</h4>
+          <h4>3.1. Identificación Comercial y Trazabilidad</h4>
           <table class="bim-ds-table">
             <tr><th>Fabricante / Marca</th><td><strong>${p.manufacturerName}</strong> (${p.brand})</td></tr>
             <tr><th>Modelo Comercial</th><td>${p.model}</td></tr>
-            <tr><th>CÃ³digo / Referencia</th><td><code>${p.refCode}</code></td></tr>
-            <tr><th>Familia Constructiva</th><td>Familia ${fam ? `${fam.code} â€” ${fam.name}` : p.familyId}</td></tr>
+            <tr><th>Código / Referencia</th><td><code>${p.refCode}</code></td></tr>
+            <tr><th>Familia Constructiva</th><td>Familia ${fam ? `${fam.code} — ${fam.name}` : p.familyId}</td></tr>
             <tr><th>Sistema Constructivo</th><td>${p.applicationSystem}</td></tr>
-            <tr><th>PaÃ­s / Disponibilidad</th><td>${p.country} Â· ${p.availability}</td></tr>
-            <tr><th>Documento y RevisiÃ³n</th><td>${p.versionDoc} (Rev. ${p.revisionDate})</td></tr>
+            <tr><th>País / Disponibilidad</th><td>${p.country} · ${p.availability}</td></tr>
+            <tr><th>Documento y Revisión</th><td>${p.versionDoc} (Rev. ${p.revisionDate})</td></tr>
           </table>
         </div>
 
-        <!-- 3.2. GEOMETRÃA -->
+        <!-- 3.2. GEOMETRÍA -->
         <div class="bim-ds-section">
-          <h4>3.2. GeometrÃ­a Oficial y ParÃ¡metros Dimensionales</h4>
+          <h4>3.2. Geometría Oficial y Parámetros Dimensionales</h4>
           <table class="bim-ds-table">
-            <tr><th>Dimensiones Nominales</th><td><strong>${p.geometry.lengthNominalMm || '-'} Ã— ${p.geometry.widthNominalMm || '-'} Ã— ${p.geometry.thicknessMm || '-'} mm</strong></td></tr>
-            <tr><th>Dimensiones Ãštiles</th><td>${p.geometry.usefulLengthNominalMm || p.geometry.lengthNominalMm || '-'} Ã— ${p.geometry.usefulWidthMm || p.geometry.widthNominalMm || '-'} mm</td></tr>
-            <tr><th>Solape Longitudinal / Transv.</th><td>Long.: ${p.geometry.overlapLongMinMm ?? '-'} mm ${p.geometry.overlapLongMaxMm ? `a ${p.geometry.overlapLongMaxMm} mm` : ''} Â· Transv.: ${p.geometry.overlapTransMm ?? '-'} mm</td></tr>
-            <tr><th>Consumo / Rendimiento</th><td>${p.geometry.unitsPerM2 ? `${p.geometry.unitsPerM2} uds/mÂ²` : p.geometry.rollAreaM2 ? `Rollo ${p.geometry.rollAreaM2} mÂ² (Ãštil ${p.geometry.usefulRollAreaM2} mÂ²)` : 'SegÃºn replanteo'}</td></tr>
-            <tr><th>Peso Unitario y Superficial</th><td><strong>${p.geometry.unitWeightKg ?? '-'} kg/ud</strong> ${p.geometry.surfaceWeightKgM2 ? `(${p.geometry.surfaceWeightKgM2} kg/mÂ²)` : ''}</td></tr>
-            <tr><th>GeometrÃ­a BIM 3D</th><td><code>${p.geometry.shape3D}</code></td></tr>
+            <tr><th>Dimensiones Nominales</th><td><strong>${p.geometry.lengthNominalMm || '-'} × ${p.geometry.widthNominalMm || '-'} × ${p.geometry.thicknessMm || '-'} mm</strong></td></tr>
+            <tr><th>Dimensiones Útiles</th><td>${p.geometry.usefulLengthNominalMm || p.geometry.lengthNominalMm || '-'} × ${p.geometry.usefulWidthMm || p.geometry.widthNominalMm || '-'} mm</td></tr>
+            <tr><th>Solape Longitudinal / Transv.</th><td>Long.: ${p.geometry.overlapLongMinMm ?? '-'} mm ${p.geometry.overlapLongMaxMm ? `a ${p.geometry.overlapLongMaxMm} mm` : ''} · Transv.: ${p.geometry.overlapTransMm ?? '-'} mm</td></tr>
+            <tr><th>Consumo / Rendimiento</th><td>${p.geometry.unitsPerM2 ? `${p.geometry.unitsPerM2} uds/m²` : p.geometry.rollAreaM2 ? `Rollo ${p.geometry.rollAreaM2} m² (Útil ${p.geometry.usefulRollAreaM2} m²)` : 'Según replanteo'}</td></tr>
+            <tr><th>Peso Unitario y Superficial</th><td><strong>${p.geometry.unitWeightKg ?? '-'} kg/ud</strong> ${p.geometry.surfaceWeightKgM2 ? `(${p.geometry.surfaceWeightKgM2} kg/m²)` : ''}</td></tr>
+            <tr><th>Geometría BIM 3D</th><td><code>${p.geometry.shape3D}</code></td></tr>
           </table>
         </div>
 
-        <!-- 3.3. CARACTERÃSTICAS TÃ‰CNICAS -->
+        <!-- 3.3. CARACTERÍSTICAS TÉCNICAS -->
         <div class="bim-ds-section">
-          <h4>3.3. CaracterÃ­sticas TÃ©cnicas y Normativa</h4>
+          <h4>3.3. Características Técnicas y Normativa</h4>
           <table class="bim-ds-table">
-            <tr><th>ComposiciÃ³n / Material</th><td>${p.technicalSpecs.material}</td></tr>
-            <tr><th>Conductividad / Resistencia TÃ©rmica</th><td>${p.technicalSpecs.thermalConductivityWmk ? `Î» = ${p.technicalSpecs.thermalConductivityWmk} W/(mÂ·K)` : 'N/A'} ${p.technicalSpecs.thermalResistanceRd ? `Â· Rd = ${p.technicalSpecs.thermalResistanceRd} mÂ²K/W` : ''} ${p.technicalSpecs.thermalTransmittanceU ? `Â· U = ${p.technicalSpecs.thermalTransmittanceU} W/mÂ²K` : ''}</td></tr>
-            <tr><th>Resistencia MecÃ¡nica / CompresiÃ³n</th><td>${p.technicalSpecs.mechanicalStrength || 'Ver ficha'} ${p.technicalSpecs.compressiveStrengthKpa ? `(${p.technicalSpecs.compressiveStrengthKpa} kPa)` : ''}</td></tr>
-            <tr><th>ReacciÃ³n al Fuego</th><td><strong>${p.technicalSpecs.fireReaction || 'N/A'}</strong></td></tr>
+            <tr><th>Composición / Material</th><td>${p.technicalSpecs.material}</td></tr>
+            <tr><th>Conductividad / Resistencia Térmica</th><td>${p.technicalSpecs.thermalConductivityWmk ? `λ = ${p.technicalSpecs.thermalConductivityWmk} W/(m·K)` : 'N/A'} ${p.technicalSpecs.thermalResistanceRd ? `· Rd = ${p.technicalSpecs.thermalResistanceRd} m²K/W` : ''} ${p.technicalSpecs.thermalTransmittanceU ? `· U = ${p.technicalSpecs.thermalTransmittanceU} W/m²K` : ''}</td></tr>
+            <tr><th>Resistencia Mecánica / Compresión</th><td>${p.technicalSpecs.mechanicalStrength || 'Ver ficha'} ${p.technicalSpecs.compressiveStrengthKpa ? `(${p.technicalSpecs.compressiveStrengthKpa} kPa)` : ''}</td></tr>
+            <tr><th>Reacción al Fuego</th><td><strong>${p.technicalSpecs.fireReaction || 'N/A'}</strong></td></tr>
             <tr><th>Comportamiento al Agua</th><td>${p.technicalSpecs.waterAbsorptionPct || 'Ver ficha'}</td></tr>
             <tr><th>Permeabilidad al Vapor</th><td>${p.technicalSpecs.vaporPermeability || 'N/A'}</td></tr>
             <tr><th>Normativa aplicable</th><td>${(p.technicalSpecs.standards || []).map((s) => `<span class="bim-std-tag">${s}</span>`).join(' ')}</td></tr>
           </table>
         </div>
 
-        <!-- 3.4. COLOCACIÃ“N -->
+        <!-- 3.4. COLOCACIÓN -->
         <div class="bim-ds-section">
-          <h4>3.4. Condiciones Oficiales de ColocaciÃ³n</h4>
+          <h4>3.4. Condiciones Oficiales de Colocación</h4>
           <table class="bim-ds-table">
-            <tr><th>Pendiente MÃ­nima / Recomendada</th><td><strong>MÃ­nima: ${p.installation.minSlopePct ?? 0}% (${p.installation.minSlopeDeg ?? 0}Â°)</strong> Â· Recomendada: ${p.installation.recommendedSlopePct ?? '-'}%</td></tr>
-            <tr><th>Paso entre Rastreles / Apoyos</th><td>${p.installation.battenDistanceMinMm ? `De ${p.installation.battenDistanceMinMm} a ${p.installation.battenDistanceMaxMm} mm` : 'Apoyo continuo / SegÃºn retÃ­cula'}</td></tr>
-            <tr><th>Sistema de FijaciÃ³n</th><td>${p.installation.fixingSystem}</td></tr>
-            <tr><th>Tasa de FijaciÃ³n</th><td>${p.installation.fixingsPerUnit || '-'}</td></tr>
+            <tr><th>Pendiente Mínima / Recomendada</th><td><strong>Mínima: ${p.installation.minSlopePct ?? 0}% (${p.installation.minSlopeDeg ?? 0}°)</strong> · Recomendada: ${p.installation.recommendedSlopePct ?? '-'}%</td></tr>
+            <tr><th>Paso entre Rastreles / Apoyos</th><td>${p.installation.battenDistanceMinMm ? `De ${p.installation.battenDistanceMinMm} a ${p.installation.battenDistanceMaxMm} mm` : 'Apoyo continuo / Según retícula'}</td></tr>
+            <tr><th>Sistema de Fijación</th><td>${p.installation.fixingSystem}</td></tr>
+            <tr><th>Tasa de Fijación</th><td>${p.installation.fixingsPerUnit || '-'}</td></tr>
             <tr><th>Reglas de Compatibilidad</th><td><ul class="bim-ds-list">${(p.installation.compatibilityRules || []).map((r) => `<li>${r}</li>`).join('')}</ul></td></tr>
             <tr><th>Instrucciones de Montaje</th><td>${p.installation.instructionsSummary || ''}</td></tr>
           </table>
         </div>
       </div>
 
-      <!-- 3.5. DOCUMENTACIÃ“N Y ENLACES OFICIALES -->
+      <!-- 3.5. DOCUMENTACIÓN Y ENLACES OFICIALES -->
       <div class="bim-ds-section" style="margin-top:14px;">
-        <h4>3.5. DocumentaciÃ³n Oficial, Enlaces Verificados y Formato BIM/CAD</h4>
+        <h4>3.5. Documentación Oficial, Enlaces Verificados y Formato BIM/CAD</h4>
         <div class="bim-ds-footer" style="margin-top:6px;padding-top:6px;border-top:none;">
           <div class="bim-ds-links">
             <a href="${p.documentation.productUrl}" target="_blank" rel="noopener noreferrer" class="bim-doc-link primary">
-              ðŸŒ PÃ¡gina Oficial del Producto (${p.manufacturerName})
+              🌐 Página Oficial del Producto (${p.manufacturerName})
             </a>
             <a href="${p.documentation.datasheetPdfUrl}" target="_blank" rel="noopener noreferrer" class="bim-doc-link">
-              ðŸ“„ CatÃ¡logo / Ficha TÃ©cnica Oficial
+              📄 Catálogo / Ficha Técnica Oficial
             </a>
             <a href="${p.documentation.installationGuideUrl}" target="_blank" rel="noopener noreferrer" class="bim-doc-link">
-              ðŸ› ï¸ Manual de InstalaciÃ³n del Fabricante
+              🛠️ Manual de Instalación del Fabricante
             </a>
           </div>
           <div class="bim-ds-bimformat">
@@ -1152,7 +1152,7 @@ export class BIMLibraryController {
   }
 
   /**
-   * Abre el Explorador del CatÃ¡logo General con filtros reales (SecciÃ³n 2 y SecciÃ³n 5).
+   * Abre el Explorador del Catálogo General con filtros reales (Sección 2 y Sección 5).
    */
   openCatalogExplorerModal(preselectFamilyId = null, preselectRole = null) {
     const modal = document.getElementById('bim-catalog-modal');
@@ -1182,9 +1182,9 @@ export class BIMLibraryController {
 
       bodyEl.innerHTML = `
         <div class="bim-cat-filters">
-          <input type="search" id="bim-cat-search" placeholder="ðŸ” Buscar por fabricante, modelo, cÃ³digo, norma UNE-EN..." value="${this.catalogFilter.search}">
+          <input type="search" id="bim-cat-search" placeholder="🔍 Buscar por fabricante, modelo, código, norma UNE-EN..." value="${this.catalogFilter.search}">
           <select id="bim-cat-family">
-            <option value="ALL">Todas las Familias (Aâ€“L Â· ${allProds.length} productos)</option>
+            <option value="ALL">Todas las Familias (A–L · ${allProds.length} productos)</option>
             ${BIM_FAMILIES.map(
               (f) =>
                 `<option value="${f.id}" ${this.catalogFilter.familyId === f.id ? 'selected' : ''}>Familia ${f.code}. ${f.name}</option>`
@@ -1207,7 +1207,7 @@ export class BIMLibraryController {
             ${Object.values(BIM_MANUFACTURERS)
               .map(
                 (m) =>
-                  `<a href="${m.url}" target="_blank" rel="noopener noreferrer" class="bim-mfg-chip" title="Abrir web oficial de ${m.name} (${m.url})">${m.name} â†—</a>`
+                  `<a href="${m.url}" target="_blank" rel="noopener noreferrer" class="bim-mfg-chip" title="Abrir web oficial de ${m.name} (${m.url})">${m.name} ↗</a>`
               )
               .join('')}
           </div>
@@ -1225,18 +1225,18 @@ export class BIMLibraryController {
                     <span class="bim-verif-pill" style="color:${vBadge.color};background:${vBadge.bg}">${vBadge.icon} ${vBadge.label}</span>
                   </div>
                   <h4 class="bim-pc-title">${p.model}</h4>
-                  <div class="bim-pc-ref">Ref: <code>${p.refCode}</code> Â· ${p.versionDoc}</div>
+                  <div class="bim-pc-ref">Ref: <code>${p.refCode}</code> · ${p.versionDoc}</div>
                   <div class="bim-pc-specs">
-                    <span>ðŸ“ ${p.geometry.lengthNominalMm}Ã—${p.geometry.widthNominalMm}Ã—${p.geometry.thicknessMm} mm</span>
-                    <span>âš–ï¸ ${p.geometry.unitWeightKg} kg/ud ${p.geometry.surfaceWeightKgM2 ? `(${p.geometry.surfaceWeightKgM2} kg/mÂ²)` : ''}</span>
-                    <span>â›°ï¸ Pend. mÃ­n: ${p.installation.minSlopePct ?? 0}%</span>
+                    <span>📐 ${p.geometry.lengthNominalMm}×${p.geometry.widthNominalMm}×${p.geometry.thicknessMm} mm</span>
+                    <span>⚖️ ${p.geometry.unitWeightKg} kg/ud ${p.geometry.surfaceWeightKgM2 ? `(${p.geometry.surfaceWeightKgM2} kg/m²)` : ''}</span>
+                    <span>⛰️ Pend. mín: ${p.installation.minSlopePct ?? 0}%</span>
                   </div>
                   <div class="bim-pc-actions">
-                    <button class="bim-pc-btn" data-open-ds="${p.id}">ðŸ“„ Ficha Oficial</button>
+                    <button class="bim-pc-btn" data-open-ds="${p.id}">📄 Ficha Oficial</button>
                     <button class="bim-pc-btn ${inCompare ? 'active' : ''}" data-toggle-cmp="${p.id}">
-                      ${inCompare ? 'âœ“ En Comparador' : 'âš–ï¸ Comparar'}
+                      ${inCompare ? '✓ En Comparador' : '⚖️ Comparar'}
                     </button>
-                    <button class="bim-pc-btn primary" data-apply-model="${p.id}">âœ… Usar en 3D</button>
+                    <button class="bim-pc-btn primary" data-apply-model="${p.id}">✅ Usar en 3D</button>
                   </div>
                 </div>
               `;
@@ -1342,7 +1342,7 @@ export class BIMLibraryController {
   }
 
   /**
-   * Abre el Comparador TÃ©cnico lado a lado (SecciÃ³n 5).
+   * Abre el Comparador Técnico lado a lado (Sección 5).
    */
   openComparatorModal() {
     const modal = document.getElementById('bim-comparator-modal');
@@ -1355,20 +1355,20 @@ export class BIMLibraryController {
     const renderComp = () => {
       bodyEl.innerHTML = `
         <div class="bim-comp-toolbar">
-          <span>AÃ±adir producto a la tabla comparativa (mÃ¡x. 4):</span>
+          <span>Añadir producto a la tabla comparativa (máx. 4):</span>
           <select id="bim-comp-add-sel">
             ${allProds
               .map((p) => `<option value="${p.id}">[${p.manufacturerName}] ${p.model}</option>`)
               .join('')}
           </select>
-          <button class="bim-mini-btn" id="bim-comp-add-btn">+ AÃ±adir a ComparaciÃ³n</button>
+          <button class="bim-mini-btn" id="bim-comp-add-btn">+ Añadir a Comparación</button>
         </div>
 
         <div class="bim-comp-table-wrap">
           <table class="bim-comp-table">
             <thead>
               <tr>
-                <th>ParÃ¡metro TÃ©cnico Verificado</th>
+                <th>Parámetro Técnico Verificado</th>
                 ${prods
                   .map(
                     (p) => `
@@ -1376,7 +1376,7 @@ export class BIMLibraryController {
                     <div class="bim-ct-head">
                       <span>${p.manufacturerName}</span>
                       <strong>${p.model}</strong>
-                      <button class="bim-ct-rm" data-rm-cmp="${p.id}">Quitar âœ•</button>
+                      <button class="bim-ct-rm" data-rm-cmp="${p.id}">Quitar ✕</button>
                     </div>
                   </th>
                 `
@@ -1387,16 +1387,16 @@ export class BIMLibraryController {
             <tbody>
               <tr><th>Referencia Comercial</th>${prods.map((p) => `<td><code>${p.refCode}</code></td>`).join('')}</tr>
               <tr><th>Sistema Constructivo</th>${prods.map((p) => `<td>${p.applicationSystem}</td>`).join('')}</tr>
-              <tr><th>Dimensiones Nominales (mm)</th>${prods.map((p) => `<td><strong>${p.geometry.lengthNominalMm} Ã— ${p.geometry.widthNominalMm} Ã— ${p.geometry.thicknessMm} mm</strong></td>`).join('')}</tr>
-              <tr><th>Dimensiones Ãštiles (mm)</th>${prods.map((p) => `<td>${p.geometry.usefulLengthNominalMm || '-'} Ã— ${p.geometry.usefulWidthMm || '-'} mm</td>`).join('')}</tr>
+              <tr><th>Dimensiones Nominales (mm)</th>${prods.map((p) => `<td><strong>${p.geometry.lengthNominalMm} × ${p.geometry.widthNominalMm} × ${p.geometry.thicknessMm} mm</strong></td>`).join('')}</tr>
+              <tr><th>Dimensiones Útiles (mm)</th>${prods.map((p) => `<td>${p.geometry.usefulLengthNominalMm || '-'} × ${p.geometry.usefulWidthMm || '-'} mm</td>`).join('')}</tr>
               <tr><th>Solape Oficial (Long / Trans)</th>${prods.map((p) => `<td>${p.geometry.overlapLongMinMm ?? '-'} mm / ${p.geometry.overlapTransMm ?? '-'} mm</td>`).join('')}</tr>
-              <tr><th>Peso Unitario / Superficial</th>${prods.map((p) => `<td>${p.geometry.unitWeightKg} kg/ud (${p.geometry.surfaceWeightKgM2 || '-'} kg/mÂ²)</td>`).join('')}</tr>
-              <tr><th>Pendiente MÃ­nima / Recom.</th>${prods.map((p) => `<td><strong>${p.installation.minSlopePct ?? 0}%</strong> / ${p.installation.recommendedSlopePct ?? '-'}%</td>`).join('')}</tr>
-              <tr><th>Paso de Rastrel Admisible</th>${prods.map((p) => `<td>${p.installation.battenDistanceMinMm ? `${p.installation.battenDistanceMinMm}â€“${p.installation.battenDistanceMaxMm} mm` : 'Apoyo continuo'}</td>`).join('')}</tr>
-              <tr><th>Material y ComposiciÃ³n</th>${prods.map((p) => `<td>${p.technicalSpecs.material}</td>`).join('')}</tr>
-              <tr><th>ReacciÃ³n al Fuego</th>${prods.map((p) => `<td>${p.technicalSpecs.fireReaction || '-'}</td>`).join('')}</tr>
+              <tr><th>Peso Unitario / Superficial</th>${prods.map((p) => `<td>${p.geometry.unitWeightKg} kg/ud (${p.geometry.surfaceWeightKgM2 || '-'} kg/m²)</td>`).join('')}</tr>
+              <tr><th>Pendiente Mínima / Recom.</th>${prods.map((p) => `<td><strong>${p.installation.minSlopePct ?? 0}%</strong> / ${p.installation.recommendedSlopePct ?? '-'}%</td>`).join('')}</tr>
+              <tr><th>Paso de Rastrel Admisible</th>${prods.map((p) => `<td>${p.installation.battenDistanceMinMm ? `${p.installation.battenDistanceMinMm}–${p.installation.battenDistanceMaxMm} mm` : 'Apoyo continuo'}</td>`).join('')}</tr>
+              <tr><th>Material y Composición</th>${prods.map((p) => `<td>${p.technicalSpecs.material}</td>`).join('')}</tr>
+              <tr><th>Reacción al Fuego</th>${prods.map((p) => `<td>${p.technicalSpecs.fireReaction || '-'}</td>`).join('')}</tr>
               <tr><th>Normativa UNE / EN / CTE</th>${prods.map((p) => `<td>${(p.technicalSpecs.standards || []).join(', ')}</td>`).join('')}</tr>
-              <tr><th>DocumentaciÃ³n Oficial</th>${prods.map((p) => `<td><a href="${p.documentation.productUrl}" target="_blank" rel="noopener">Web Oficial â†—</a></td>`).join('')}</tr>
+              <tr><th>Documentación Oficial</th>${prods.map((p) => `<td><a href="${p.documentation.productUrl}" target="_blank" rel="noopener">Web Oficial ↗</a></td>`).join('')}</tr>
             </tbody>
           </table>
         </div>
@@ -1424,7 +1424,7 @@ export class BIMLibraryController {
   }
 
   /**
-   * Abre el Administrador del CatÃ¡logo BIM para Alta/EdiciÃ³n de Productos y Control de Versiones (SecciÃ³n 14).
+   * Abre el Administrador del Catálogo BIM para Alta/Edición de Productos y Control de Versiones (Sección 14).
    */
   openAdminProductModal() {
     const modal = document.getElementById('bim-admin-modal');
@@ -1436,9 +1436,9 @@ export class BIMLibraryController {
     bodyEl.innerHTML = `
       <div class="bim-admin-grid">
         <div class="bim-admin-form-box">
-          <h4>Alta o ActualizaciÃ³n de Producto Comercial</h4>
+          <h4>Alta o Actualización de Producto Comercial</h4>
           <p class="bim-admin-note">
-            Todo producto incorporado registra su estado de verificaciÃ³n (<code>VERIFICADO_OFICIAL</code>, <code>CALCULADO_PARAMETRICO</code> o <code>PENDIENTE_DOCUMENTACION</code>) y conserva el historial de versiones de ficha tÃ©cnica.
+            Todo producto incorporado registra su estado de verificación (<code>VERIFICADO_OFICIAL</code>, <code>CALCULADO_PARAMETRICO</code> o <code>PENDIENTE_DOCUMENTACION</code>) y conserva el historial de versiones de ficha técnica.
           </p>
           <div class="bim-form-row">
             <label>Cargar producto existente para editar:
@@ -1449,12 +1449,12 @@ export class BIMLibraryController {
             </label>
           </div>
           <div class="bim-form-row">
-            <label>ID Ãšnico BIM
+            <label>ID Único BIM
               <input type="text" id="adm-id" placeholder="Ej: TERREAL-TB10-2025">
             </label>
             <label>Familia Constructiva
               <select id="adm-family">
-                ${BIM_FAMILIES.map((f) => `<option value="${f.id}">Familia ${f.code} â€” ${f.name}</option>`).join('')}
+                ${BIM_FAMILIES.map((f) => `<option value="${f.id}">Familia ${f.code} — ${f.name}</option>`).join('')}
               </select>
             </label>
           </div>
@@ -1467,16 +1467,16 @@ export class BIMLibraryController {
             </label>
           </div>
           <div class="bim-form-row">
-            <label>CÃ³digo / Referencia
+            <label>Código / Referencia
               <input type="text" id="adm-ref" placeholder="Ej: TR-DUNA-450">
             </label>
             <label>Rol en Ensamblador 3D
               <select id="adm-role">
                 <option value="roof_covering">Cobertura de Tejado (roof_covering)</option>
                 <option value="batten_system">Rastrel / Soporte (batten_system)</option>
-                <option value="support_panel">Panel SÃ¡ndwich Madera (support_panel)</option>
-                <option value="waterproofing">ImpermeabilizaciÃ³n (waterproofing)</option>
-                <option value="insulation">Aislamiento TÃ©rmico (insulation)</option>
+                <option value="support_panel">Panel Sándwich Madera (support_panel)</option>
+                <option value="waterproofing">Impermeabilización (waterproofing)</option>
+                <option value="insulation">Aislamiento Térmico (insulation)</option>
                 <option value="separator">Geotextil Separador (separator)</option>
                 <option value="plots">Plots Regulables (plots)</option>
                 <option value="pavement">Pavimento 20mm (pavement)</option>
@@ -1496,10 +1496,10 @@ export class BIMLibraryController {
             </label>
           </div>
           <div class="bim-form-row">
-            <label>Largo Ãštil / Paso Rastrel (mm)
+            <label>Largo Útil / Paso Rastrel (mm)
               <input type="number" id="adm-ulen" value="375">
             </label>
-            <label>Ancho Ãštil (mm)
+            <label>Ancho Útil (mm)
               <input type="number" id="adm-uwid" value="235">
             </label>
             <label>Peso Unitario (kg)
@@ -1507,27 +1507,27 @@ export class BIMLibraryController {
             </label>
           </div>
           <div class="bim-form-row">
-            <label>Pendiente MÃ­nima (%)
+            <label>Pendiente Mínima (%)
               <input type="number" id="adm-slope" value="30">
             </label>
-            <label>Estado de VerificaciÃ³n Documental
+            <label>Estado de Verificación Documental
               <select id="adm-verif">
-                <option value="VERIFICADO_OFICIAL">VERIFICADO_OFICIAL (Ficha tÃ©cnica verificada)</option>
-                <option value="CALCULADO_PARAMETRICO">CALCULADO_PARAMETRICO (Derivado geomÃ©tricamente)</option>
+                <option value="VERIFICADO_OFICIAL">VERIFICADO_OFICIAL (Ficha técnica verificada)</option>
+                <option value="CALCULADO_PARAMETRICO">CALCULADO_PARAMETRICO (Derivado geométricamente)</option>
                 <option value="PENDIENTE_DOCUMENTACION">PENDIENTE_DOCUMENTACION (Pendiente de ficha PDF)</option>
               </select>
             </label>
           </div>
           <div class="bim-form-row">
-            <label>VersiÃ³n Ficha TÃ©cnica / DoP
-              <input type="text" id="adm-docver" value="Ficha TÃ©cnica Oficial 2025">
+            <label>Versión Ficha Técnica / DoP
+              <input type="text" id="adm-docver" value="Ficha Técnica Oficial 2025">
             </label>
             <label>URL Oficial del Fabricante
               <input type="url" id="adm-url" value="https://www.terreal.com">
             </label>
           </div>
           <div class="bim-admin-actions">
-            <button class="bim-action-btn primary" id="adm-save-btn">ðŸ’¾ Guardar Producto en CatÃ¡logo BIM</button>
+            <button class="bim-action-btn primary" id="adm-save-btn">💾 Guardar Producto en Catálogo BIM</button>
             <span id="adm-save-feedback"></span>
           </div>
         </div>
@@ -1579,8 +1579,8 @@ export class BIMLibraryController {
         role: bodyEl.querySelector('#adm-role').value,
         subType: existing?.subType || 'teja_mixta',
         applicationSystem: existing?.applicationSystem || 'Sistema constructivo de cubierta',
-        country: existing?.country || 'EspaÃ±a / UE',
-        availability: 'En comercializaciÃ³n activa',
+        country: existing?.country || 'España / UE',
+        availability: 'En comercialización activa',
         verificationStatus: bodyEl.querySelector('#adm-verif').value,
         versionDoc: bodyEl.querySelector('#adm-docver').value.trim(),
         revisionDate: new Date().toISOString().slice(0, 7),
@@ -1601,7 +1601,7 @@ export class BIMLibraryController {
           shape3D: existing?.geometry?.shape3D || 'mixed_interlocking_tile',
         },
         technicalSpecs: existing?.technicalSpecs || {
-          material: 'Producto comercial registrado en catÃ¡logo BIM ETSIE',
+          material: 'Producto comercial registrado en catálogo BIM ETSIE',
           mechanicalStrength: 'Conforme a norma europea UNE-EN de producto',
           fireReaction: 'Euroclase A1 / Broof(t1)',
           standards: ['CTE DB-HS 1', 'Marcado CE'],
@@ -1613,20 +1613,20 @@ export class BIMLibraryController {
           recommendedSlopePct: (Number(bodyEl.querySelector('#adm-slope').value) || 25) + 5,
           battenDistanceMinMm: Math.max(50, ulen - 15),
           battenDistanceMaxMm: ulen + 10,
-          fixingSystem: existing?.installation?.fixingSystem || 'FijaciÃ³n mecÃ¡nica segÃºn ficha tÃ©cnica oficial',
-          compatibilityRules: existing?.installation?.compatibilityRules || ['Respetar solapes y pendiente mÃ­nima del fabricante'],
+          fixingSystem: existing?.installation?.fixingSystem || 'Fijación mecánica según ficha técnica oficial',
+          compatibilityRules: existing?.installation?.compatibilityRules || ['Respetar solapes y pendiente mínima del fabricante'],
         },
         documentation: {
           productUrl: bodyEl.querySelector('#adm-url').value.trim() || 'https://www.upv.es',
           datasheetPdfUrl: bodyEl.querySelector('#adm-url').value.trim() || 'https://www.upv.es',
           installationGuideUrl: bodyEl.querySelector('#adm-url').value.trim() || 'https://www.upv.es',
-          bimCadFormat: 'Objeto ParamÃ©trico 3D BIM ETSIE',
+          bimCadFormat: 'Objeto Paramétrico 3D BIM ETSIE',
         },
       };
 
       this.store.upsertProduct(newProd);
       const fb = bodyEl.querySelector('#adm-save-feedback');
-      if (fb) fb.textContent = `âœ… Producto ${newProd.id} guardado correctamente con control de versiÃ³n.`;
+      if (fb) fb.textContent = `✅ Producto ${newProd.id} guardado correctamente con control de versión.`;
       this.recalculateAndRenderAll();
     });
 
@@ -1634,7 +1634,7 @@ export class BIMLibraryController {
   }
 
   // ===========================================================================
-  // GENERADOR DE DOCUMENTACIÃ“N TÃ‰CNICA: INFORME PDF/IMPRESIÃ“N, CSV Y JSON (SECCIÃ“N 13)
+  // GENERADOR DE DOCUMENTACIÓN TÉCNICA: INFORME PDF/IMPRESIÓN, CSV Y JSON (SECCIÓN 13)
   // ===========================================================================
   exportTechnicalReportPDF() {
     if (!this.currentReplanteo || !this.currentCompatibility) return;
@@ -1664,8 +1664,8 @@ export class BIMLibraryController {
         (a) => `
         <div class="alert ${a.severity}">
           <strong>[${a.severity.toUpperCase()}] ${a.problem}</strong><br>
-          <span>ParÃ¡metro: ${a.affectedParam} | Fuente: ${a.source}</span><br>
-          <em>AcciÃ³n / VerificaciÃ³n: ${a.solution}</em>
+          <span>Parámetro: ${a.affectedParam} | Fuente: ${a.source}</span><br>
+          <em>Acción / Verificación: ${a.solution}</em>
         </div>
       `
       )
@@ -1676,7 +1676,7 @@ export class BIMLibraryController {
       <html lang="es">
       <head>
         <meta charset="UTF-8">
-        <title>Informe TÃ©cnico BIM â€” ConstrucciÃ³n II ETSIE UPV</title>
+        <title>Informe Técnico BIM — Construcción II ETSIE UPV</title>
         <style>
           body { font-family: 'Segoe UI', Arial, sans-serif; color: #1e293b; margin: 28px; line-height: 1.45; }
           .header { border-bottom: 3px solid #0284c7; padding-bottom: 12px; margin-bottom: 18px; display: flex; justify-content: space-between; }
@@ -1696,13 +1696,13 @@ export class BIMLibraryController {
       <body>
         <div class="no-print" style="margin-bottom:16px;">
           <button onclick="window.print()" style="padding:8px 16px;background:#0284c7;color:#fff;border:none;border-radius:4px;cursor:pointer;font-weight:bold;">
-            ðŸ–¨ï¸ Imprimir o Guardar como PDF
+            🖨️ Imprimir o Guardar como PDF
           </button>
         </div>
         <div class="header">
           <div>
-            <h1>UNIVERSITAT POLITÃˆCNICA DE VALÃˆNCIA Â· ETSIE</h1>
-            <div>ConstrucciÃ³n II â€” Informe TÃ©cnico de EspecificaciÃ³n Comercial BIM y Replanteo de Cubierta</div>
+            <h1>UNIVERSITAT POLITÈCNICA DE VALÈNCIA · ETSIE</h1>
+            <div>Construcción II — Informe Técnico de Especificación Comercial BIM y Replanteo de Cubierta</div>
           </div>
           <div style="text-align:right;font-size:12px;">
             Fecha: ${new Date().toLocaleDateString('es-ES')}<br>
@@ -1712,18 +1712,18 @@ export class BIMLibraryController {
 
         <div class="kpis">
           <div class="kpi">
-            <div>Superficie de CÃ¡lculo</div>
-            <strong style="font-size:18px;">${rep.geometry.realAreaM2 || rep.geometry.flatAreaM2} mÂ²</strong>
+            <div>Superficie de Cálculo</div>
+            <strong style="font-size:18px;">${rep.geometry.realAreaM2 || rep.geometry.flatAreaM2} m²</strong>
             <div>Pendiente: ${rep.geometry.slopePct}%</div>
           </div>
           <div class="kpi">
             <div>Peso Total de la Cubierta</div>
             <strong style="font-size:18px;">${rep.summary.totalWeightKg} kg</strong>
-            <div>Carga superficial: ${rep.summary.weightPerM2Kg} kg/mÂ²</div>
+            <div>Carga superficial: ${rep.summary.weightPerM2Kg} kg/m²</div>
           </div>
           <div class="kpi">
-            <div>Transmitancia TÃ©rmica Estimada</div>
-            <strong style="font-size:18px;">U = ${rep.summary.uValueWmk} W/mÂ²K</strong>
+            <div>Transmitancia Térmica Estimada</div>
+            <strong style="font-size:18px;">U = ${rep.summary.uValueWmk} W/m²K</strong>
             <div>Merma considerada: ${rep.geometry.wastePct}%</div>
           </div>
         </div>
@@ -1734,8 +1734,8 @@ export class BIMLibraryController {
             <tr>
               <th>Orden / Capa</th>
               <th>Fabricante y Modelo Oficial</th>
-              <th>Dimensiones y ParÃ¡metros</th>
-              <th>Cantidad TeÃ³rica</th>
+              <th>Dimensiones y Parámetros</th>
+              <th>Cantidad Teórica</th>
               <th>Cantidad Montaje</th>
               <th>Pedido (+${rep.geometry.wastePct}%)</th>
               <th>Peso Total</th>
@@ -1744,15 +1744,15 @@ export class BIMLibraryController {
           <tbody>${rowsHtml}</tbody>
         </table>
 
-        <h2>2. AuditorÃ­a del Motor de Compatibilidad Constructiva y Normativa CTE</h2>
+        <h2>2. Auditoría del Motor de Compatibilidad Constructiva y Normativa CTE</h2>
         ${compatHtml}
 
-        <h2>3. Enlaces Oficiales a Fichas TÃ©cnicas de los Fabricantes Seleccionados</h2>
+        <h2>3. Enlaces Oficiales a Fichas Técnicas de los Fabricantes Seleccionados</h2>
         <ul>
           ${Object.values(rep.products)
             .map(
               (p) =>
-                `<li><strong>${p.manufacturerName} â€” ${p.model}</strong> (${p.versionDoc}): <a href="${p.documentation.productUrl}">${p.documentation.productUrl}</a></li>`
+                `<li><strong>${p.manufacturerName} — ${p.model}</strong> (${p.versionDoc}): <a href="${p.documentation.productUrl}">${p.documentation.productUrl}</a></li>`
             )
             .join('')}
         </ul>
@@ -1812,7 +1812,7 @@ export class BIMLibraryController {
   exportProjectJSON() {
     if (!this.currentReplanteo) return;
     const data = {
-      project: 'ROOFLAB ETSIE Â· BIBLIOTECA BIM DE PRODUCTOS REALES',
+      project: 'ROOFLAB ETSIE · BIBLIOTECA BIM DE PRODUCTOS REALES',
       exportedAt: new Date().toISOString(),
       activeDemoId: this.activeDemoId,
       replanteo: this.currentReplanteo,
@@ -1827,4 +1827,3 @@ export class BIMLibraryController {
     URL.revokeObjectURL(url);
   }
 }
-

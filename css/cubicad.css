@@ -1,0 +1,1430 @@
+/* =============================================================================
+   CubiCAD · Constructor CAD/BIM de Cubiertas
+   Diseño Futurista Minimalista Apple (Blanco / Negro · Alta Resolución)
+   ============================================================================= */
+
+:root,
+[data-theme="light"] {
+  --bg-app: #f5f5f7;
+  --bg-surface: rgba(255, 255, 255, 0.92);
+  --bg-solid: #ffffff;
+  --bg-subtle: #f0f1f4;
+  --bg-hover: #e8eaef;
+  --ink-primary: #111318;
+  --ink-secondary: #4b5563;
+  --ink-muted: #6e7787;
+  --border-hair: rgba(17, 19, 24, 0.10);
+  --border-strong: rgba(17, 19, 24, 0.20);
+  --accent: #0071e3;
+  --accent-hover: #005bb5;
+  --accent-soft: rgba(0, 113, 227, 0.10);
+  --ok: #15803d;
+  --ok-bg: rgba(22, 163, 74, 0.11);
+  --warn: #b45309;
+  --warn-bg: rgba(245, 158, 11, 0.14);
+  --err: #dc2626;
+  --err-bg: rgba(220, 38, 38, 0.11);
+  --shadow-sm: 0 2px 10px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 12px 34px rgba(0, 0, 0, 0.10);
+  --shadow-lg: 0 24px 60px rgba(0, 0, 0, 0.18);
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", "Inter", system-ui, sans-serif;
+  --font-mono: "SFMono-Regular", ui-monospace, "Cascadia Code", Consolas, monospace;
+}
+
+[data-theme="dark"] {
+  --bg-app: #0c0f15;
+  --bg-surface: rgba(18, 22, 30, 0.92);
+  --bg-solid: #141923;
+  --bg-subtle: #1c222e;
+  --bg-hover: #252d3c;
+  --ink-primary: #f5f7fa;
+  --ink-secondary: #b4becc;
+  --ink-muted: #8490a3;
+  --border-hair: rgba(255, 255, 255, 0.10);
+  --border-strong: rgba(255, 255, 255, 0.20);
+  --accent: #0a84ff;
+  --accent-hover: #3b9cff;
+  --accent-soft: rgba(10, 132, 255, 0.18);
+  --ok: #4ade80;
+  --ok-bg: rgba(34, 197, 94, 0.16);
+  --warn: #fbbf24;
+  --warn-bg: rgba(245, 158, 11, 0.18);
+  --err: #f87171;
+  --err-bg: rgba(239, 68, 68, 0.18);
+  --shadow-sm: 0 2px 10px rgba(0, 0, 0, 0.35);
+  --shadow-md: 0 14px 36px rgba(0, 0, 0, 0.50);
+  --shadow-lg: 0 24px 64px rgba(0, 0, 0, 0.65);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  font-family: var(--font-sans);
+  background: var(--bg-app);
+  color: var(--ink-primary);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+button, input, select {
+  font-family: inherit;
+}
+
+/* ============================================================================
+   BARRA SUPERIOR MINIMALISTA APPLE / ARCHICAD
+   ============================================================================ */
+.cc-topbar {
+  height: 54px;
+  background: var(--bg-surface);
+  backdrop-filter: blur(18px);
+  border-bottom: 1px solid var(--border-hair);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  gap: 8px;
+  position: relative;
+  z-index: 40;
+}
+
+.cc-brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.cc-logo-box {
+  width: 32px;
+  height: 32px;
+  border-radius: 9px;
+  background: var(--ink-primary);
+  color: var(--bg-solid);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  box-shadow: var(--shadow-sm);
+}
+.cc-logo-box svg {
+  width: 22px;
+  height: 22px;
+}
+
+.cc-brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.08;
+}
+.cc-brand-name {
+  font-size: 15.5px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: var(--ink-primary);
+}
+.cc-brand-sub {
+  font-size: 9.5px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: var(--ink-muted);
+}
+
+/* Pestañas principales agrupadas */
+.cc-main-tabs {
+  display: flex;
+  align-items: center;
+  background: var(--bg-subtle);
+  padding: 3px;
+  border-radius: 10px;
+  border: 1px solid var(--border-hair);
+  gap: 1px;
+}
+.cc-tab-btn {
+  appearance: none;
+  border: none;
+  background: transparent;
+  color: var(--ink-secondary);
+  font-size: 11.5px;
+  font-weight: 600;
+  padding: 5px 9px;
+  border-radius: 7px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  transition: all 0.16s ease;
+  white-space: nowrap;
+}
+.cc-tab-btn svg {
+  width: 14px;
+  height: 14px;
+}
+.cc-tab-btn:hover {
+  color: var(--ink-primary);
+}
+.cc-tab-btn.active {
+  background: var(--bg-solid);
+  color: var(--ink-primary);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Selector rápido de las 3 Tipologías */
+.cc-typology-switch {
+  display: flex;
+  align-items: center;
+  background: var(--bg-subtle);
+  padding: 3px;
+  border-radius: 9px;
+  border: 1px solid var(--border-hair);
+  gap: 1px;
+}
+.cc-typo-btn {
+  appearance: none;
+  border: none;
+  background: transparent;
+  color: var(--ink-secondary);
+  font-size: 11px;
+  font-weight: 600;
+  padding: 5px 7px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  transition: all 0.15s ease;
+  white-space: nowrap;
+}
+.cc-typo-btn svg {
+  width: 13px;
+  height: 13px;
+}
+.cc-typo-btn.active {
+  background: var(--ink-primary);
+  color: var(--bg-solid);
+}
+
+/* Controles CAD Globales (Undo/Redo/Copy/Paste/Delete/Tutorial/Theme) */
+.cc-topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex-shrink: 0;
+}
+
+.cc-cad-quick {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+  background: var(--bg-subtle);
+  padding: 2px;
+  border-radius: 8px;
+  border: 1px solid var(--border-hair);
+}
+
+.cc-ico-btn {
+  appearance: none;
+  border: none;
+  background: transparent;
+  color: var(--ink-primary);
+  width: 27px;
+  height: 27px;
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.14s ease;
+}
+.cc-ico-btn svg {
+  width: 15px;
+  height: 15px;
+}
+.cc-ico-btn:hover:not(:disabled) {
+  background: var(--bg-solid);
+  box-shadow: var(--shadow-sm);
+}
+.cc-ico-btn:disabled {
+  opacity: 0.32;
+  cursor: not-allowed;
+}
+
+.cc-tutorial-pill {
+  appearance: none;
+  border: 1px solid var(--accent);
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-size: 11px;
+  font-weight: 700;
+  padding: 5px 9px;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  white-space: nowrap;
+}
+.cc-tutorial-pill svg {
+  width: 14px;
+  height: 14px;
+}
+.cc-tutorial-pill:hover {
+  background: var(--accent);
+  color: #fff;
+}
+
+/* ============================================================================
+   CONTENEDOR PRINCIPAL DE VISTAS
+   ============================================================================ */
+.cc-main-shell {
+  height: calc(100vh - 54px);
+  width: 100%;
+  position: relative;
+}
+
+.cc-main-view {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+.cc-main-view.active {
+  display: flex;
+}
+
+/* ============================================================================
+   VISTA 1: CONSTRUCTOR (ROOF BUILDER ESTILO ARCHICAD + APPLE)
+   ============================================================================ */
+.cc-builder-layout {
+  display: grid;
+  grid-template-columns: 88px minmax(0, 1fr) 315px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.cc-builder-layout.inspector-collapsed {
+  grid-template-columns: 88px minmax(0, 1fr) 0px;
+}
+.cc-builder-layout.inspector-collapsed .cc-inspector {
+  overflow: hidden;
+  border-left: none;
+  padding: 0;
+}
+
+/* Paleta Lateral Izquierda con Iconos SVG Visibles y Etiquetas Claras */
+.cc-left-palette {
+  background: var(--bg-surface);
+  backdrop-filter: blur(18px);
+  border-right: 1px solid var(--border-hair);
+  display: flex;
+  flex-direction: column;
+  padding: 5px 5px;
+  gap: 2px;
+  overflow-y: auto;
+  z-index: 25;
+}
+
+.cc-palette-section-lbl {
+  font-size: 8.5px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+  text-align: center;
+  margin: 2px 0 1px;
+}
+.cc-palette-divider {
+  height: 1px;
+  background: var(--border-hair);
+  margin: 3px 6px;
+}
+
+.cc-tool-btn {
+  appearance: none;
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--ink-secondary);
+  border-radius: 8px;
+  padding: 4px 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.15s ease;
+}
+.cc-tool-btn .cc-t-ico {
+  width: 19px;
+  height: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cc-tool-btn .cc-t-ico svg {
+  width: 18px;
+  height: 18px;
+}
+.cc-tool-btn .cc-t-lbl {
+  font-size: 9px;
+  font-weight: 600;
+  line-height: 1.08;
+  text-align: center;
+}
+.cc-tool-btn:hover {
+  background: var(--bg-subtle);
+  color: var(--ink-primary);
+}
+.cc-tool-btn.active,
+.cc-tool-btn.flyout-open {
+  background: var(--accent-soft);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.cc-tool-layer.layer-on::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  right: 7px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #16a34a;
+  box-shadow: 0 0 0 2px var(--bg-solid);
+}
+
+/* Ventanilla Desplegable (Flyout estilo ArchiCAD) */
+.cc-flyout {
+  position: fixed;
+  left: 96px;
+  top: 72px;
+  width: 348px;
+  max-height: calc(100vh - 96px);
+  background: var(--bg-surface);
+  backdrop-filter: blur(22px);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  z-index: 45;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.cc-flyout[hidden] {
+  display: none !important;
+}
+
+.cc-fly-head {
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--border-hair);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--bg-solid);
+}
+.cc-fly-kicker {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 9.5px;
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: 0.05em;
+}
+.cc-fly-head h4 {
+  margin: 2px 0 0;
+  font-size: 13.5px;
+  font-weight: 700;
+}
+.cc-icon-close {
+  appearance: none;
+  border: 1px solid var(--border-hair);
+  background: var(--bg-subtle);
+  color: var(--ink-primary);
+  width: 26px;
+  height: 26px;
+  border-radius: 7px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.cc-icon-close svg {
+  width: 14px;
+  height: 14px;
+}
+
+.cc-fly-body {
+  padding: 12px 14px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.cc-fly-desc {
+  margin: 0;
+  font-size: 11.5px;
+  color: var(--ink-secondary);
+  line-height: 1.4;
+}
+.cc-fly-sublabel {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 10.5px;
+  font-weight: 700;
+  color: var(--ink-secondary);
+}
+
+.cc-fly-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+}
+.cc-fly-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.cc-fly-option {
+  appearance: none;
+  text-align: left;
+  background: var(--bg-solid);
+  border: 1px solid var(--border-hair);
+  border-radius: 9px;
+  padding: 7px 9px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  color: var(--ink-primary);
+  transition: all 0.14s ease;
+}
+.cc-fly-option strong {
+  display: block;
+  font-size: 11.5px;
+}
+.cc-fly-option small {
+  display: block;
+  font-size: 10px;
+  color: var(--ink-muted);
+  line-height: 1.25;
+}
+.cc-fly-option:hover {
+  border-color: var(--border-strong);
+  background: var(--bg-subtle);
+}
+.cc-fly-option.active {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+.cc-dot, .cc-swatch {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  border: 1px solid rgba(0, 0, 0, 0.18);
+}
+.cc-swatch {
+  border-radius: 4px;
+  width: 16px;
+  height: 16px;
+}
+
+.cc-fly-toggle-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--bg-subtle);
+  padding: 8px 10px;
+  border-radius: 9px;
+  font-size: 11.5px;
+}
+
+.cc-fly-form-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 7px;
+  margin-top: 4px;
+}
+.cc-fly-form-2 label {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  font-size: 10.5px;
+  font-weight: 600;
+  color: var(--ink-secondary);
+}
+.cc-fly-form-2 input,
+.cc-select {
+  width: 100%;
+  background: var(--bg-solid);
+  border: 1px solid var(--border-strong);
+  color: var(--ink-primary);
+  border-radius: 7px;
+  padding: 6px 8px;
+  font-size: 11.5px;
+}
+
+.cc-fly-prod-summary {
+  background: var(--bg-subtle);
+  border: 1px solid var(--border-hair);
+  border-radius: 10px;
+  padding: 9px 10px;
+}
+.cc-fps-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.cc-fps-top code {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--ink-muted);
+}
+.cc-fps-specs {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 11px;
+  color: var(--ink-secondary);
+}
+
+.cc-verif {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 5px;
+}
+
+.cc-fly-btn-row {
+  display: flex;
+  gap: 6px;
+}
+.cc-fly-slider-box {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 12px;
+}
+.cc-fly-slider-box input[type="range"] {
+  width: 100%;
+  accent-color: var(--accent);
+}
+.cc-fly-footer-note {
+  font-size: 11px;
+  color: var(--ink-muted);
+  border-top: 1px solid var(--border-hair);
+  padding-top: 7px;
+}
+
+/* ============================================================================
+   VISOR 3D CENTRAL Y HUD FLOTANTE APPLE
+   ============================================================================ */
+.cc-viewport-area {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.cc-canvas-shell {
+  position: relative;
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+#cubicad-3d-canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+  outline: none;
+}
+
+.cubicad-marquee-box {
+  position: absolute;
+  border: 1.5px solid var(--accent);
+  background: rgba(0, 113, 227, 0.14);
+  border-radius: 4px;
+  pointer-events: none;
+  z-index: 20;
+}
+
+.cc-vp-hud-top {
+  position: absolute;
+  top: 12px;
+  left: 14px;
+  right: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+  pointer-events: none;
+  z-index: 15;
+}
+
+.cc-hud-pill {
+  background: var(--bg-surface);
+  backdrop-filter: blur(16px);
+  border: 1px solid var(--border-hair);
+  border-radius: 11px;
+  padding: 7px 12px;
+  box-shadow: var(--shadow-sm);
+  pointer-events: auto;
+}
+#hud-building-title {
+  font-size: 12px;
+  color: var(--ink-primary);
+}
+#hud-live-metrics {
+  display: flex;
+  gap: 12px;
+  margin-top: 3px;
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  color: var(--ink-secondary);
+}
+
+.cc-cam-strip {
+  display: flex;
+  gap: 4px;
+  background: var(--bg-surface);
+  backdrop-filter: blur(16px);
+  border: 1px solid var(--border-hair);
+  padding: 4px;
+  border-radius: 10px;
+  box-shadow: var(--shadow-sm);
+  pointer-events: auto;
+}
+.cc-cam-strip button {
+  appearance: none;
+  border: none;
+  background: transparent;
+  color: var(--ink-secondary);
+  font-size: 11px;
+  font-weight: 600;
+  padding: 5px 9px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+.cc-cam-strip button:hover {
+  background: var(--bg-subtle);
+  color: var(--ink-primary);
+}
+
+/* Barra de Estado CAD Inferior */
+.cc-status-bar {
+  height: 30px;
+  background: var(--bg-surface);
+  border-top: 1px solid var(--border-hair);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 14px;
+  font-size: 11px;
+  color: var(--ink-secondary);
+  z-index: 15;
+}
+.cc-status-shortcuts {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--ink-muted);
+}
+
+/* Ventana Flotante de Detalle Constructivo 2D Vivo */
+.cc-live2d-drawer {
+  position: absolute;
+  left: 16px;
+  right: 16px;
+  bottom: 42px;
+  height: 360px;
+  background: var(--bg-solid);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  z-index: 30;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.cc-live2d-drawer[hidden] {
+  display: none !important;
+}
+.cc-live2d-bar {
+  padding: 8px 14px;
+  border-bottom: 1px solid var(--border-hair);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--bg-subtle);
+  font-size: 12px;
+  font-weight: 700;
+}
+.cc-live2d-canvas {
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+  padding: 6px;
+}
+
+/* ============================================================================
+   INSPECTOR DERECHO COMPACTO Y PLEGABLE
+   ============================================================================ */
+.cc-inspector {
+  background: var(--bg-surface);
+  backdrop-filter: blur(18px);
+  border-left: 1px solid var(--border-hair);
+  padding: 10px 12px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 20;
+}
+
+.cc-insp-card {
+  background: var(--bg-solid);
+  border: 1px solid var(--border-hair);
+  border-radius: var(--radius-md);
+  padding: 10px 11px;
+}
+.cc-insp-title {
+  font-size: 10px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--ink-muted);
+  margin-bottom: 7px;
+}
+
+.cc-muted-note {
+  font-size: 11px;
+  color: var(--ink-muted);
+  line-height: 1.4;
+}
+.cc-sel-card {
+  font-size: 11.5px;
+}
+.cc-sel-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+.cc-sel-badge {
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 5px;
+}
+.cc-sel-desc {
+  font-size: 11px;
+  color: var(--ink-secondary);
+  margin-top: 2px;
+}
+.cc-sel-dims {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--accent);
+  margin-top: 3px;
+}
+
+.cc-compat-pill {
+  padding: 6px 9px;
+  border-radius: 7px;
+  font-size: 11px;
+  font-weight: 700;
+  margin-bottom: 7px;
+}
+.cc-compat-pill.ok { background: var(--ok-bg); color: var(--ok); }
+.cc-compat-pill.warning { background: var(--warn-bg); color: var(--warn); }
+.cc-compat-pill.error { background: var(--err-bg); color: var(--err); }
+
+.cc-compat-items {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  max-height: 185px;
+  overflow-y: auto;
+}
+.cc-compat-row {
+  border-left: 3px solid var(--ok);
+  background: var(--bg-subtle);
+  padding: 5px 8px;
+  border-radius: 5px;
+  font-size: 10.5px;
+  line-height: 1.3;
+}
+.cc-compat-row.warning { border-left-color: var(--warn); }
+.cc-compat-row.error { border-left-color: var(--err); background: var(--err-bg); }
+.cc-compat-row strong { display: block; color: var(--ink-primary); }
+.cc-compat-row span { display: block; color: var(--ink-secondary); }
+.cc-compat-row small { display: block; color: var(--ink-muted); margin-top: 2px; }
+
+.cc-kpi-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  margin-bottom: 8px;
+}
+.cc-kpi-row > div {
+  background: var(--bg-subtle);
+  border-radius: 7px;
+  padding: 6px;
+  text-align: center;
+}
+.cc-kpi-row span {
+  display: block;
+  font-size: 9.5px;
+  color: var(--ink-muted);
+}
+.cc-kpi-row strong {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  color: var(--ink-primary);
+}
+
+.cc-boq-mini-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  max-height: 210px;
+  overflow-y: auto;
+  margin-bottom: 8px;
+}
+.cc-boq-mini-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 6px;
+  border-bottom: 1px solid var(--border-hair);
+  padding-bottom: 5px;
+  font-size: 10.5px;
+}
+.cc-boq-mini-item strong { display: block; color: var(--ink-primary); }
+.cc-boq-mini-item span { display: block; color: var(--ink-muted); font-size: 9.5px; }
+.cc-boq-qty { text-align: right; flex-shrink: 0; font-family: var(--font-mono); }
+.cc-boq-qty small { display: block; font-size: 9.5px; color: var(--ink-muted); }
+
+.cc-export-bar {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+}
+
+/* ============================================================================
+   BOTONES COHERENTES APPLE
+   ============================================================================ */
+.cc-btn-pri, .cc-btn-pri-sm, .cc-btn-pri-xs {
+  appearance: none;
+  border: none;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 700;
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  text-decoration: none;
+  transition: background 0.14s ease;
+}
+.cc-btn-pri { padding: 9px 14px; font-size: 12px; width: 100%; }
+.cc-btn-pri-sm { padding: 6px 11px; font-size: 11.5px; }
+.cc-btn-pri-xs { padding: 5px 8px; font-size: 10.5px; }
+.cc-btn-pri:hover, .cc-btn-pri-sm:hover, .cc-btn-pri-xs:hover { background: var(--accent-hover); }
+
+.cc-btn-sec, .cc-btn-sec-sm, .cc-btn-sec-xs {
+  appearance: none;
+  border: 1px solid var(--border-strong);
+  background: var(--bg-solid);
+  color: var(--ink-primary);
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  text-decoration: none;
+  transition: all 0.14s ease;
+}
+.cc-btn-sec { padding: 8px 12px; font-size: 11.5px; flex: 1; }
+.cc-btn-sec-sm { padding: 6px 11px; font-size: 11.5px; }
+.cc-btn-sec-xs { padding: 5px 8px; font-size: 10.5px; }
+.cc-btn-sec:hover, .cc-btn-sec-sm:hover, .cc-btn-sec-xs:hover { background: var(--bg-subtle); border-color: var(--accent); }
+.cc-btn-sec svg, .cc-btn-sec-sm svg, .cc-btn-pri-sm svg { width: 14px; height: 14px; }
+
+.cc-btn-danger-sm, .cc-btn-danger-xs {
+  appearance: none;
+  border: 1px solid rgba(220, 38, 38, 0.35);
+  background: var(--err-bg);
+  color: var(--err);
+  font-weight: 700;
+  border-radius: 7px;
+  cursor: pointer;
+}
+.cc-btn-danger-sm { padding: 5px 10px; font-size: 11px; }
+.cc-btn-danger-xs { padding: 4px 8px; font-size: 10.5px; }
+
+/* ============================================================================
+   VISTAS COMPLEMENTARIAS (FABRICANTES, HYDRO, DETALLES 2D, RENDER Y SECUENCIA)
+   ============================================================================ */
+.cc-mfg-wrap {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  padding: 20px 26px;
+}
+.cc-mfg-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 14px;
+  gap: 12px;
+}
+.cc-mfg-header h2 { margin: 0 0 4px; font-size: 20px; letter-spacing: -0.02em; }
+.cc-mfg-header p { margin: 0; font-size: 12.5px; color: var(--ink-secondary); }
+.cc-mfg-filters {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+.cc-mfg-filters input, .cc-mfg-filters select {
+  background: var(--bg-solid);
+  border: 1px solid var(--border-strong);
+  color: var(--ink-primary);
+  border-radius: 9px;
+  padding: 9px 12px;
+  font-size: 12.5px;
+}
+.cc-mfg-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+.cc-mfg-chip {
+  text-decoration: none;
+  background: var(--bg-solid);
+  border: 1px solid var(--border-hair);
+  color: var(--ink-secondary);
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 9px;
+  border-radius: 99px;
+}
+.cc-mfg-chip:hover { border-color: var(--accent); color: var(--accent); }
+
+.cc-mfg-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+  gap: 12px;
+}
+.cc-prod-card {
+  background: var(--bg-solid);
+  border: 1px solid var(--border-hair);
+  border-radius: var(--radius-md);
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 8px;
+  box-shadow: var(--shadow-sm);
+}
+.cc-pc-top { display: flex; justify-content: space-between; align-items: center; }
+.cc-pc-brand { font-size: 11.5px; font-weight: 800; color: var(--accent); }
+.cc-prod-card h3 { margin: 0; font-size: 13.5px; line-height: 1.3; }
+.cc-pc-meta { font-size: 11px; color: var(--ink-muted); }
+.cc-pc-specs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  background: var(--bg-subtle);
+  padding: 6px 9px;
+  border-radius: 7px;
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  color: var(--ink-secondary);
+}
+.cc-pc-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 6px;
+}
+
+/* Vista Simulador de Agua */
+#view-hydro {
+  flex-direction: column;
+}
+.cc-hydro-bar {
+  height: 44px;
+  padding: 0 16px;
+  background: var(--bg-solid);
+  border-bottom: 1px solid var(--border-hair);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+}
+#hydro-embed-frame {
+  flex: 1;
+  width: 100%;
+  border: none;
+  background: #0c0f15;
+}
+
+/* Vista Detalles 2D */
+#view-details2d {
+  flex-direction: column;
+  padding: 14px 20px;
+  gap: 12px;
+}
+.cc-subview-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.cc-segmented {
+  display: inline-flex;
+  background: var(--bg-subtle);
+  padding: 3px;
+  border-radius: 10px;
+  border: 1px solid var(--border-hair);
+}
+.cc-segmented button {
+  appearance: none;
+  border: none;
+  background: transparent;
+  color: var(--ink-secondary);
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.cc-segmented button.active {
+  background: var(--bg-solid);
+  color: var(--ink-primary);
+  box-shadow: var(--shadow-sm);
+}
+.cc-subview-actions { display: flex; gap: 8px; align-items: center; }
+.cc-live2d-stage {
+  flex: 1;
+  background: var(--bg-solid);
+  border: 1px solid var(--border-hair);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  padding: 10px;
+  box-shadow: var(--shadow-sm);
+}
+
+.cc-atlas-grid {
+  flex: 1;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: 260px minmax(0, 1fr);
+  gap: 12px;
+}
+.cc-atlas-sidebar {
+  background: var(--bg-solid);
+  border: 1px solid var(--border-hair);
+  border-radius: var(--radius-md);
+  padding: 8px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.cc-atlas-item {
+  appearance: none;
+  text-align: left;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  padding: 8px 10px;
+  cursor: pointer;
+  color: var(--ink-primary);
+}
+.cc-atlas-item span { display: block; font-family: var(--font-mono); font-size: 10px; color: var(--accent); font-weight: 700; }
+.cc-atlas-item strong { display: block; font-size: 12px; }
+.cc-atlas-item:hover { background: var(--bg-subtle); }
+.cc-atlas-item.active { background: var(--accent-soft); border-color: var(--accent); }
+
+.cc-atlas-viewer {
+  background: var(--bg-solid);
+  border: 1px solid var(--border-hair);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.cc-atlas-head {
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--border-hair);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cc-atlas-head small { display: block; color: var(--ink-muted); font-size: 11px; }
+.cc-atlas-split {
+  flex: 1;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+}
+.cc-atlas-pane {
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.cc-atlas-pane.dark { background: #12161f; }
+.cc-atlas-pane img { max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 6px; }
+
+/* Vista Render y Secuencia */
+#view-render {
+  display: none;
+}
+#view-render.active {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) 340px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.cc-render-stage {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 0;
+  min-width: 0;
+  overflow: hidden;
+}
+.cc-render-host {
+  flex: 1 1 auto;
+  position: relative;
+  min-height: 0;
+  overflow: hidden;
+  display: flex;
+}
+.cc-render-bar {
+  flex-shrink: 0;
+  background: var(--bg-solid);
+  border-top: 1px solid var(--border-hair);
+  padding: 10px 14px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.cc-seq-slider-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+  min-width: 220px;
+  font-size: 12px;
+  font-weight: 600;
+}
+.cc-seq-slider-wrap input[type="range"] { flex: 1; accent-color: var(--accent); }
+
+.cc-render-gallery-col {
+  background: var(--bg-surface);
+  border-left: 1px solid var(--border-hair);
+  padding: 14px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.cc-render-gallery-col h3 { margin: 0; font-size: 14px; }
+.cc-gal-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.cc-gal-card {
+  background: var(--bg-solid);
+  border: 1px solid var(--border-hair);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.cc-gal-card img { width: 100%; height: 150px; object-fit: cover; display: block; }
+.cc-gal-card span { display: block; padding: 7px 10px; font-size: 11px; font-weight: 600; color: var(--ink-secondary); }
+
+/* ============================================================================
+   TUTORIAL INTERACTIVO GUIADO Y COACH FLOTANTE
+   ============================================================================ */
+.cc-tut-pulse {
+  box-shadow: 0 0 0 3px var(--accent), 0 0 18px rgba(0, 113, 227, 0.55) !important;
+  animation: ccPulse 1.3s infinite ease-in-out;
+}
+@keyframes ccPulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.04); }
+}
+
+.cc-tutorial-coach {
+  position: fixed;
+  bottom: 44px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 520px;
+  max-width: calc(100vw - 40px);
+  background: var(--bg-solid);
+  border: 2px solid var(--accent);
+  border-radius: var(--radius-lg);
+  padding: 14px 16px;
+  box-shadow: var(--shadow-lg);
+  z-index: 70;
+}
+.cc-tutorial-coach[hidden] { display: none !important; }
+.cc-coach-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 800;
+  color: var(--accent);
+  margin-bottom: 5px;
+}
+.cc-tutorial-coach h4 { margin: 0 0 5px; font-size: 14.5px; }
+.cc-tutorial-coach p { margin: 0 0 11px; font-size: 12px; color: var(--ink-secondary); line-height: 1.42; }
+.cc-coach-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+.cc-coach-nav { display: flex; gap: 5px; }
+
+/* Modales Apple */
+.cc-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 14, 22, 0.55);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  z-index: 90;
+}
+.cc-modal-backdrop[hidden] { display: none !important; }
+.cc-modal-card {
+  background: var(--bg-solid);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-lg);
+  width: 100%;
+  max-width: 860px;
+  max-height: 88vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+}
+.cc-modal-head {
+  padding: 14px 18px;
+  border-bottom: 1px solid var(--border-hair);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 700;
+}
+.cc-modal-body {
+  padding: 18px;
+  overflow-y: auto;
+}
+
+.cc-tut-intro { margin: 0 0 14px; font-size: 13px; color: var(--ink-secondary); line-height: 1.5; }
+.cc-tut-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+@media (max-width: 780px) { .cc-tut-cards { grid-template-columns: 1fr; } }
+.cc-tut-card {
+  background: var(--bg-subtle);
+  border: 1px solid var(--border-hair);
+  border-radius: var(--radius-md);
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 8px;
+}
+.cc-tut-badge { font-family: var(--font-mono); font-size: 9.5px; font-weight: 800; color: var(--accent); }
+.cc-tut-card h4 { margin: 0; font-size: 13.5px; }
+.cc-tut-card p { margin: 0; font-size: 11.5px; color: var(--ink-secondary); line-height: 1.35; }
+.cc-tut-skip-row { margin-top: 14px; display: flex; justify-content: flex-end; }
+
+/* Tablas de Ficha Técnica y Comparador */
+.cc-ds-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.cc-ds-sec {
+  background: var(--bg-subtle);
+  border-radius: 10px;
+  padding: 11px 13px;
+}
+.cc-ds-sec h5 { margin: 0 0 7px; font-size: 12px; color: var(--accent); }
+.cc-ds-sec table { width: 100%; border-collapse: collapse; font-size: 11.5px; }
+.cc-ds-sec th { text-align: left; color: var(--ink-muted); padding: 4px 5px; width: 36%; vertical-align: top; }
+.cc-ds-sec td { padding: 4px 5px; color: var(--ink-primary); }
+.cc-ds-links { margin-top: 14px; display: flex; gap: 8px; }
+
+.cc-comp-wrap { overflow-x: auto; }
+.cc-comp-table { width: 100%; border-collapse: collapse; font-size: 11.5px; }
+.cc-comp-table th, .cc-comp-table td { border: 1px solid var(--border-hair); padding: 8px 10px; text-align: left; }
+.cc-comp-table th { background: var(--bg-subtle); }
+.cc-comp-table th span { display: block; font-size: 10px; color: var(--accent); }
+
+/* Toast de Notificaciones CAD */
+.cc-toast {
+  position: fixed;
+  top: 70px;
+  left: 50%;
+  transform: translateX(-50%) translateY(-10px);
+  background: var(--ink-primary);
+  color: var(--bg-solid);
+  font-size: 12px;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 99px;
+  box-shadow: var(--shadow-md);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.2s ease;
+  z-index: 120;
+}
+.cc-toast.visible {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}

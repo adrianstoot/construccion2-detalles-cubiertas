@@ -1,296 +1,316 @@
-﻿<!DOCTYPE html>
-<html lang="es">
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ConstrucciÃ³n II Â· Tejados y Azoteas â€” Modelos 3D Fotorrealistas y Planos 2D MilimÃ©tricos</title>
-  <link rel="stylesheet" href="css/styles.css" />
+  <title>CubiCAD · Constructor CAD/BIM de Cubiertas — ETSIE · UPV</title>
+  <link rel="stylesheet" href="css/cubicad.css" />
 </head>
 <body>
-  <header class="topbar">
-    <div class="topbar-inner">
-      <div class="brand">
-        <div class="brand-mark">UPVÂ·C2</div>
-        <div>
-          <div class="brand-kicker">ConstrucciÃ³n II Â· ETSIE Â· Tejados y Azoteas (10 Detalles)</div>
-          <h1 class="brand-title">Atlas Constructivo 3D Fotorrealista &amp; 2D CAD MilimÃ©trico</h1>
-        </div>
-      </div>
-
-      <div class="cat-filter-row" id="category-filters" role="group" aria-label="Filtrar por tipologÃ­a">
-        <button class="cat-pill active" data-cat="all">Todos (10)</button>
-        <button class="cat-pill" data-cat="azoteas">Azoteas (5)</button>
-        <button class="cat-pill" data-cat="teja">Tejados Teja (3)</button>
-        <button class="cat-pill" data-cat="pizarra">Pizarra (1)</button>
-        <button class="cat-pill" data-cat="metal">MetÃ¡licas Zinc (1)</button>
-        <button class="cat-pill" id="top-pill-bim" style="background:linear-gradient(135deg,#f59e0b 0%,#d97706 100%);color:#080c12;font-weight:800;border:none;cursor:pointer;">ðŸ—ï¸ Biblioteca BIM (Fabricantes)</button>
-        <a href="https://adrianstoot.github.io/rooflab-hydro-3d/" target="_blank" class="cat-pill cat-pill-hydro">ðŸŒŠ Hydro 3D</a>
+  <!-- BARRA SUPERIOR MINIMALISTA APPLE / ARCHICAD -->
+  <header class="cc-topbar">
+    <div class="cc-brand">
+      <div class="cc-logo-box" id="brand-logo-icon" aria-hidden="true"></div>
+      <div class="cc-brand-text">
+        <span class="cc-brand-name">CubiCAD</span>
+        <span class="cc-brand-sub">Constructor CAD/BIM de Cubiertas</span>
       </div>
     </div>
 
-    <div class="topbar-catalog">
-      <nav class="detail-tabs" id="detail-tabs" aria-label="Selector de 10 detalles constructivos">
-        <button class="detail-tab active" data-detail="detalle1" data-cat="azoteas">
-          <span class="tab-code">DET-01 Â· IVE D.20</span>
-          <span class="tab-name">1. Azotea Convencional (+Montaje)</span>
-        </button>
-        <button class="detail-tab" data-detail="detalle2_qat16" data-cat="azoteas">
-          <span class="tab-code">DET-02A Â· NTE QAT-16</span>
-          <span class="tab-name">2A. Encuentro Cazoleta</span>
-        </button>
-        <button class="detail-tab" data-detail="detalle2_qat17" data-cat="azoteas">
-          <span class="tab-code">DET-02B Â· NTE QAT-17</span>
-          <span class="tab-name">2B. CanalÃ³n Cinc (35 cm)</span>
-        </button>
-        <button class="detail-tab" data-detail="detalle3" data-cat="azoteas">
-          <span class="tab-code">DET-03 Â· DIAP. 21</span>
-          <span class="tab-name">3. Cazoleta SifÃ³nica</span>
-        </button>
-        <button class="detail-tab" data-detail="detalle4_plots" data-cat="azoteas">
-          <span class="tab-code">DET-04 Â· AZ-08 P.55</span>
-          <span class="tab-name">4. Invertida sobre PLOTS</span>
-        </button>
-        <button class="detail-tab" data-detail="detalle5_alero_teja" data-cat="teja">
-          <span class="tab-code">DET-05 Â· TEJA CURVA</span>
-          <span class="tab-name">5. Palomeros + Alero CanalÃ³n</span>
-        </button>
-        <button class="detail-tab" data-detail="detalle6_cumbrera_teja" data-cat="teja">
-          <span class="tab-code">DET-06 Â· TEJA CURVA</span>
-          <span class="tab-name">6. Cumbrera Ventilada Seco</span>
-        </button>
-        <button class="detail-tab" data-detail="detalle7_teja_mixta" data-cat="teja">
-          <span class="tab-code">DET-07 Â· TEJA MIXTA</span>
-          <span class="tab-name">7. Doble Rastrel + Paramento</span>
-        </button>
-        <button class="detail-tab" data-detail="detalle8_pizarra" data-cat="pizarra">
-          <span class="tab-code">DET-08 Â· NTE QTP-14</span>
-          <span class="tab-name">8. Pizarra + Ganchos Inox</span>
-        </button>
-        <button class="detail-tab" data-detail="detalle9_zinc" data-cat="metal">
-          <span class="tab-code">DET-09 Â· VMZINC L6</span>
-          <span class="tab-name">9. Zinc Junta Alzada</span>
-        </button>
-      </nav>
+    <!-- Pestañas Principales Agrupadas -->
+    <nav class="cc-main-tabs" role="tablist" aria-label="Espacios de trabajo CubiCAD">
+      <button class="cc-tab-btn active" data-maintab="builder">
+        <span id="icon-tab-builder"></span> Constructor
+      </button>
+      <button class="cc-tab-btn" data-maintab="manufacturers">
+        <span id="icon-tab-mfg"></span> Fabricantes
+      </button>
+      <button class="cc-tab-btn" data-maintab="hydro">
+        <span id="icon-tab-hydro"></span> Simulador Agua
+      </button>
+      <button class="cc-tab-btn" data-maintab="details2d">
+        <span id="icon-tab-2d"></span> Detalles 2D
+      </button>
+      <button class="cc-tab-btn" data-maintab="render">
+        <span id="icon-tab-render"></span> Render y Secuencia
+      </button>
+    </nav>
+
+    <!-- Selector Rápido de 3 Tipologías de Cubierta -->
+    <div class="cc-typology-switch" role="group" aria-label="Tipología de cubierta">
+      <button class="cc-typo-btn active" data-typology="tejado" title="Tejado inclinado sobre vivienda de 2 plantas">
+        <span id="icon-typo-tejado"></span> Tejado
+      </button>
+      <button class="cc-typo-btn" data-typology="azotea" title="Azotea plana sobre edificio de 4 plantas">
+        <span id="icon-typo-azotea"></span> Azotea
+      </button>
+      <button class="cc-typo-btn" data-typology="metalica" title="Cubierta metálica sobre nave o pabellón deportivo">
+        <span id="icon-typo-metalica"></span> Metálica
+      </button>
+    </div>
+
+    <!-- Barra CAD (Deshacer, Rehacer, Copiar, Pegar, Eliminar) + Tutorial + Tema -->
+    <div class="cc-topbar-right">
+      <div class="cc-cad-quick" role="group" aria-label="Acciones CAD">
+        <button class="cc-ico-btn" id="btn-cad-undo" title="Deshacer (Ctrl+Z)" disabled><span id="icon-undo"></span></button>
+        <button class="cc-ico-btn" id="btn-cad-redo" title="Rehacer (Ctrl+Mayús+Z)" disabled><span id="icon-redo"></span></button>
+        <button class="cc-ico-btn" id="btn-cad-copy" title="Copiar selección (Ctrl+C)"><span id="icon-copy"></span></button>
+        <button class="cc-ico-btn" id="btn-cad-paste" title="Pegar (Ctrl+V)"><span id="icon-paste"></span></button>
+        <button class="cc-ico-btn" id="btn-cad-delete" title="Retirar selección (Supr)" disabled><span id="icon-delete"></span></button>
+      </div>
+
+      <button class="cc-tutorial-pill" id="btn-open-tutorial" title="Tutorial guiado de las 3 tipologías desde cero">
+        <span id="icon-tutorial"></span> Tutorial
+      </button>
+
+      <button class="cc-ico-btn" id="btn-toggle-theme" title="Alternar modo Claro Apple / Oscuro Estudio">
+        <span id="icon-theme"></span>
+      </button>
     </div>
   </header>
 
-  <main class="workspace">
-    <!-- Hero Detail Banner -->
-    <section class="hero-header">
-      <div>
-        <div class="hero-meta-row">
-          <span class="pill pill-accent" id="hero-code">IVE Â· TIPOLOGÃA 1</span>
-          <span class="pill" id="hero-slide">Diapositiva 1 Â· PÃ¡g. 20 (AnÃ¡lisis Cartillas IVE)</span>
-          <span class="pill pill-scale" id="hero-scale">Escala 2D 1:5 Â· PrecisiÃ³n 1:1 mm</span>
-          <span class="pill" id="hero-normativa">Cartillas IVE Â· CTE DB-HS1 / DB-HE1</span>
-        </div>
-        <h2 class="hero-title" id="hero-title">Azotea Transitable Â· No Ventilada Â· Convencional Â· Pavimento Fijo</h2>
-        <p class="hero-subtitle" id="hero-subtitle">Encuentro con peto de fÃ¡brica y secuencia escalonada de capas (P, CS, I, AT, BV, FP, SR)</p>
-      </div>
+  <!-- CONTENEDOR PRINCIPAL -->
+  <main class="cc-main-shell">
+    <!-- ======================================================================
+         VISTA 1: CONSTRUCTOR 3D (ROOF BUILDER — PANTALLA INICIAL)
+         ====================================================================== -->
+    <section class="cc-main-view active" id="view-builder">
+      <div class="cc-builder-layout" id="builder-layout">
+        <!-- PALETA LATERAL IZQUIERDA (ICONOS SVG VISIBLES ESTILO ARCHICAD) -->
+        <aside class="cc-left-palette" aria-label="Paleta CAD y Capas Constructivas">
+          <div class="cc-palette-section-lbl">CAD</div>
 
-      <div class="mode-bar" role="tablist">
-        <button class="mode-btn active" data-mode="montaje">Secuencia Montaje 3D+2D</button>
-        <button class="mode-btn" data-mode="video">VÃ­deo Montaje 30s (HD)</button>
-        <button class="mode-btn" data-mode="renders">Renders Fotorrealistas</button>
-        <button class="mode-btn" data-mode="webgl">Visor 3D Interactivo</button>
-        <button class="mode-btn" data-mode="cad2d" id="mode-cad2d-btn">Plano 2D Acabado (E 1:5)</button>
-        <button class="mode-btn" data-mode="split">Comparativa 3D + 2D</button>
-        <button class="mode-btn" data-mode="bim" id="mode-bim-btn" style="border-color:#f59e0b;color:#fde68a;font-weight:800;">ðŸ—ï¸ Biblioteca BIM &amp; Montaje Real (Fabricantes)</button>
-        <a href="https://adrianstoot.github.io/rooflab-hydro-3d/" target="_blank" class="mode-btn" style="background:linear-gradient(135deg,#00d2ff 0%,#0284c7 100%);color:#041019;text-decoration:none;font-weight:800;">ðŸŒŠ Simulador de Agua (HYDRO 3D)</a>
+          <button class="cc-tool-btn cc-tool-cad active" id="tool-cad-select" data-cadtool="select" title="Seleccionar (V) · Mantén Shift para selección múltiple">
+            <span class="cc-t-ico" id="ico-cad-select"></span>
+            <span class="cc-t-lbl">Selección</span>
+          </button>
+
+          <button class="cc-tool-btn cc-tool-cad" id="tool-cad-marquee" data-cadtool="marquee" title="Selección por Zona / Marquesina (M)">
+            <span class="cc-t-ico" id="ico-cad-marquee"></span>
+            <span class="cc-t-lbl">Zona</span>
+          </button>
+
+          <button class="cc-tool-btn cc-tool-cad" id="tool-cad-move" data-cadtool="move" title="Mover faldón, pendiente o sumidero en vivo (G)">
+            <span class="cc-t-ico" id="ico-cad-move"></span>
+            <span class="cc-t-lbl">Mover</span>
+          </button>
+
+          <button class="cc-tool-btn cc-tool-cad" id="tool-cad-draw" data-cadtool="draw_line" title="Trazar Cumbrera, Limatesa, Limahoya o Contorno (L)">
+            <span class="cc-t-ico" id="ico-cad-draw"></span>
+            <span class="cc-t-lbl">Trazar</span>
+          </button>
+
+          <button class="cc-tool-btn" id="tool-cad-explode" title="Levantar y separar capas instantáneamente (E)">
+            <span class="cc-t-ico" id="ico-cad-explode"></span>
+            <span class="cc-t-lbl">Levantar</span>
+          </button>
+
+          <button class="cc-tool-btn" id="tool-cad-detail2d" title="Mostrar Detalle Constructivo 2D Vivo (Tecla 2)">
+            <span class="cc-t-ico" id="ico-cad-detail2d"></span>
+            <span class="cc-t-lbl">Detalle 2D</span>
+          </button>
+
+          <div class="cc-palette-divider"></div>
+          <div class="cc-palette-section-lbl">CAPAS</div>
+
+          <button class="cc-tool-btn cc-tool-layer" id="tool-layer-building" title="Edificio base, variantes de cubierta y dimensiones">
+            <span class="cc-t-ico" id="ico-layer-building"></span>
+            <span class="cc-t-lbl">Edificio</span>
+          </button>
+
+          <button class="cc-tool-btn cc-tool-layer layer-on" id="tool-layer-support" title="Soporte resistente, pendientes o panel sándwich">
+            <span class="cc-t-ico" id="ico-layer-support"></span>
+            <span class="cc-t-lbl">Soporte</span>
+          </button>
+
+          <button class="cc-tool-btn cc-tool-layer layer-on" id="tool-layer-membrane" title="Lámina transpirable o geotextil separador">
+            <span class="cc-t-ico" id="ico-layer-membrane"></span>
+            <span class="cc-t-lbl">Lámina</span>
+          </button>
+
+          <button class="cc-tool-btn cc-tool-layer" id="tool-layer-waterproofing" title="Impermeabilización (Bituminosa SBS / PVC Antirraíz)">
+            <span class="cc-t-ico" id="ico-layer-waterproofing"></span>
+            <span class="cc-t-lbl">Impermeab.</span>
+          </button>
+
+          <button class="cc-tool-btn cc-tool-layer layer-on" id="tool-layer-insulation" title="Aislamiento térmico (URSA XPS / ROCKWOOL)">
+            <span class="cc-t-ico" id="ico-layer-insulation"></span>
+            <span class="cc-t-lbl">Aislamiento</span>
+          </button>
+
+          <button class="cc-tool-btn cc-tool-layer layer-on" id="tool-layer-battens" title="Rastreles ventilados o Plots regulables Peygran">
+            <span class="cc-t-ico" id="ico-layer-battens"></span>
+            <span class="cc-t-lbl">Rastrel/Plot</span>
+          </button>
+
+          <button class="cc-tool-btn cc-tool-layer layer-on" id="tool-layer-covering" title="Tejas (árabe, mixta, plana, hormigón), Pizarra, Zinc, Panel o Pavimento">
+            <span class="cc-t-ico" id="ico-layer-covering"></span>
+            <span class="cc-t-lbl">Teja / Acab.</span>
+          </button>
+
+          <button class="cc-tool-btn cc-tool-layer layer-on" id="tool-layer-drainage" title="Evacuación: Canalón VMZINC, Cazoleta Jimten y Cumbrera">
+            <span class="cc-t-ico" id="ico-layer-drainage"></span>
+            <span class="cc-t-lbl">Evacuación</span>
+          </button>
+        </aside>
+
+        <!-- VENTANILLA DESPLEGABLE FLOTANTE (FLYOUT) -->
+        <div class="cc-flyout" id="cubicad-flyout" hidden></div>
+
+        <!-- ÁREA CENTRAL DEL VISOR 3D -->
+        <section class="cc-viewport-area" id="builder-viewport-host">
+          <div class="cc-canvas-shell" id="cubicad-canvas-shell">
+            <canvas id="cubicad-3d-canvas"></canvas>
+
+            <!-- HUD Superior Flotante -->
+            <div class="cc-vp-hud-top">
+              <div class="cc-hud-pill">
+                <div id="hud-building-title">Vivienda Unifamiliar Aislada (2 Plantas) · Dos Aguas</div>
+                <div id="hud-live-metrics"></div>
+              </div>
+
+              <div class="cc-cam-strip">
+                <button data-cam-preset="iso">Isométrica</button>
+                <button data-cam-preset="roof_close">Zoom Cubierta</button>
+                <button data-cam-preset="top">Planta</button>
+                <button data-cam-preset="front">Alzado</button>
+                <button data-cam-preset="side">Sección</button>
+                <button id="btn-toggle-inspector" title="Mostrar u ocultar panel técnico derecho">Inspector</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Ventana Flotante Instantánea de Detalle Constructivo 2D Vivo -->
+          <div class="cc-live2d-drawer" id="live-detail2d-drawer" hidden>
+            <div class="cc-live2d-bar">
+              <span>Sección Constructiva 2D Acotada en Vivo (Escala 1:5 · Sincronizada)</span>
+              <div class="cc-subview-actions">
+                <button class="cc-btn-sec-xs" id="btn-expand-live2d">Ampliar a Pantalla Completa</button>
+                <button class="cc-btn-sec-xs" id="btn-close-live2d">Cerrar ✕</button>
+              </div>
+            </div>
+            <div class="cc-live2d-canvas" id="live-detail2d-svg-mini"></div>
+          </div>
+
+          <!-- Barra de Estado CAD -->
+          <div class="cc-status-bar">
+            <span id="cubicad-status-text">Herramienta Selección (V) · Haz clic en los botones de la izquierda para configurar cada capa de cubierta.</span>
+            <span class="cc-status-shortcuts">V: Sel · M: Zona · G: Mover · L: Trazar · 2: Detalle 2D · Ctrl+Z/Mayús+Z: Deshacer/Rehacer · Ctrl+C/V: Copiar/Pegar</span>
+          </div>
+        </section>
+
+        <!-- INSPECTOR DERECHO COMPACTO -->
+        <aside class="cc-inspector" id="cubicad-inspector">
+          <div class="cc-insp-card">
+            <div class="cc-insp-title">Selección CAD</div>
+            <div id="insp-selection-box"></div>
+          </div>
+
+          <div class="cc-insp-card">
+            <div class="cc-insp-title">Compatibilidad Constructiva CTE</div>
+            <div id="insp-compat-box"></div>
+          </div>
+
+          <div class="cc-insp-card">
+            <div class="cc-insp-title">Mediciones y Pesos Reales</div>
+            <div id="insp-boq-box"></div>
+          </div>
+        </aside>
       </div>
     </section>
 
-    <!-- Studio Viewport + Layer Inspector -->
-    <section class="studio-grid" id="studio-grid">
-      <div class="stage-card">
-        <div class="stage-toolbar" id="stage-toolbar">
-          <!-- Montaje Controls -->
-          <div class="tool-group" id="controls-montaje" style="width:100%; justify-content:space-between;">
-            <div class="tool-group">
-              <button class="btn-tool btn-play" id="mnt-play">â–¶ Reproducir (30s)</button>
-              <button class="btn-tool" id="mnt-prev">â—€ Fase</button>
-              <button class="btn-tool" id="mnt-next">Fase â–¶</button>
-              <button class="btn-tool" id="mnt-reset">Reiniciar</button>
-            </div>
-            <div class="slider-wrap" style="flex:1; max-width:440px;">
-              <span class="pill pill-accent" id="mnt-phase-pill">FASE 12 / 12</span>
-              <input id="mnt-slider" type="range" min="0" max="300" value="300" style="flex:1; width:auto;" />
-              <span id="mnt-time-readout">30.0s / 30.0s</span>
-            </div>
-            <div class="tool-group">
-              <button class="btn-tool" id="mnt-toggle-2d-sheet">Ver LÃ¡mina 2D Montaje</button>
-            </div>
-          </div>
+    <!-- ======================================================================
+         VISTA 2: FABRICANTES (BIBLIOTECA COMERCIAL BIM COMPLETA)
+         ====================================================================== -->
+    <section class="cc-main-view" id="view-manufacturers"></section>
 
-          <!-- WebGL Controls -->
-          <div class="tool-group" id="controls-webgl" style="display:none;">
-            <button class="btn-tool" data-cam="iso">Vista IsomÃ©trica</button>
-            <button class="btn-tool" data-cam="front">SecciÃ³n Frontal</button>
-            <button class="btn-tool" data-cam="top">Planta Cenital</button>
-            <button class="btn-tool" id="btn-wireframe">Malla CAD</button>
-            <div class="slider-wrap">
-              <label for="explode-slider">Despiece:</label>
-              <input id="explode-slider" type="range" min="0" max="100" value="0" />
-              <span id="explode-val">0%</span>
-            </div>
-          </div>
+    <!-- ======================================================================
+         VISTA 3: SIMULADOR DE AGUA (ROOFLAB HYDRO 3D SINCRONIZADO)
+         ====================================================================== -->
+    <section class="cc-main-view" id="view-hydro">
+      <div class="cc-hydro-bar">
+        <span><strong>ROOFLAB HYDRO 3D</strong> · Simulador de lluvia y escorrentía sincronizado con las capas comerciales de tu azotea.</span>
+        <a id="hydro-open-external" href="https://adrianstoot.github.io/rooflab-hydro-3d/?bimSync=1" target="_blank" rel="noopener noreferrer" class="cc-btn-sec-sm">Abrir en pantalla independiente ↗</a>
+      </div>
+      <iframe id="hydro-embed-frame" title="Simulador de Agua ROOFLAB HYDRO 3D"></iframe>
+    </section>
 
-          <!-- 2D CAD Controls -->
-          <div class="tool-group" id="controls-cad2d" style="display:none;">
-            <button class="btn-tool" id="cad-zoom-in">Zoom +</button>
-            <button class="btn-tool" id="cad-zoom-out">Zoom âˆ’</button>
-            <button class="btn-tool" id="cad-zoom-reset">Encajar A3 (1:5)</button>
-            <button class="btn-tool" id="cad-toggle-montaje" style="display:none;">Alternar Plano 2D Montaje (01â€“12)</button>
-            <span class="pill" id="cad-zoom-readout">100%</span>
-          </div>
+    <!-- ======================================================================
+         VISTA 4: DETALLES 2D (SECCIÓN VIVA + 10 DETALLES DEL ATLAS UPV)
+         ====================================================================== -->
+    <section class="cc-main-view" id="view-details2d"></section>
 
-          <!-- Renders / Split / Video info -->
-          <div class="tool-group" id="controls-info" style="display:none;">
-            <span class="pill">Motor Cycles / Raytracing PBR Fotorrealista</span>
-            <span class="pill" id="bounds-readout">Envolvente: 1175 Ã— 960 Ã— 1080 mm</span>
+    <!-- ======================================================================
+         VISTA 5: RENDER Y SECUENCIA DE MONTAJE EN VIVO
+         ====================================================================== -->
+    <section class="cc-main-view" id="view-render">
+      <div class="cc-render-stage">
+        <div class="cc-render-host" id="render-viewport-host"></div>
+        <div class="cc-render-bar" id="render-sequence-controls">
+          <button class="cc-btn-pri-sm" id="btn-seq-play">▶ Reproducir Secuencia</button>
+          <div class="cc-seq-slider-wrap">
+            <span>Progreso:</span>
+            <input type="range" min="0" max="100" value="100" id="render-seq-slider" />
+            <strong id="render-seq-pct">100%</strong>
           </div>
-
-          <div class="tool-group" id="controls-reset-wrap" style="display:none;">
-            <button class="btn-tool" id="btn-reset-layers">Mostrar todas las capas</button>
+          <div class="cc-seq-slider-wrap" style="max-width:220px;">
+            <span>Despiece:</span>
+            <input type="range" min="0" max="100" value="0" id="render-explode-slider" />
           </div>
-
-          <!-- BIM Commercial Library & Piece-by-Piece Assembler Controls -->
-          <div class="tool-group" id="controls-bim" style="display:none; width:100%; justify-content:space-between;">
-            <div class="tool-group">
-              <button class="btn-tool btn-play" id="bim-assembly-play">â–¶ Montaje Pieza a Pieza</button>
-              <div class="slider-wrap">
-                <label for="bim-assembly-slider">Progreso Montaje:</label>
-                <input id="bim-assembly-slider" type="range" min="4" max="100" value="100" />
-                <span id="bim-assembly-pct">100%</span>
-              </div>
-            </div>
-            <div class="slider-wrap">
-              <label for="bim-explode-slider">Desmontar / Explotar Capas:</label>
-              <input id="bim-explode-slider" type="range" min="0" max="100" value="0" />
-            </div>
-            <div class="tool-group">
-              <button class="btn-tool" id="bim-quick-catalog-btn" style="border-color:#38bdf8;color:#7dd3fc;">ðŸ“š CatÃ¡logo Oficial (12 Familias Â· 24 Fabricantes)</button>
-            </div>
+          <div class="cc-subview-actions">
+            <button class="cc-btn-sec-sm" id="btn-capture-render-png">Capturar Render PNG HD</button>
+            <button class="cc-btn-pri-sm" id="btn-record-seq-webm">Grabar Vídeo Secuencia (.webm)</button>
           </div>
-        </div>
-
-        <div class="stage-body">
-          <!-- Mode 0: Software de Montaje 3D + 2D -->
-          <div class="pane montaje-pane active" id="pane-montaje">
-            <div class="montaje-split">
-              <div class="montaje-3d-wrap" id="montaje-webgl-wrap">
-                <div class="hud-stage-tag" id="mnt-3d-tag">MONTAJE 3D POR PIEZAS Y CAPAS (1:1 mm)</div>
-                <div class="hud-active-card" id="mnt-active-card">
-                  <div class="hud-active-code" id="mnt-card-code">FASE 12 Â· P Â· RODAPIÃ‰</div>
-                  <div class="hud-active-title" id="mnt-card-title">Junta elÃ¡stica perimetral y rodapiÃ© cerÃ¡mico</div>
-                  <div class="hud-active-desc" id="mnt-card-desc">Sellado perimetral elÃ¡stico y recibido de piezas verticales de rodapiÃ©.</div>
-                </div>
-              </div>
-              <div class="montaje-2d-wrap">
-                <div class="montaje-2d-head">
-                  <span>SECCIÃ“N 2D SINCRONIZADA (ESCALA 1:5)</span>
-                  <span class="pill pill-scale" id="mnt-2d-status">DETALLE 2D ACABADO 100%</span>
-                </div>
-                <div class="montaje-2d-svg" id="montaje-2d-svg-box"></div>
-              </div>
-            </div>
-            <div class="montaje-stepper" id="montaje-stepper"></div>
-          </div>
-
-          <!-- Mode 0B: Video 30s HD Player -->
-          <div class="pane video-pane" id="pane-video">
-            <div class="video-wrap">
-              <video id="montaje-video" controls preload="metadata" poster="renders/detalle1_hero.png">
-                <source src="renders/detalle1_montaje_30s.mp4" type="video/mp4" />
-                Tu navegador no soporta vÃ­deo HTML5 MP4.
-              </video>
-            </div>
-          </div>
-
-          <!-- Mode 1: Cycles Photorealistic Renders -->
-          <div class="pane renders-pane" id="pane-renders">
-            <div class="renders-grid" id="renders-grid"></div>
-          </div>
-
-          <!-- Mode 2: Interactive Three.js WebGL -->
-          <div class="pane" id="pane-webgl">
-            <div id="webgl-canvas-wrap">
-              <div class="hud-hover" id="webgl-hover"></div>
-              <div class="hud-badge" id="webgl-hud">
-                Orbita: arrastrar Â· Zoom: rueda Â· Pan: botÃ³n derecho Â· Clic en capa para inspeccionar
-              </div>
-            </div>
-          </div>
-
-          <!-- Mode 3: 2D Vector CAD -->
-          <div class="pane cad-pane" id="pane-cad2d">
-            <div id="cad-svg-stage"></div>
-          </div>
-
-          <!-- Mode 4: Side by Side 3D + 2D -->
-          <div class="pane split-pane" id="pane-split">
-            <div class="split-half" style="background:#14171c;">
-              <span class="split-label">CORTE 3D FOTORREALISTA (CYCLES PBR)</span>
-              <img id="split-3d-img" src="" alt="Render 3D Cycles" />
-            </div>
-            <div class="split-half">
-              <span class="split-label" id="split-2d-label">SECCIÃ“N TÃ‰CNICA 2D MILIMÃ‰TRICA (E 1:5)</span>
-              <img id="split-2d-img" src="" alt="Plano 2D CAD" />
-            </div>
-          </div>
-
-          <!-- Mode 5: Biblioteca BIM de Productos Reales y Montaje 3D Pieza a Pieza -->
-          <div class="pane bim-pane" id="pane-bim"></div>
         </div>
       </div>
 
-      <!-- Constructive Layer Inspector -->
-      <aside class="sidebar-card">
-        <div class="sidebar-head">
-          <h3 id="sidebar-title">Fases de Montaje (12)</h3>
-          <span class="pill" id="sidebar-hint">Clic para saltar a fase</span>
-        </div>
-        <div class="layers-list" id="layers-list"></div>
+      <aside class="cc-render-gallery-col">
+        <h3>Capturas de Estudio y Renders Cycles PBR</h3>
+        <div class="cc-gal-list" id="render-captured-gallery"></div>
       </aside>
-    </section>
-
-    <!-- Specification Matrix + Engineering Downloads -->
-    <section class="bottom-grid">
-      <div class="panel-card">
-        <h3>
-          <span>Cuadro TÃ©cnico de Especificaciones y Dosificaciones</span>
-          <span class="pill pill-scale">Tolerancia geomÃ©trica: 0,0 mm</span>
-        </h3>
-        <table class="spec-table">
-          <thead>
-            <tr>
-              <th style="width:95px;">CÃ³digo</th>
-              <th style="width:230px;">Elemento Constructivo</th>
-              <th style="width:155px;">Espesor / Cota</th>
-              <th>DescripciÃ³n TÃ©cnica y Normativa</th>
-            </tr>
-          </thead>
-          <tbody id="spec-tbody"></tbody>
-        </table>
-      </div>
-
-      <div class="panel-card">
-        <h3>
-          <span>Descargas TÃ©cnicas (3D + CAD 2D + VÃ­deo)</span>
-        </h3>
-        <p style="margin:0 0 12px 0; color:var(--ink-secondary); font-size:12.5px;">
-          Todos los archivos 2D, 3D y el vÃ­deo de montaje comparten la misma definiciÃ³n paramÃ©trica milimÃ©trica.
-        </p>
-        <div class="downloads-list" id="downloads-list"></div>
-      </div>
     </section>
   </main>
 
-  <div class="lightbox" id="lightbox">
-    <img id="lightbox-img" src="" alt="Vista ampliada" />
+  <!-- COACH FLOTANTE DEL TUTORIAL INTERACTIVO PASO A PASO -->
+  <div class="cc-tutorial-coach" id="cc-tutorial-coach" hidden></div>
+
+  <!-- MODAL SELECTOR DE TUTORIAL DE PRIMER USO -->
+  <div class="cc-modal-backdrop" id="cc-tutorial-modal" hidden>
+    <div class="cc-modal-card">
+      <div class="cc-modal-head">
+        <span>Tutorial Interactivo CubiCAD · Aprende a montar cada tipología desde cero</span>
+        <button class="cc-icon-close" data-close-modal="cc-tutorial-modal">✕</button>
+      </div>
+      <div class="cc-modal-body" id="cc-tutorial-modal-body"></div>
+    </div>
   </div>
 
-  <script type="module" src="js/app.js"></script>
+  <!-- MODAL FICHA TÉCNICA DIGITAL OFICIAL -->
+  <div class="cc-modal-backdrop" id="cc-datasheet-modal" hidden>
+    <div class="cc-modal-card">
+      <div class="cc-modal-head">
+        <div id="cc-ds-title">Ficha Técnica Oficial</div>
+        <button class="cc-icon-close" data-close-modal="cc-datasheet-modal">✕</button>
+      </div>
+      <div class="cc-modal-body" id="cc-ds-body"></div>
+    </div>
+  </div>
+
+  <!-- MODAL COMPARADOR TÉCNICO DE FABRICANTES -->
+  <div class="cc-modal-backdrop" id="cc-comparator-modal" hidden>
+    <div class="cc-modal-card">
+      <div class="cc-modal-head">
+        <span>Comparador Técnico de Productos Comerciales</span>
+        <button class="cc-icon-close" data-close-modal="cc-comparator-modal">✕</button>
+      </div>
+      <div class="cc-modal-body" id="cc-comp-body"></div>
+    </div>
+  </div>
+
+  <!-- NOTIFICACIÓN FLOTANTE CAD -->
+  <div class="cc-toast" id="cubicad-toast" role="status" aria-live="polite"></div>
+
+  <script>window.CUBICAD_HYDRO_URL = "https://adrianstoot.github.io/rooflab-hydro-3d/?bimSync=1";</script>
+  <script type="module" src="js/cubicad/cubicad_app.js"></script>
 </body>
 </html>
-

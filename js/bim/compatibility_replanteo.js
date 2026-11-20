@@ -61,6 +61,7 @@ export class BIMReplanteoCalculator {
       covering.subType === 'teja_curva' ||
       covering.subType === 'teja_mixta' ||
       covering.subType === 'teja_plana' ||
+      covering.subType === 'teja_hormigon' ||
       covering.subType === 'placa_ondulada_fibrocemento'
     ) {
       realOverlapLongMm = Math.max(0, covGeom.lengthNominalMm - battenStepMm);

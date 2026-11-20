@@ -374,6 +374,79 @@ export const INITIAL_BIM_PRODUCTS = [
     ],
   },
 
+  {
+    id: 'BMI-COBERT-GREDOS',
+    familyId: 'A_TEJAS',
+    manufacturerId: 'BMI_COBERT',
+    manufacturerName: 'BMI Cobert',
+    brand: 'BMI Cobert Hormigón',
+    model: 'Nueva Gredos (Teja de Hormigón Mineral · 420×331 mm)',
+    refCode: 'BMI-GREDOS-420',
+    role: 'roof_covering',
+    subType: 'teja_hormigon',
+    applicationSystem: 'Cubierta inclinada ventilada de teja de hormigón de alta resistencia mecánica',
+    country: 'España',
+    availability: 'En comercialización activa',
+    verificationStatus: 'VERIFICADO_OFICIAL',
+    versionDoc: 'Ficha Técnica BMI Cobert Nueva Gredos · UNE-EN 490/491',
+    revisionDate: '2024-09',
+    colorHex: '#6c5a4f',
+    textureKey: 'concrete_paver',
+    geometry: {
+      lengthNominalMm: 420,
+      widthNominalMm: 331,
+      thicknessMm: 14,
+      archHeightMm: 62,
+      usefulWidthMm: 300,
+      usefulLengthMinMm: 295,
+      usefulLengthMaxMm: 325,
+      usefulLengthNominalMm: 315,
+      overlapLongMinMm: 95,
+      overlapLongMaxMm: 125,
+      overlapTransMm: 31,
+      unitsPerM2: 10.5,
+      unitsPerLinearMeterEave: 3.33,
+      unitsPerLinearMeterRidge: 2.4,
+      unitWeightKg: 4.30,
+      surfaceWeightKgM2: 45.2,
+      shape3D: 'concrete_interlocking_tile',
+    },
+    technicalSpecs: {
+      material: 'Mortero de hormigón coloreado en masa con áridos seleccionados y acabado superficial protector hidrófugo',
+      thermalConductivityWmk: null,
+      mechanicalStrength: 'Resistencia a flexión > 2.000 N (UNE-EN 490/491 · Alta transitabilidad en mantenimiento)',
+      fireReaction: 'Euroclase A1 (Incombustible)',
+      waterAbsorptionPct: 'Impermeable según UNE-EN 491',
+      compressiveStrengthKpa: null,
+      vaporPermeability: 'Estanca',
+      densityKgM3: 2200,
+      weatherResistance: 'Garantía 35 años frente a heladas, roturas y envejecimiento',
+      standards: ['UNE-EN 490', 'UNE-EN 491', 'UNE 136020', 'CTE DB-HS 1'],
+    },
+    installation: {
+      minSlopePct: 25,
+      minSlopeDeg: 14,
+      recommendedSlopePct: 30,
+      battenDistanceMinMm: 295,
+      battenDistanceMaxMm: 325,
+      fixingSystem: 'Colocación en seco al hilo sobre doble rastrel 30×50 mm con fijación mecánica en perímetro y faldón',
+      fixingsPerUnit: '1 clip o tornillo cada 5 piezas y 100% en perímetro',
+      compatibilityRules: ['Compatible con lámina impermeable transpirable y sistema Tectum en seco'],
+      mandatoryAccessories: ['ROTHOBLAAS-RASTREL-3050', 'SFS-CLIP-TEJA-INOX'],
+      instructionsSummary: 'Replantear rastreles entre 295 y 325 mm según pendiente del faldón y solapar lateralmente 31 mm.',
+    },
+    documentation: {
+      productUrl: 'https://www.bmigroup.com/es/',
+      datasheetPdfUrl: 'https://www.bmigroup.com/es/',
+      installationGuideUrl: 'https://www.bmigroup.com/es/',
+      bimCadFormat: 'Objeto BIM BMI Cobert Teja de Hormigón Nueva Gredos (420×331 mm)',
+    },
+    variants: [
+      { id: 'paso_315', label: 'Paso estándar 315 mm (Solape 105 mm · 10,5 uds/m²)', usefulLengthNominalMm: 315, unitsPerM2: 10.5 },
+      { id: 'paso_295', label: 'Paso corto 295 mm (Solape 125 mm · 11,3 uds/m²)', usefulLengthNominalMm: 295, unitsPerM2: 11.3 },
+    ],
+  },
+
   // ===========================================================================
   // FAMILIA B — CUBIERTAS DE PIZARRA (2 FORMATOS VERIFICADOS CUPA PIZARRAS)
   // ===========================================================================
@@ -1900,7 +1973,7 @@ export const BIM_DEMOS = {
  */
 export class BIMCatalogStore {
   constructor() {
-    this.storageKey = 'ETSIE_C2_BIM_CATALOG_V1';
+    this.storageKey = 'ETSIE_C2_BIM_CATALOG_V2';
     this.products = [];
     this.load();
   }
